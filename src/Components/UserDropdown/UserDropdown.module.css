@@ -1,0 +1,104 @@
+.userDropdown {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  position: absolute;
+  top: calc(100% + 4rem);
+  right: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  box-shadow: 0 0 5px var(--color-dark-10);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.userDropdown.show {
+  opacity: 1;
+  visibility: visible;
+  top: calc(100% + 2rem);
+}
+.userDropdown i {
+  color: var(--color-dark-50);
+}
+.user {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-dark-10);
+}
+.user > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.user > a:hover {
+  background-color: var(--color-blue-gray-light-hover);
+}
+.userIcon {
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+.userInfo {
+  margin-inline-start: 1rem;
+  flex-grow: 1;
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userInfo h1 {
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.userDropdown__list {
+  width: 100%;
+  height: 100%;
+}
+.userDropdown__item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.userDropdown__item:hover {
+  background: var(--color-blue-gray-light-hover);
+}
+.userDropdown__item:active {
+  background: var(--color-blue-gray-light);
+}
+.userDropdown__item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1rem;
+}
+.userDropdown__item i {
+  width: 20px;
+}
+.userDropdown__item span {
+  margin-left: 0.5rem;
+}

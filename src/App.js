@@ -1,6 +1,6 @@
 import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home/Home";
 // import Login from "./Pages/Login/Login";
 // import SignUp from "./Pages/SignUp/SignUp";
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/signup" element={<SignUp />} /> */}
         </Routes>
