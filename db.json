@@ -13,5 +13,48 @@
       "postId": 1
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "hhhheee@gma.com",
+      "password": "fffff12f2f2F",
+      "name": "sa ff",
+      "id": 1
+    },
+    {
+      "email": "sdkjhskjshd@gms.co",
+      "password": "kjhkjhkjhkjh54F",
+      "name": "kjhkjhkjh kjhkjhkjh",
+      "id": 2
+    },
+    {
+      "email": "hgfhgfhgf@fkjhkfjh.com",
+      "password": "kjhkjhkjhkjhff55T",
+      "name": "gfhgfhfhgf jhgjjhg",
+      "id": 3
+    },
+    {
+      "email": "nbvnbnbv@ggm.com",
+      "password": "lkjlkjlkj5454F",
+      "name": "kkkk jjjj",
+      "id": 4
+    },
+    {
+      "email": "nbvnbnbv@ggm.com",
+      "password": "lkjlkjlkj5454F",
+      "name": "",
+      "id": 5
+    },
+    {
+      "email": "skfjhkjhf@fkjhf.ddd",
+      "password": "kjhsdkjhd54524F",
+      "name": "jhgjhg kjhgkjh",
+      "id": 6
+    },
+    {
+      "email": "dgkljhfsolfjksj@gmaifd.cjh",
+      "password": "jhgjhg654241G",
+      "name": "jhgjhg jhgjhg",
+      "id": 7
+    }
+  ]
 }

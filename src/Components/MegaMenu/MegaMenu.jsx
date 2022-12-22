@@ -3,9 +3,16 @@ import { galleryData } from "./Data";
 import { servicesData } from "./Data";
 import classes from "./MegaMenu.module.css";
 export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
+  if (megaMenuState) {
+    const megaMenu = document.getElementById("megaMenu");
+    megaMenu.scrollTo(0, 0);
+  }
   return (
     <>
-      <div className={`${classes.menu} ${megaMenuState ? classes.show : null}`}>
+      <div
+        id="megaMenu"
+        className={`${classes.menu} ${megaMenuState ? classes.show : null}`}
+      >
         <div
           className={classes.close}
           onClick={() => {
