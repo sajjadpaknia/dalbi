@@ -269,7 +269,7 @@
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    opacity: 1;
+    opacity: 0;
     visibility: hidden;
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
