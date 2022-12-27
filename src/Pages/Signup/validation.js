@@ -76,7 +76,7 @@ function emailValidation(state, setState, setStep, setSpinner, setMessage) {
 // Password validation function
 function passwordValidation(state, setState, setStep) {
   const valid = String(state.password).match(
-     /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/
   );
   if (!valid) {
     if (state.password.length < 8 || state.password.length > 20) {
@@ -107,20 +107,14 @@ function passwordValidation(state, setState, setStep) {
         errorText: "Password must contain at least one number.",
       });
       return;
-    } else if (state.password.search(/[#?!@$./|'",<>_+)(~`%^&*-]/) > 0) {
+    } else {
       setState({
         ...state,
         error: true,
-        errorText: "Special characters are not accepted for password.",
+        errorText: "Sorry, your password doesn't right.",
       });
       return;
     }
-    setState({
-      ...state,
-      error: true,
-      errorText: "Sorry, your password doesn't right.",
-    });
-    return;
   }
   setState({ ...state, error: false, errorText: "" });
   setStep({ step1: false, step2: false, step3: true });

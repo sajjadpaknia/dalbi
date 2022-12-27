@@ -1,20 +1,23 @@
 import classes from "./Slider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { Autoplay, Pagination } from "swiper";
 import { Link } from "react-router-dom";
 
-export default function App() {
+export default function Slider() {
   return (
     <>
       <section className={classes.slider}>
         <div className={classes.swiperItem}>
           <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            lazy={{
+              loadPrevNext: true,
+            }}
+            loop={true}
             centeredSlides={true}
             autoplay={{
-              delay: 4000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             pagination={{
