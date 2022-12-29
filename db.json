@@ -1,11 +1,1759 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
+  "products": {
+    "phone": [
+      {
+        "id": 1,
+        "available": true,
+        "title": "apple iPhone 14 Pro",
+        "brand": "apple",
+        "model": "iPhone 14 Pro",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 6,
+            "storage": 512,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "silver",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "gold",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "purple",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 2,
+        "available": true,
+        "title": "samsung Galaxy S22",
+        "brand": "samsung",
+        "model": "Galaxy S22",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 8,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "white",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "green",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "sky blue",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 5,
+            "colorName": "cream",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 3,
+        "available": true,
+        "title": "huawei nova 9 NAM-LX9",
+        "brand": "huawei",
+        "model": "nova 9 NAM-LX9",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 8,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "green",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 4,
+        "available": true,
+        "title": "Xiaomi Mi 10T Pro 5G",
+        "brand": "xiaomi",
+        "model": "Mi 10T Pro 5G",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 8,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "silver",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "Blue",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 5,
+        "available": true,
+        "title": "Nokia G60 5G",
+        "brand": "nokia",
+        "model": "G60 5G",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 128,
+            "increase": 0,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "ice",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 6,
+        "available": true,
+        "title": "Motorola Moto G60S XT2133-2",
+        "brand": "motorola ",
+        "model": "Moto G60S XT2133-2",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 4,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "green",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "blue",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 7,
+        "available": true,
+        "title": "Apple iPhone 13 Pro Max",
+        "brand": "apple",
+        "model": "iPhone 13 Pro Max",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 6,
+            "storage": 512,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 4,
+            "ram": 6,
+            "storage": 1000,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "graphite",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "silver",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "gold",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "blue",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 5,
+            "colorName": "green",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 8,
+        "available": true,
+        "title": "Nokia G11 Plus",
+        "brand": "nokia",
+        "model": "G11 Plus",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 3,
+            "storage": 32,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 3,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 4,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "blue",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "gray",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 9,
+        "available": true,
+        "title": "Samsung Galaxy A23 5G",
+        "brand": "samsung",
+        "model": "Galaxy A23 5G",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 4,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 4,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 4,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 5,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "white",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "peach",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "blue",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 10,
+        "available": true,
+        "title": "Xiaomi Mi Note 10 Lite",
+        "brand": "xiaomi",
+        "model": "Mi Note 10 Lite",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "white",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "purple",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 11,
+        "available": true,
+        "title": "Samsung Galaxy S22 Ultra 5G",
+        "brand": "samsung",
+        "model": "Galaxy S22 Ultra 5G",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 12,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 12,
+            "storage": 512,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 12,
+            "storage": 1000,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "white",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "burgundy",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "green",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 5,
+            "colorName": "red",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 6,
+            "colorName": "purple",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 12,
+        "available": true,
+        "title": "Huawei nova 8i",
+        "brand": "huawei",
+        "model": "nova 8i",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 8,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "silver",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "gold",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "purple",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 13,
+        "available": true,
+        "title": "Apple iPhone 14 Plus",
+        "brand": "apple",
+        "model": "iPhone 14 Plus",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 6,
+            "storage": 512,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "Midnight",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "blue",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "red",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "purple",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 14,
+        "available": true,
+        "title": "Nokia C21 Plus",
+        "brand": "nokia",
+        "model": "C21 Plus",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 3,
+            "storage": 32,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 3,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "gray",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "dark cyan",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 15,
+        "available": true,
+        "title": "Samsung Galaxy Z Fold3 5G",
+        "brand": "samsung",
+        "model": "Galaxy Z Fold3 5G",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 12,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 12,
+            "storage": 512,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "silver",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "green",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 16,
+        "available": true,
+        "title": "Nokia G20",
+        "brand": "nokia",
+        "model": "G20",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 4,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 4,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "glacier",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "night",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 17,
+        "available": true,
+        "title": "Apple iPhone 11",
+        "brand": "apple",
+        "model": "iPhone 11",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 4,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 4,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 4,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "yellow",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "white",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "purple",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 5,
+            "colorName": "red",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 18,
+        "available": true,
+        "title": "Xiaomi Poco F2 Pro",
+        "brand": "xiaomi",
+        "model": "Poco F2 Pro",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 6,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 8,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "purple",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "gray",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "white",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "blue",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 19,
+        "available": true,
+        "title": "Nokia 5.4",
+        "brand": "nokia",
+        "model": "5.4",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 4,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 6,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 4,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "night",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "dusk",
+            "hexCode": "#F51E59"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      },
+      {
+        "id": 20,
+        "available": true,
+        "title": "Apple iPhone 12 mini",
+        "brand": "apple",
+        "model": "iPhone 12 mini",
+        "configuration": [
+          {
+            "id": 1,
+            "ram": 4,
+            "storage": 64,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 2,
+            "ram": 4,
+            "storage": 128,
+            "increase": 100,
+            "available": true
+          },
+          {
+            "id": 3,
+            "ram": 4,
+            "storage": 256,
+            "increase": 100,
+            "available": true
+          }
+        ],
+        "colors": [
+          {
+            "id": 1,
+            "colorName": "black",
+            "hexCode": "#000"
+          },
+          {
+            "id": 2,
+            "colorName": "blue",
+            "hexCode": "#F51E59"
+          },
+          {
+            "id": 3,
+            "colorName": "white",
+            "hexCode": "#42B2F2"
+          },
+          {
+            "id": 4,
+            "colorName": "red",
+            "hexCode": "#42B2F2"
+          }
+        ],
+        "sim": "dual",
+        "sellCount": 12,
+        "rate": 125,
+        "image": {
+          "mainImage": "/",
+          "otherImage": ["/", "/", "/"]
+        },
+        "price": 998.9,
+        "seller": {
+          "name": "Apple",
+          "company": "Technology",
+          "profileImg": "./",
+          "satisfaction": 70,
+          "status": "confirmed"
+        },
+        "favorite": false,
+        "comments": [
+          {
+            "id": 1,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 2,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          },
+          {
+            "id": 3,
+            "author": "Alireza",
+            "rate": 2,
+            "date": "2020-12-8",
+            "text": "Was good"
+          }
+        ],
+        "introduction": "lorem1",
+        "badge": "new"
+      }
+    ]
+  },
   "comments": [
     {
       "id": 1,

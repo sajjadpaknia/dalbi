@@ -34,7 +34,7 @@ const Slides = (props) => {
               delay: 2000,
               disableOnInteraction: false,
             }}
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation, ]}
             className="mySwiper"
           >
             <SwiperSlide>

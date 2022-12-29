@@ -3,6 +3,7 @@ import Badge from "../Badge/Badge";
 import Rate from "../Rate/Rate";
 import classes from "./ProductCard.module.css";
 
+// let title = document.querySelectorAll("#productCardTitle");
 export default function ProductCard() {
   return (
     <div className={classes.card}>
@@ -11,14 +12,19 @@ export default function ProductCard() {
           <div className={classes.image}>
             <figure className={classes.figure}>
               <img
-                src="./assets/images/products/Shoes/Nike/Pic-1/Pic-1.jpg"
+                src="./assets/images/products/Clothing/Nike/Pic-4/Pic-1.jpg"
                 alt=""
               />
             </figure>
           </div>
           <div className={classes.info}>
             <div className={classes.title}>
-              <h1>iPhone 13 Pro A2639 - Dual SIM - 6 GB - 256 GB</h1>
+              <h1 id="productCardTitle">
+                iPhone 13 Pro A2639 - Dual SIM - 6 GB - 256 GB
+                {/* {title.map((item) => {
+                  return item.textContent.substring(0, 20) + "...";
+                })} */}
+              </h1>
             </div>
             <div className={classes.details}>
               <Rate />
@@ -28,6 +34,7 @@ export default function ProductCard() {
               <p className={classes.priceWrapper}>
                 <span className={classes.dollar}>$</span>
                 <span className={classes.priceNumber}>680</span>
+                <span className={classes.cent}>.99</span>
               </p>
             </div>
           </div>

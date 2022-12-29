@@ -10,7 +10,7 @@ export default function Home() {
       <Container>
         <Header />
         <Slider />
-        <Slides title={"Most visited"} bkColor={"--color-blue"} />
+        <Slides title={"Todays best deals for you!"} bkColor={"--color-blue"} />
         <Boxes />
         <Slides title={"Top sells"} bkColor={" --color-pink"} />
       </Container>
