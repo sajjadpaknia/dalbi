@@ -5,28 +5,30 @@
         "id": 1,
         "available": true,
         "title": "apple iPhone 14 Pro",
-        "brand": "apple",
-        "model": "iPhone 14 Pro",
+        "specifications": {
+          "brand": "apple",
+          "model": "iPhone 14 Pro"
+        },
         "configuration": [
           {
             "id": 1,
             "ram": 6,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
             "id": 2,
             "ram": 6,
             "storage": 256,
-            "increase": 100,
+            "increase": 140,
             "available": true
           },
           {
             "id": 3,
             "ram": 6,
             "storage": 512,
-            "increase": 100,
+            "increase": 220,
             "available": true
           }
         ],
@@ -39,32 +41,32 @@
           {
             "id": 2,
             "colorName": "silver",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "gold",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "purple",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 603,
+        "rate": 4.8,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Apple/Pic-1/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
         "price": 998.9,
         "seller": {
           "name": "Apple",
-          "company": "Technology",
+          "company": "Technology company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 98,
           "status": "confirmed"
         },
         "favorite": false,
@@ -72,21 +74,21 @@
           {
             "id": 1,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 5,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 2,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 4,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 3,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 3,
             "date": "2020-12-8",
             "text": "Was good"
           }
@@ -105,14 +107,14 @@
             "id": 1,
             "ram": 8,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
             "id": 2,
             "ram": 8,
             "storage": 256,
-            "increase": 100,
+            "increase": 90,
             "available": true
           }
         ],
@@ -125,37 +127,37 @@
           {
             "id": 2,
             "colorName": "white",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "green",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "sky blue",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 5,
             "colorName": "cream",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 4124,
+        "rate": 4.3,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Samsung/Pic-1/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 319.95,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "Samsung",
+          "company": "Electronics corporation",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 89,
           "status": "confirmed"
         },
         "favorite": false,
@@ -170,20 +172,20 @@
           {
             "id": 2,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 4,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 3,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 4,
             "date": "2020-12-8",
             "text": "Was good"
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": "original"
       },
       {
         "id": 3,
@@ -196,14 +198,14 @@
             "id": 1,
             "ram": 8,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
             "id": 2,
             "ram": 8,
             "storage": 256,
-            "increase": 100,
+            "increase": 50,
             "available": true
           }
         ],
@@ -216,22 +218,22 @@
           {
             "id": 2,
             "colorName": "green",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 3898,
+        "rate": 3.1,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Huawei/Pic-1/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 279.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "huawei",
+          "company": "Telecommunications equipment company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 73,
           "status": "confirmed"
         },
         "favorite": false,
@@ -246,14 +248,14 @@
           {
             "id": 2,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 4,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 3,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 5,
             "date": "2020-12-8",
             "text": "Was good"
           }
@@ -272,7 +274,7 @@
             "id": 1,
             "ram": 8,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -292,27 +294,27 @@
           {
             "id": 2,
             "colorName": "silver",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "Blue",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 757,
+        "rate": 1.1,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Xiaomi/Pic-1/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 385.0,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "xiaomi",
+          "company": "Consumer electronics company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 82,
           "status": "confirmed"
         },
         "favorite": false,
@@ -320,7 +322,7 @@
           {
             "id": 1,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 5,
             "date": "2020-12-8",
             "text": "Was good"
           },
@@ -334,7 +336,7 @@
           {
             "id": 3,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 5,
             "date": "2020-12-8",
             "text": "Was good"
           }
@@ -366,22 +368,22 @@
           {
             "id": 2,
             "colorName": "ice",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 1634,
+        "rate": 3.6,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Nokia/Pic-1/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 377.0,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "nokia",
+          "company": "Telecommunications company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 34,
           "status": "confirmed"
         },
         "favorite": false,
@@ -396,14 +398,14 @@
           {
             "id": 2,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 4,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 3,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 5,
             "date": "2020-12-8",
             "text": "Was good"
           }
@@ -422,14 +424,14 @@
             "id": 1,
             "ram": 4,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
             "id": 2,
             "ram": 6,
             "storage": 128,
-            "increase": 100,
+            "increase": 180,
             "available": true
           }
         ],
@@ -442,22 +444,22 @@
           {
             "id": 2,
             "colorName": "blue",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 4422,
+        "rate": 1.9,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Motorola/Pic-1/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 189.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "motorola",
+          "company": "Consumer electronics company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 56,
           "status": "confirmed"
         },
         "favorite": false,
@@ -465,27 +467,27 @@
           {
             "id": 1,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 3,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 2,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 1,
             "date": "2020-12-8",
             "text": "Was good"
           },
           {
             "id": 3,
             "author": "Alireza",
-            "rate": 2,
+            "rate": 4,
             "date": "2020-12-8",
             "text": "Was good"
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": false
       },
       {
         "id": 7,
@@ -498,28 +500,28 @@
             "id": 1,
             "ram": 6,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
             "id": 2,
             "ram": 6,
             "storage": 256,
-            "increase": 100,
+            "increase": 190,
             "available": true
           },
           {
             "id": 3,
             "ram": 6,
             "storage": 512,
-            "increase": 100,
+            "increase": 280,
             "available": true
           },
           {
             "id": 4,
             "ram": 6,
             "storage": 1000,
-            "increase": 100,
+            "increase": 340,
             "available": true
           }
         ],
@@ -532,37 +534,37 @@
           {
             "id": 2,
             "colorName": "silver",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "gold",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "blue",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 5,
             "colorName": "green",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 1174,
+        "rate": 2.9,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Apple/Pic-2/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 775.0,
         "seller": {
           "name": "Apple",
-          "company": "Technology",
+          "company": "Technology company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 98,
           "status": "confirmed"
         },
         "favorite": false,
@@ -603,21 +605,21 @@
             "id": 1,
             "ram": 3,
             "storage": 32,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
             "id": 2,
             "ram": 3,
             "storage": 64,
-            "increase": 100,
+            "increase": 110,
             "available": true
           },
           {
             "id": 3,
             "ram": 4,
             "storage": 64,
-            "increase": 100,
+            "increase": 230,
             "available": true
           }
         ],
@@ -630,22 +632,22 @@
           {
             "id": 2,
             "colorName": "gray",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 1786,
+        "rate": 4.1,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Nokia/Pic-2/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 335.0,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "nokia",
+          "company": "Telecommunications company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 34,
           "status": "confirmed"
         },
         "favorite": false,
@@ -686,7 +688,7 @@
             "id": 1,
             "ram": 4,
             "storage": 64,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -727,32 +729,32 @@
           {
             "id": 2,
             "colorName": "white",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "peach",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "blue",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 2707,
+        "rate": 5,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Samsung/Pic-2/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 299.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "Samsung",
+          "company": "Electronics corporation",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 89,
           "status": "confirmed"
         },
         "favorite": false,
@@ -780,7 +782,7 @@
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": "original"
       },
       {
         "id": 10,
@@ -793,7 +795,7 @@
             "id": 1,
             "ram": 6,
             "storage": 64,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -820,27 +822,27 @@
           {
             "id": 2,
             "colorName": "white",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "purple",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 3794,
+        "rate": 3.9,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Xiaomi/Pic-2/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 269.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "xiaomi",
+          "company": "Consumer electronics company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 82,
           "status": "confirmed"
         },
         "favorite": false,
@@ -868,7 +870,7 @@
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": "bestseller"
       },
       {
         "id": 11,
@@ -881,7 +883,7 @@
             "id": 1,
             "ram": 8,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -899,7 +901,7 @@
             "available": true
           },
           {
-            "id": 3,
+            "id": 4,
             "ram": 12,
             "storage": 1000,
             "increase": 100,
@@ -915,42 +917,42 @@
           {
             "id": 2,
             "colorName": "white",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "burgundy",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "green",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 5,
             "colorName": "red",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 6,
             "colorName": "purple",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 1881,
+        "rate": 4.4,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Samsung/Pic-3/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 708.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "Samsung",
+          "company": "Electronics corporation",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 89,
           "status": "confirmed"
         },
         "favorite": false,
@@ -991,7 +993,7 @@
             "id": 1,
             "ram": 6,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1011,32 +1013,32 @@
           {
             "id": 2,
             "colorName": "silver",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "gold",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "purple",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 2628,
+        "rate": 4.6,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Huawei/Pic-2/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 539.0,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "huawei",
+          "company": "Telecommunications equipment company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 73,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1077,7 +1079,7 @@
             "id": 1,
             "ram": 6,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1104,32 +1106,32 @@
           {
             "id": 2,
             "colorName": "blue",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "red",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "purple",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 1564,
+        "rate": 3.8,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Apple/Pic-3/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 899.99,
         "seller": {
           "name": "Apple",
-          "company": "Technology",
+          "company": "Technology company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 98,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1170,7 +1172,7 @@
             "id": 1,
             "ram": 3,
             "storage": 32,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1190,22 +1192,22 @@
           {
             "id": 2,
             "colorName": "dark cyan",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 3383,
+        "rate": 4.7,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Nokia/Pic-3/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 244.02,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "nokia",
+          "company": "Telecommunications company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 34,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1246,7 +1248,7 @@
             "id": 1,
             "ram": 12,
             "storage": 256,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1266,27 +1268,27 @@
           {
             "id": 2,
             "colorName": "silver",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "green",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 1367,
+        "rate": 3.1,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Samsung/Pic-4/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 1079.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "Samsung",
+          "company": "Electronics corporation",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 89,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1327,7 +1329,7 @@
             "id": 1,
             "ram": 4,
             "storage": 64,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1347,22 +1349,22 @@
           {
             "id": 2,
             "colorName": "night",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 2864,
+        "rate": 3,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Nokia/Pic-4/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 167.51,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "nokia",
+          "company": "Telecommunications company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 34,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1390,7 +1392,7 @@
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": false
       },
       {
         "id": 17,
@@ -1403,7 +1405,7 @@
             "id": 1,
             "ram": 4,
             "storage": 64,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1430,37 +1432,37 @@
           {
             "id": 2,
             "colorName": "yellow",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "white",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "purple",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 5,
             "colorName": "red",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 507,
+        "rate": 4.2,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Apple/Pic-4/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 299.0,
         "seller": {
           "name": "Apple",
-          "company": "Technology",
+          "company": "Technology company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 98,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1501,7 +1503,7 @@
             "id": 1,
             "ram": 6,
             "storage": 128,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1521,32 +1523,32 @@
           {
             "id": 2,
             "colorName": "gray",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "white",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "blue",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 568,
+        "rate": 2.2,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Xiaomi/Pic-3/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 380.77,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "xiaomi",
+          "company": "Consumer electronics company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 82,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1587,7 +1589,7 @@
             "id": 1,
             "ram": 4,
             "storage": 64,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1614,22 +1616,22 @@
           {
             "id": 2,
             "colorName": "dusk",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 3722,
+        "rate": 1.9,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Nokia/Pic-5/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 249.99,
         "seller": {
-          "name": "Apple",
-          "company": "Technology",
+          "name": "nokia",
+          "company": "Telecommunications company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 34,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1657,7 +1659,7 @@
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": "non original"
       },
       {
         "id": 20,
@@ -1670,7 +1672,7 @@
             "id": 1,
             "ram": 4,
             "storage": 64,
-            "increase": 100,
+            "increase": 0,
             "available": true
           },
           {
@@ -1697,32 +1699,32 @@
           {
             "id": 2,
             "colorName": "blue",
-            "hexCode": "#F51E59"
+            "hexCode": "#000"
           },
           {
             "id": 3,
             "colorName": "white",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           },
           {
             "id": 4,
             "colorName": "red",
-            "hexCode": "#42B2F2"
+            "hexCode": "#000"
           }
         ],
         "sim": "dual",
-        "sellCount": 12,
-        "rate": 125,
+        "sellCount": 3357,
+        "rate": 4.3,
         "image": {
-          "mainImage": "/",
+          "mainImage": "Cell-Phones/Apple/Pic-5/Pic-1.jpg",
           "otherImage": ["/", "/", "/"]
         },
-        "price": 998.9,
+        "price": 325.0,
         "seller": {
           "name": "Apple",
-          "company": "Technology",
+          "company": "Technology company",
           "profileImg": "./",
-          "satisfaction": 70,
+          "satisfaction": 98,
           "status": "confirmed"
         },
         "favorite": false,
@@ -1750,7 +1752,7 @@
           }
         ],
         "introduction": "lorem1",
-        "badge": "new"
+        "badge": "bestseller"
       }
     ]
   },

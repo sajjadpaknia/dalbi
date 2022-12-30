@@ -2,8 +2,8 @@
   display: grid;
   place-items: center;
   height: min-content;
+  text-transform: capitalize;
   padding: 0.5rem 1rem;
-  background-color: #00acee;
   color: var(--color-white);
   border-radius: 100px;
   -webkit-border-radius: 100px;

@@ -6,15 +6,7 @@ import SignUp from "./Pages/Signup/Signup";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { products } from "./data";
 axios.defaults.baseURL = "http://localhost:4433";
-async function post() {
-  console.log(JSON.stringify(products));
-  await axios
-    .post("/products", products)
-    .then((res) => console.log(res));
-}
-post();
 function App() {
   return (
     <>

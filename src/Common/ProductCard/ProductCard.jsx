@@ -4,7 +4,7 @@ import Rate from "../Rate/Rate";
 import classes from "./ProductCard.module.css";
 
 // let title = document.querySelectorAll("#productCardTitle");
-export default function ProductCard() {
+export default function ProductCard({ data }) {
   return (
     <div className={classes.card}>
       <Link to={"#"}>
@@ -12,29 +12,28 @@ export default function ProductCard() {
           <div className={classes.image}>
             <figure className={classes.figure}>
               <img
-                src="./assets/images/products/Clothing/Nike/Pic-4/Pic-1.jpg"
-                alt=""
+                src={`./assets/images/products/${data.image.mainImage}`}
+                alt="#"
               />
             </figure>
           </div>
           <div className={classes.info}>
             <div className={classes.title}>
               <h1 id="productCardTitle">
-                iPhone 13 Pro A2639 - Dual SIM - 6 GB - 256 GB
+                {data.title}
                 {/* {title.map((item) => {
                   return item.textContent.substring(0, 20) + "...";
                 })} */}
               </h1>
             </div>
             <div className={classes.details}>
-              <Rate />
-              <Badge />
+              <Rate rate={data.rate} />
+              <Badge title={data.badge} />
             </div>
             <div className={classes.price}>
               <p className={classes.priceWrapper}>
                 <span className={classes.dollar}>$</span>
-                <span className={classes.priceNumber}>680</span>
-                <span className={classes.cent}>.99</span>
+                <span className={classes.priceNumber}>{data.price}</span>
               </p>
             </div>
           </div>

@@ -1,12 +1,11 @@
 .container {
-  width: 35px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .container i {
   display: block;
   color: #ffb300;
+  margin-inline-end: 0.3rem;
 }
 .degree {
   font-weight: 600;
