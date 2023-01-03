@@ -4,13 +4,13 @@ import classes from "./Slides.module.css";
 import Spinner from "../../Common/Spinner/Spinner";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
+import CategoryTitle from "../../Common/CategoryTitle/CategoryTitle";
 
 const Slides = (props) => {
   return (
     <>
-      <div className={classes.title}>
-        <p>{props.title}</p>
-      </div>
+
+      <CategoryTitle>{props.title}</CategoryTitle>
       {props.products ? (
         <section
           className={classes.container}

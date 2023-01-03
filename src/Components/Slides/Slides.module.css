@@ -1,16 +1,4 @@
-.title {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.title p {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: capitalize;
-}
+
 .container {
   display: grid;
   place-items: center;

@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Boxes from "../../Components/Boxes/Boxes";
 import Container from "../../Components/Container/Container";
 import Header from "../../Components/Header/Header";
 import ProductCategories from "../../Components/ProductCategories/ProductCategories";
 import Slider from "../../Components/Slider/Slider";
 import Slides from "../../Components/Slides/Slides";
+import TopBrands from "../../Components/TopBrands/TopBrands";
 import classes from "./Home.module.css";
 export default function Home() {
   const [popularProducts, setPopularProducts] = useState();
@@ -37,9 +39,10 @@ export default function Home() {
         />
         <Boxes />
         <ProductCategories />
+        <TopBrands />
         <Slides
-          title={"Top sells"}
-          bkColor={" --color-pink"}
+          title={"Weekly popular products"}
+          bkColor={"--color-blue-gray-bk"}
           products={popularProducts}
         />
       </Container>

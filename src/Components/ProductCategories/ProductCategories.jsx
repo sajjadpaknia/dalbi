@@ -1,12 +1,11 @@
 import CategoryItem from "../../Common/CategoryItem/CategoryItem";
+import CategoryTitle from "../../Common/CategoryTitle/CategoryTitle";
 import classes from "./ProductCategories.module.css";
 
 const ProductCategories = () => {
   return (
     <>
-      <div className={classes.title}>
-        <p>Shop our top categories</p>
-      </div>
+      <CategoryTitle>Shop our top categories</CategoryTitle>
       <div className={classes.container}>
         <CategoryItem
           clothes={"shoes2.png"}
