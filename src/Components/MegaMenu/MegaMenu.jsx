@@ -55,7 +55,7 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
           <div className={classes.group}>
             <div className={classes.subCatagories}>
               <div className={classes.category__title}>
-                <h3>Dolbi Subcategories</h3>
+                <h3>Dalbi Subcategories</h3>
               </div>
               <div className={classes.services}>
                 {servicesData.map((item) => {

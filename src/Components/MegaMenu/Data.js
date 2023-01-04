@@ -79,24 +79,24 @@ export const galleryData = [
 export const servicesData = [
   {
     id: 1,
-    logo: "./assets/svg/Dolbi-Elite.svg",
-    title: "Dolbi Elite",
+    logo: "./assets/svg/Dalbi-Elite.svg",
+    title: "Dalbi Elite",
     description: "Multi-tasking, gaming or binge watching your favorite.",
     alt: "clothes",
     to: "/#",
   },
   {
     id: 2,
-    logo: "./assets/svg/Dolbi-Pro.svg",
-    title: "Dolbi Pro",
+    logo: "./assets/svg/Dalbi-Pro.svg",
+    title: "Dalbi Pro",
     description: "Follow your after-sales service and special offers.",
     alt: "clothes",
     to: "/#",
   },
   {
     id: 3,
-    logo: "./assets/svg/Dolbi-Club.svg",
-    title: "Dolbi Club",
+    logo: "./assets/svg/Dalbi-Club.svg",
+    title: "Dalbi Club",
     description:
       "Free shipping, product insurance and choice of shipping method.",
     alt: "clothes",
@@ -104,8 +104,8 @@ export const servicesData = [
   },
   {
     id: 4,
-    logo: "./assets/svg/Dolbi-Time.svg",
-    title: "Dolbi Time",
+    logo: "./assets/svg/Dalbi-Time.svg",
+    title: "Dalbi Time",
     description: "Return or sell the product you bought without any hassle.",
     alt: "clothes",
     to: "/#",

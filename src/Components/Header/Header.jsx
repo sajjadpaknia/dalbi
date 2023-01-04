@@ -16,12 +16,9 @@ export default function Header() {
   // When "Mega menu" is displayed, the "Scrolls of Body" must be disabled for "Mega menu" to be displayed correctly.
   useEffect(() => {
     if (megaMenuState) {
-      document.body.style.overflowY = "hidden";
       document.body.style.height = "100vh";
       return;
     }
-    document.body.style.overflowY = "auto";
-    document.body.style.overflowX = "hidden";
     document.body.style.height = "auto";
   }, [megaMenuState]);
   // Closing the "User dropdown" when the user clicks outside of it

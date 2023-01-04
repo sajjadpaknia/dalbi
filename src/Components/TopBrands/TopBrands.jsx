@@ -9,7 +9,7 @@ const TopBrands = () => {
       <section className={classes.container}>
         <div
           className={classes.item}
-          style={{ background: "rgba(92, 0, 230, 0.3)" }}
+          style={{ background: "rgba(92, 0, 230, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -26,7 +26,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: "rgba(0, 158, 55, 0.3)" }}
+          style={{ background: "rgba(0, 158, 55, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -43,7 +43,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: "rgba(230, 0, 92, 0.3)" }}
+          style={{ background: "rgba(230, 0, 92, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -60,7 +60,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: " rgba(0, 165, 230, 0.3)" }}
+          style={{ background: " rgba(0, 165, 230, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -77,7 +77,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: "rgba(230, 0, 0, 0.3)" }}
+          style={{ background: "rgba(230, 0, 0, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -94,7 +94,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: "rgba(19, 0, 230, 0.3)" }}
+          style={{ background: "rgba(19, 0, 230, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -111,7 +111,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: "rgba(230, 123, 0, 0.3)" }}
+          style={{ background: "rgba(230, 123, 0, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>
@@ -128,7 +128,7 @@ const TopBrands = () => {
         </div>
         <div
           className={classes.item}
-          style={{ background: "rgba(207, 0, 230, 0.3)" }}
+          style={{ background: "rgba(207, 0, 230, 0.2)" }}
         >
           <Link to={"#"}>
             <figure className={classes.profile}>

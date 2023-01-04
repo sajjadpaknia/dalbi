@@ -1,9 +1,9 @@
 .slider {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 .item,
 .swiperItem {

@@ -50,6 +50,11 @@
 }
 
 /* config */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: var(--font-size);

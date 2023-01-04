@@ -7,7 +7,9 @@ import Header from "../../Components/Header/Header";
 import ProductCategories from "../../Components/ProductCategories/ProductCategories";
 import Slider from "../../Components/Slider/Slider";
 import Slides from "../../Components/Slides/Slides";
+import Subcategories from "../../Components/Subcategories/Subcategories";
 import TopBrands from "../../Components/TopBrands/TopBrands";
+import WideBanner from "../../Components/WideBanner/WideBanner";
 import classes from "./Home.module.css";
 export default function Home() {
   const [popularProducts, setPopularProducts] = useState();
@@ -32,6 +34,7 @@ export default function Home() {
       <Container>
         <Header />
         <Slider />
+        <Subcategories />
         <Slides
           title={"Todays best deals for you!"}
           bkColor={"--color-blue-gray-bk"}
@@ -40,6 +43,7 @@ export default function Home() {
         <Boxes />
         <ProductCategories />
         <TopBrands />
+        <WideBanner />
         <Slides
           title={"Weekly popular products"}
           bkColor={"--color-blue-gray-bk"}
