@@ -64,18 +64,6 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.profile.elite {
-  background: linear-gradient(135deg, #f2d50f 0%, #da0641 100%);
-}
-.profile.pro {
-  background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
-}
-.profile.club {
-  background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
-}
-.profile.time {
-  background: linear-gradient(135deg, #dfec51 0%, #73aa0a 100%);
-}
 .title {
   font-weight: bold;
   font-size: 1.6rem;

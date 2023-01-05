@@ -1,29 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Boxes.module.css";
-
+import { data } from "./data";
 const Boxes = () => {
+  const [boxes, setBoxes] = useState(data);
   return (
     <div className={classes.container}>
-      <div className={classes.box}>
-        <Link to={"#"} className={classes.figure}>
-          <img src="./assets/images/box1.jpg" alt="" />
-        </Link>
-      </div>
-      <div className={classes.box}>
-        <Link to={"#"} className={classes.figure}>
-          <img src="./assets/images/box3.jpg" alt="" />
-        </Link>
-      </div>
-      <div className={classes.box}>
-        <Link to={"#"} className={classes.figure}>
-          <img src="./assets/images/box2.jpg" alt="" />
-        </Link>
-      </div>
-      <div className={classes.box}>
-        <Link to={"#"} className={classes.figure}>
-          <img src="./assets/images/box4.jpg" alt="" />
-        </Link>
-      </div>
+      {boxes.map((item) => {
+        return (
+          <div className={classes.box} key={item._id}>
+            <Link to={item.to} className={classes.figure}>
+              <img src={`./assets/images/${item.background}.jpg`} alt="" />
+            </Link>
+          </div>
+        );
+      })}
     </div>
   );
 };
