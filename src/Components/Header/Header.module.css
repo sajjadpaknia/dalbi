@@ -112,6 +112,7 @@
 @media (max-width: 700px) {
   .header {
     height: 160px;
+    margin-bottom: 1rem;
   }
   .search {
     max-width: 100%;

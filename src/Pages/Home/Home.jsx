@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import DiscountCard from "../../Common/DiscountCard/DiscountCard";
 import Boxes from "../../Components/Boxes/Boxes";
 import Container from "../../Components/Container/Container";
 import Header from "../../Components/Header/Header";
@@ -49,6 +50,7 @@ export default function Home() {
           bkColor={"--color-blue-gray-bk"}
           products={popularProducts}
         />
+        <DiscountCard />
       </Container>
     </>
   );
