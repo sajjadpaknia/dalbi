@@ -5,7 +5,7 @@
   gap: 2rem;
   width: 90%;
   height: max-content;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 .card {
   overflow: hidden;
@@ -109,6 +109,9 @@
   }
 }
 @media (max-width: 530px) {
+  .container {
+    margin-bottom: 5rem;
+  }
   .header {
     font-size: 1.5rem;
   }

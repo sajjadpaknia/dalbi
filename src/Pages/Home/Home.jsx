@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Boxes from "../../Components/Boxes/Boxes";
 import Container from "../../Components/Container/Container";
 import DiscountCard from "../../Components/DiscountCard/DiscountCard";
+import Introducing from "../../Components/FullBanner/Introducing";
 import Header from "../../Components/Header/Header";
 import ProductCategories from "../../Components/ProductCategories/ProductCategories";
 import Slider from "../../Components/Slider/Slider";
@@ -51,6 +52,7 @@ export default function Home() {
           products={popularProducts}
         />
         <DiscountCard />
+        <Introducing />
       </Container>
     </>
   );
