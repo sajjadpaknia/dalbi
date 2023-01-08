@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Boxes from "../../Components/Boxes/Boxes";
 import Container from "../../Components/Container/Container";
 import DiscountCard from "../../Components/DiscountCard/DiscountCard";
+import Footer from "../../Components/Footer/Footer";
 import Introducing from "../../Components/FullBanner/Introducing";
 import Header from "../../Components/Header/Header";
 import ProductCategories from "../../Components/ProductCategories/ProductCategories";
@@ -55,6 +56,7 @@ export default function Home() {
         <DiscountCard />
         <Introducing />
         <TopChellPhones />
+        <Footer />
       </Container>
     </>
   );

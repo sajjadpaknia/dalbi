@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-dark-20);
+}
+.container a:hover {
+  border-bottom: 1px solid var(--color-dark-60);
+}
+.top {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 3rem;
+  flex-grow: 1;
+  width: 100%;
+}
+.left {
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+.logo {
+  margin-bottom: 2rem;
+}
+.logo figure {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+.logo p {
+  max-width: 350px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.payments {
+  max-width: 300px;
+  flex-grow: 1;
+}
+.payments h3 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.payments__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1rem;
+}
+.payments__item {
+  padding: 0.8rem;
+  height: 40px;
+  border: 1px solid var(--color-dark-40);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.payments__item img {
+  object-fit: contain !important;
+}
+.right {
+  flex-grow: 1;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-color: rgb(255, 255, 255);
+}
+.subList__item::first-letter {
+  text-transform: uppercase;
+}
+.subList__item:first-child {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.subList__item:not(:first-child) {
+  margin-bottom: 1rem;
+  color: var(--color-dark-60);
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-bottom: 1px solid transparent;
+}
+.subList__item:last-child {
+  margin-bottom: 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid var(--color-dark-20);
+}
+.bottom__item {
+  display: flex;
+  color: var(--color-dark-60);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.bottom__item p {
+  margin-inline-end: 1rem;
+}
+@media (max-width: 600px) {
+  .top {
+    flex-direction: column;
+    gap: 0;
+  }
+  .left {
+    flex-basis: max-content;
+    margin-bottom: 5rem;
+  }
+} ;
