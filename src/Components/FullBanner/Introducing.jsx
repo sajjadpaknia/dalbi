@@ -34,9 +34,8 @@ export default function Introducing() {
           //   height="541"
           src="https://www.youtube.com/embed/FT3ODSg1GFE"
           title="Introducing iPhone 14 Pro | Apple"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </section>

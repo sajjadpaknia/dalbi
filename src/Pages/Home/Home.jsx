@@ -11,6 +11,7 @@ import Slider from "../../Components/Slider/Slider";
 import Slides from "../../Components/Slides/Slides";
 import Subcategories from "../../Components/Subcategories/Subcategories";
 import TopBrands from "../../Components/TopBrands/TopBrands";
+import TopChellPhones from "../../Components/TopChellPhones/TopChellPhones";
 import WideBanner from "../../Components/WideBanner/WideBanner";
 import classes from "./Home.module.css";
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
         />
         <DiscountCard />
         <Introducing />
+        <TopChellPhones />
       </Container>
     </>
   );

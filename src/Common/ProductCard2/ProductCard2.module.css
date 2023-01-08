@@ -95,3 +95,14 @@
   line-height: 1.5;
   margin-left: 0.2rem;
 }
+@media (max-width: 580px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .image {
+    width: 120px;
+    padding: 0;
+    flex-shrink: 0;
+    border: 0;
+  }
+} ;
