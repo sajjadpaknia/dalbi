@@ -12,50 +12,53 @@ import Slider from "../../Components/Slider/Slider";
 import Slides from "../../Components/Slides/Slides";
 import Subcategories from "../../Components/Subcategories/Subcategories";
 import TopBrands from "../../Components/TopBrands/TopBrands";
-import TopChellPhones from "../../Components/TopChellPhones/TopChellPhones";
+import TopCellPhones from "../../Components/TopCellPhones/TopCellPhones";
 import WideBanner from "../../Components/WideBanner/WideBanner";
 import classes from "./Home.module.css";
 export default function Home() {
-  const [popularProducts, setPopularProducts] = useState();
+  const [phones, setPhones] = useState();
+  const [topSellPhones, setTopSellPhones] = useState();
   useEffect(() => {
-    setTimeout(() => {
-      const getItems = async () => {
-        await axios
-          .get("/products")
-          .then((res) =>
-            setPopularProducts(
-              res.data.phone
-                .sort((a, b) => b.sellCount - a.sellCount)
-                .slice(0, 10)
-            )
-          );
-      };
-      getItems();
-    }, 5000);
+    const getItems = async () => {
+      await axios.get("/products").then((res) => {
+        setPhones(res.data.phone);
+        setTopSellPhones(
+          res.data.phone.sort((a, b) => b.sellCount - a.sellCount).slice(0, 10)
+        );
+      });
+    };
+    getItems();
   }, []);
+
   return (
     <>
       <Container>
         <Header />
         <Slider />
         <Subcategories />
-        <Slides
-          title={"Todays best deals for you!"}
-          bkColor={"--color-blue-gray-bk"}
-          products={popularProducts}
-        />
+        {topSellPhones && (
+          <Slides
+            title={"Todays best deals for you!"}
+            bkColor={"--color-blue-gray-bk"}
+            products={topSellPhones}
+          />
+        )}
         <Boxes />
         <ProductCategories />
         <TopBrands />
         <WideBanner />
-        <Slides
-          title={"Weekly popular products"}
-          bkColor={"--color-blue-gray-bk"}
-          products={popularProducts}
-        />
+        {topSellPhones && (
+          <Slides
+            title={"Weekly popular products"}
+            bkColor={"--color-blue-gray-bk"}
+            products={topSellPhones}
+          />
+        )}
         <DiscountCard />
         <Introducing />
-        <TopChellPhones />
+
+        {phones && <TopCellPhones products={phones} />}
+
         <Footer />
       </Container>
     </>

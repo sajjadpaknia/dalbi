@@ -24,7 +24,9 @@
   text-align: center;
   font-weight: 500;
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
+
 .circle {
   position: absolute;
   width: 6px;
@@ -47,8 +49,9 @@
   -o-transform: translate(-50%, -50%);
 }
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
   margin-bottom: 1rem;
@@ -60,6 +63,9 @@
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+}
+.wrapper > div {
+  flex-basis: 210px;
 }
 .footer {
   width: max-content;
@@ -75,9 +81,11 @@
   font-size: 1rem;
   font-weight: bold;
 }
-@media (max-width: 580px) {
+@media (max-width: 556px) {
   .wrapper {
-    grid-template-columns: 1fr;
     padding: 1.5rem;
+  }
+  .wrapper > div {
+    flex-basis: 100%;
   }
 } ;
