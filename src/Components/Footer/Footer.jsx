@@ -53,6 +53,24 @@ export default function Footer() {
             })}
           </ul>
         </div>
+
+        <div className={classes.app}>
+          <figure className={classes.app_photo}>
+            <img src="./assets/images/shop.png" alt="" />
+          </figure>
+          <div className={classes.app_btn}>
+            <figure className={classes.btn}>
+              <Link to={"#"}>
+                <img src="./assets/svg/google-play.svg" alt="" />
+              </Link>
+            </figure>
+            <figure className={classes.btn}>
+              <Link to={"#"}>
+                <img src="./assets/svg/app-store.svg" alt="" />
+              </Link>
+            </figure>
+          </div>
+        </div>
       </section>
       <ul className={classes.bottom}>
         <li className={classes.bottom__item}>

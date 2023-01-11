@@ -48,7 +48,13 @@
   width: max-content;
   background-color: transparent;
   animation: shake 2s infinite;
+  overflow: hidden;
   -webkit-animation: shake 2s infinite;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 @keyframes shake {
@@ -87,11 +93,6 @@
   color: var(--text-primary);
   background-color: var(--color-white);
   padding: 1.3rem 2rem;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -99,10 +100,6 @@
   -o-transition: 0.3s;
 }
 @media (max-width: 550px) {
-  /* .container {
-    padding-inline: 5rem;
-  } */
-
   .box h1 {
     font-size: 3rem;
   }

@@ -65,7 +65,7 @@
   -o-border-radius: 1rem;
 }
 .wrapper > div {
-  flex-basis: 210px;
+  flex-basis: 200px;
 }
 .footer {
   width: max-content;

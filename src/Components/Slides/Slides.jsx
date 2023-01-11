@@ -21,13 +21,13 @@ const Slides = (props) => {
             navigation={true}
             breakpoints={{
               500: {
-                slidesPerView: 2,
-              },
-              750: {
                 slidesPerView: 3,
               },
-              1024: {
+              750: {
                 slidesPerView: 4,
+              },
+              1024: {
+                slidesPerView: 5,
               },
             }}
             loop={true}

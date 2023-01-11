@@ -70,20 +70,20 @@ export default function TopCellPhones(props) {
     });
   };
   const [topRatePhones, setTopRatePhones] = useState(
-    props.products.sort((a, b) => b.rate - a.rate).slice(0, 20)
+    props.products.sort((a, b) => b.rate - a.rate).slice(0, 12)
   );
 
   const filterPhones = (brand) => {
     if (brand === "all") {
       setTopRatePhones(
-        props.products.sort((a, b) => b.rate - a.rate).slice(0, 20)
+        props.products.sort((a, b) => b.rate - a.rate).slice(0, 12)
       );
       return;
     }
     setTopRatePhones(
       props.products
         .sort((a, b) => b.rate - a.rate)
-        .slice(0, 20)
+        .slice(0, 12)
         .filter((item) => item.specifications.brand === brand)
     );
   };
