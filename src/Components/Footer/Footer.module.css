@@ -78,7 +78,7 @@
   font-weight: bold;
 }
 .subList__item:first-child a {
-  cursor: auto !important;
+  pointer-events: none;
 }
 .subList__item:not(:first-child) {
   margin-bottom: 1rem;

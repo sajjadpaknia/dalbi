@@ -7,6 +7,7 @@ import DiscountCard from "../../Components/DiscountCard/DiscountCard";
 import Footer from "../../Components/Footer/Footer";
 import Introducing from "../../Components/FullBanner/Introducing";
 import Header from "../../Components/Header/Header";
+import HugeBanner from "../../Components/HugeBanner/HugeBanner";
 import ProductCategories from "../../Components/ProductCategories/ProductCategories";
 import Slider from "../../Components/Slider/Slider";
 import Slides from "../../Components/Slides/Slides";
@@ -45,6 +46,7 @@ export default function Home() {
         )}
         <Boxes />
         <ProductCategories />
+        <HugeBanner />
         <TopBrands />
         <WideBanner />
         {topSellPhones && (
