@@ -20,13 +20,16 @@ const Slides = (props) => {
             spaceBetween={20}
             navigation={true}
             breakpoints={{
-              500: {
+              480: {
+                slidesPerView: 2,
+              },
+              650: {
                 slidesPerView: 3,
               },
-              750: {
+              850: {
                 slidesPerView: 4,
               },
-              1024: {
+              1100: {
                 slidesPerView: 5,
               },
             }}

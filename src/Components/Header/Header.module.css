@@ -22,13 +22,6 @@
   height: 45px;
   flex-grow: 1;
   margin-right: auto;
-  background: var(--color-blue-gray-light);
-  overflow: hidden;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
 }
 .buttonGroup {
   position: relative;

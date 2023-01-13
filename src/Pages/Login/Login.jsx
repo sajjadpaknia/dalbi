@@ -6,6 +6,7 @@ import MessageBox from "../../Common/MessageBox/MessageBox";
 import BackToHomeBtn from "../../Common/BackToHomeBtn/BackToHomeBtn";
 import Spinner from "../../Common/Spinner/Spinner";
 import validation from "./validation";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -78,7 +79,11 @@ export default function Login() {
           {!message.show ? (
             <>
               <figure className={classes.logo}>
-                <img src="./assets/svg/light-logo.svg" alt="logo" />
+                <LazyLoadImage
+                  effect="blur"
+                  src="./assets/svg/light-logo.svg"
+                  alt="logo"
+                />
               </figure>
               <form className={classes.form} spellCheck={false} id="signUpForm">
                 <div

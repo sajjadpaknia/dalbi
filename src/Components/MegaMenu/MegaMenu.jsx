@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { galleryData } from "./Data";
 import { servicesData } from "./Data";
@@ -44,7 +45,11 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
                         </p>
                       </div>
                       <figure className={classes.gallery__bk}>
-                        <img src={item.background} alt={item.alt} />
+                        <LazyLoadImage
+                          effect="blur"
+                          src={item.background}
+                          alt={item.alt}
+                        />
                       </figure>
                     </div>
                   </Link>
@@ -63,7 +68,11 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
                     <Link key={item.id} to={item.to}>
                       <div className={classes.services__container}>
                         <figure className={classes.logo}>
-                          <img src={item.logo} alt={item.alt} />
+                          <LazyLoadImage
+                            effect="blur"
+                            src={item.logo}
+                            alt={item.alt}
+                          />
                         </figure>
                         <div className={classes.info}>
                           <h3 className={classes.title}>{item.title}</h3>
@@ -82,17 +91,29 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
               <div className={classes.mobileAppContainer}>
                 <div className={classes.mobileAppContainer__wrapper}>
                   <figure className={classes.mobileAppContainer__figure}>
-                    <img src="./assets/images/shop.png" alt="" />
+                    <LazyLoadImage
+                      effect="blur"
+                      src="./assets/images/shop.png"
+                      alt=""
+                    />
                   </figure>
                   <div className={classes.mobileAppContainer__group}>
                     <figure className={classes.apps}>
                       <Link to={"#"}>
-                        <img src="./assets/svg/google-play.svg" alt="" />
+                        <LazyLoadImage
+                          effect="blur"
+                          src="./assets/svg/google-play.svg"
+                          alt=""
+                        />
                       </Link>
                     </figure>
                     <figure className={classes.apps}>
                       <Link to={"#"}>
-                        <img src="./assets/svg/app-store.svg" alt="" />
+                        <LazyLoadImage
+                          effect="blur"
+                          src="./assets/svg/app-store.svg"
+                          alt=""
+                        />
                       </Link>
                     </figure>
                   </div>
@@ -103,7 +124,8 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
         </div>
         <div className={classes.notification}>
           <figure className={classes.profile}>
-            <img
+            <LazyLoadImage
+              effect="blur"
               src="./assets/images/profile/Woman.jpeg"
               alt="the woman is laughing"
             />

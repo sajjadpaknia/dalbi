@@ -2,6 +2,7 @@ import classes from "./Slider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Slider() {
   return (
@@ -28,7 +29,8 @@ export default function Slider() {
           >
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/1.jpg"
                   alt=""
@@ -37,7 +39,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/2.jpg"
                   alt=""
@@ -46,7 +49,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/3.jpg"
                   alt=""
@@ -55,7 +59,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/4.jpg"
                   alt=""
@@ -64,7 +69,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/5.jpg"
                   alt=""
@@ -73,7 +79,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/6.jpg"
                   alt=""
@@ -82,7 +89,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/7.jpg"
                   alt=""
@@ -91,7 +99,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/8.jpg"
                   alt=""
@@ -100,7 +109,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/9.jpg"
                   alt=""
@@ -109,7 +119,8 @@ export default function Slider() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to={"#"}>
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className={classes.image}
                   src="./assets/images/slider/10.jpg"
                   alt=""
@@ -120,7 +131,8 @@ export default function Slider() {
         </div>
         <div className={classes.item}>
           <Link to={"#"}>
-            <img
+            <LazyLoadImage
+              effect="blur"
               className={classes.image}
               src="./assets/images/adv (2).jpg"
               alt=""
@@ -129,7 +141,8 @@ export default function Slider() {
         </div>
         <div className={classes.item}>
           <Link to={"#"}>
-            <img
+            <LazyLoadImage
+              effect="blur"
               className={classes.image}
               src="./assets/images/adv (1).jpg"
               alt=""

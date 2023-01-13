@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import classes from "./Subcategories.module.css";
 import { data } from "./data";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Subcategories() {
   const [categories, setCategories] = useState(data);
   return (
@@ -19,7 +20,8 @@ export default function Subcategories() {
                   className={classes.profile}
                   style={{ background: item.bkColor }}
                 >
-                  <img
+                  <LazyLoadImage
+                    effect="blur"
                     src={`./assets/images/subcategory/${item.logo}.png`}
                     alt="the woman is laughing"
                   />

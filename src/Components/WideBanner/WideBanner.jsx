@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import classes from "./WideBanner.module.css";
 
@@ -8,7 +9,11 @@ const WideBanner = () => {
         <div className={classes.wrapper}>
           <div className={classes.context1}>
             <div className={classes.logo}>
-              <img src="./assets/images/creativeCloud.png" alt="" />
+              <LazyLoadImage
+                effect="blur"
+                src="./assets/images/creativeCloud.png"
+                alt=""
+              />
             </div>
             <p className={classes.title}>
               The best laptops for graphic designers.

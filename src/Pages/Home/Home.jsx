@@ -22,9 +22,9 @@ export default function Home() {
   useEffect(() => {
     const getItems = async () => {
       await axios.get("/products").then((res) => {
-        setPhones(res.data.phone);
+        setPhones(res.data);
         setTopSellPhones(
-          res.data.phone.sort((a, b) => b.sellCount - a.sellCount).slice(0, 10)
+          res.data.sort((a, b) => b.sellCount - a.sellCount).slice(0, 10)
         );
       });
     };

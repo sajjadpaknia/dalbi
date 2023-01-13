@@ -3,6 +3,7 @@ import CategoryTitle from "../../Common/CategoryTitle/CategoryTitle";
 import classes from "./ProductCategories.module.css";
 import { data } from "./data";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const ProductCategories = () => {
   const [categoryData, setCategoryData] = useState(data);
   return (
@@ -19,7 +20,11 @@ const ProductCategories = () => {
                 </p>
               </div>
               <figure className={classes.img}>
-                <img src={`./assets/images/category/${item.image}`} alt="" />
+                <LazyLoadImage
+                  effect="blur"
+                  src={`./assets/images/category/${item.image}`}
+                  alt=""
+                />
               </figure>
             </Link>
           );

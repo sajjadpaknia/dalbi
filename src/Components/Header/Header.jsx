@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Search from "../Search/Search";
 import UserDropdown from "../UserDropdown/UserDropdown";
 import MegaMenu from "../MegaMenu/MegaMenu";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Header() {
   // The number of products in the shopping cart
   const [count, setCount] = useState(2);
@@ -35,7 +36,11 @@ export default function Header() {
         <div className={classes.header__container}>
           <figure className={classes.logo}>
             <Link to={"/"}>
-              <img src="./assets/svg/light-logo.svg" alt="logo" />
+              <LazyLoadImage
+                effect="blur"
+                src="./assets/svg/light-logo.svg"
+                alt="logo"
+              />
             </Link>
           </figure>
           <div className={classes.search}>

@@ -3,6 +3,7 @@ import CategoryTitle from "../../Common/CategoryTitle/CategoryTitle";
 import classes from "./DiscountCard.module.css";
 import { data } from "./data";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function DiscountCard() {
   const [cardSate, setCardSate] = useState(data);
   return (
@@ -27,7 +28,10 @@ export default function DiscountCard() {
                   <p className={classes.description}>{item.info}</p>
                 </div>
                 <figure className={classes.image}>
-                  <img src={`./assets/images/discountCard/${item.bkImage}`} />
+                  <LazyLoadImage
+                    src={`./assets/images/discountCard/${item.bkImage}`}
+                    effect="blur"
+                  />
                 </figure>
               </Link>
             </div>

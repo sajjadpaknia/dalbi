@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import classes from "./Introducing.module.css";
 
 export default function Introducing() {
@@ -20,7 +21,11 @@ export default function Introducing() {
           </div>
           <div className={classes.item}>
             <p className={classes.item__logo}>
-              <img src="./assets/svg/Energy.svg" alt="" />
+              <LazyLoadImage
+                effect="blur"
+                src="./assets/svg/Energy.svg"
+                alt=""
+              />
             </p>
             <p className={classes.item__info}>
               Add a MagSafe charger for faster wireless charging 4
@@ -29,7 +34,7 @@ export default function Introducing() {
         </div>
       </div>
       <div className={classes.video}>
-              <iframe
+        <iframe
           //   width="962"
           //   height="541"
           src="https://www.youtube.com/embed/FT3ODSg1GFE"

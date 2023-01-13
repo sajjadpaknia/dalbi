@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import classes from "./Footer.module.css";
 import { data, gateway } from "./data";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Footer() {
   const [list, setList] = useState(data);
   const [gateways, setGateways] = useState(gateway);
@@ -11,7 +12,11 @@ export default function Footer() {
         <div className={classes.left}>
           <div className={classes.logo}>
             <figure>
-              <img src="./assets/svg/light-logo.svg" alt="" />
+              <LazyLoadImage
+                effect="blur"
+                src="./assets/svg/light-logo.svg"
+                alt=""
+              />
             </figure>
             <p>
               Dalbi's online store offers physical goods, supermarkets,
@@ -24,7 +29,8 @@ export default function Footer() {
               {gateways.map((item) => {
                 return (
                   <div className={classes.payments__item} key={item._id}>
-                    <img
+                    <LazyLoadImage
+                      effect="blur"
                       src={`./assets/images/gateways/${item.imgURL}`}
                       alt=""
                     />
@@ -56,17 +62,21 @@ export default function Footer() {
 
         <div className={classes.app}>
           <figure className={classes.app_photo}>
-            <img src="./assets/images/shop.png" alt="" />
+            <LazyLoadImage
+              effect="blur"
+              src="./assets/images/shop.png"
+              alt=""
+            />
           </figure>
           <div className={classes.app_btn}>
             <figure className={classes.btn}>
               <Link to={"#"}>
-                <img src="./assets/svg/google-play.svg" alt="" />
+                <img loading="lazy" src="./assets/svg/google-play.svg" alt="" />
               </Link>
             </figure>
             <figure className={classes.btn}>
               <Link to={"#"}>
-                <img src="./assets/svg/app-store.svg" alt="" />
+                <img loading="lazy" src="./assets/svg/app-store.svg" alt="" />
               </Link>
             </figure>
           </div>

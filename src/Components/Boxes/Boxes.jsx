@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import classes from "./Boxes.module.css";
 import { data } from "./data";
@@ -10,7 +11,10 @@ const Boxes = () => {
         return (
           <div className={classes.box} key={item._id}>
             <Link to={item.to} className={classes.figure}>
-              <img src={`./assets/images/${item.background}.jpg`} alt="" />
+              <LazyLoadImage
+                src={`./assets/images/${item.background}.jpg`}
+                alt=""
+              />
             </Link>
           </div>
         );

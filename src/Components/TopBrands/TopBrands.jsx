@@ -3,6 +3,7 @@ import CategoryTitle from "../../Common/CategoryTitle/CategoryTitle";
 import classes from "./TopBrands.module.css";
 import { data } from "./data";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const TopBrands = () => {
   const [brands, setBrands] = useState(data);
   return (
@@ -18,7 +19,10 @@ const TopBrands = () => {
             >
               <Link to={item.to}>
                 <figure className={classes.profile}>
-                  <img src={`./assets/images/brands/${item.logo}`} />
+                  <LazyLoadImage
+                    effect="blur"
+                    src={`./assets/images/brands/${item.logo}`}
+                  />
                 </figure>
                 <div className={classes.info}>
                   <h1 className={classes.title}>{item.title}</h1>

@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import Badge from "../Badge/Badge";
 import Rate from "../Rate/Rate";
@@ -10,9 +11,10 @@ export default function ProductCard2({ data }) {
         <div className={classes.wrapper}>
           <div className={classes.image}>
             <figure className={classes.figure}>
-              <img
+              <LazyLoadImage
                 src={`./assets/images/products/${data.image.mainImage}`}
                 alt="#"
+                effect="blur"
               />
             </figure>
           </div>
