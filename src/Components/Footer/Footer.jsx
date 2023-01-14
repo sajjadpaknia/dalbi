@@ -29,10 +29,10 @@ export default function Footer() {
               {gateways.map((item) => {
                 return (
                   <div className={classes.payments__item} key={item._id}>
-                    <LazyLoadImage
-                      effect="blur"
+                    <img
                       src={`./assets/images/gateways/${item.imgURL}`}
                       alt=""
+                      loading="lazy"
                     />
                   </div>
                 );

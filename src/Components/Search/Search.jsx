@@ -30,25 +30,20 @@ export default function Search() {
   const handleSearch = (e) => {
     setSearchItems(
       products.filter((item) => {
-        return item.title.toLowerCase().includes(input);
+        return item.title.toLowerCase().includes(e.target.value);
       })
     );
   };
   return (
     <>
-      <div
-        className={classes.search}
-        // onClick={(e) => {
-        //   setDropdown(true);
-        // }}
-      >
+      <div className={classes.search}>
         <input
           ref={search}
           type="text"
           placeholder="Search..."
           onChange={(e) => {
+            setInput(e.target.value.toLowerCase());
             setDropdown(true);
-            setInput(e.target.value);
             handleSearch(e);
           }}
         />
@@ -66,7 +61,6 @@ export default function Search() {
             {input.length > 0 ? (
               searchItems.length > 0 ? (
                 searchItems.slice(0, 3).map((item) => {
-                  console.log(item);
                   return (
                     <div className={classes.item} key={item.id}>
                       <Link to={"#"}>

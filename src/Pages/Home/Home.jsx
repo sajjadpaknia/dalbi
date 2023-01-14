@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Breadcrumbs from "../../Common/Breadcrumbs/Breadcrumbs";
 import Boxes from "../../Components/Boxes/Boxes";
 import Container from "../../Components/Container/Container";
 import DiscountCard from "../../Components/DiscountCard/DiscountCard";
@@ -35,6 +36,7 @@ export default function Home() {
     <>
       <Container>
         <Header />
+        <Breadcrumbs />
         <Slider />
         <Subcategories />
         {topSellPhones && (
