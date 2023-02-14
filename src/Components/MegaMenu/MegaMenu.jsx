@@ -30,7 +30,7 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
             <div className={classes.gallery}>
               {galleryData.map((item) => {
                 return (
-                  <Link key={item.id} to={item.to}>
+                  <Link key={item.id} to={`/products${item.to}`}>
                     <div className={classes.gallery__container}>
                       <div className={classes.gallery__info}>
                         <div
@@ -91,27 +91,27 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
               <div className={classes.mobileAppContainer}>
                 <div className={classes.mobileAppContainer__wrapper}>
                   <figure className={classes.mobileAppContainer__figure}>
-                    <LazyLoadImage
-                      effect="blur"
-                      src="./assets/images/shop.png"
+                    <img
+                      loading="lazy"
+                      src="http://127.0.0.1:3000/assets/images/shop.png"
                       alt=""
                     />
                   </figure>
                   <div className={classes.mobileAppContainer__group}>
                     <figure className={classes.apps}>
                       <Link to={"#"}>
-                        <LazyLoadImage
-                          effect="blur"
-                          src="./assets/svg/google-play.svg"
+                        <img
+                          loading="lazy"
+                          src="http://127.0.0.1:3000/assets/svg/google-play.svg"
                           alt=""
                         />
                       </Link>
                     </figure>
                     <figure className={classes.apps}>
                       <Link to={"#"}>
-                        <LazyLoadImage
-                          effect="blur"
-                          src="./assets/svg/app-store.svg"
+                        <img
+                          loading="lazy"
+                          src="http://127.0.0.1:3000/assets/svg/app-store.svg"
                           alt=""
                         />
                       </Link>
@@ -124,9 +124,9 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
         </div>
         <div className={classes.notification}>
           <figure className={classes.profile}>
-            <LazyLoadImage
-              effect="blur"
-              src="./assets/images/profile/Woman.jpeg"
+            <img
+              loading="lazy"
+              src="http://127.0.0.1:3000/assets/images/profile/Woman.jpeg"
               alt="the woman is laughing"
             />
           </figure>

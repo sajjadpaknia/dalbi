@@ -1,32 +1,25 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import Badge from "../Badge/Badge";
 import Rate from "../Rate/Rate";
 import classes from "./ProductCard.module.css";
 
-// let title = document.querySelectorAll("#productCardTitle");
 export default function ProductCard({ data }) {
   return (
     <div className={classes.card}>
-      <Link to={"#"}>
+      <Link to={`/product/${data.category}/${data.id}`}>
         <div className={classes.wrapper}>
           <div className={classes.image}>
             <figure className={classes.figure}>
-              <LazyLoadImage
-                src={`./assets/images/products/${data.image.mainImage}`}
+              <img
+                src={`./assets/images/products/${data.image[0]}`}
                 alt="#"
-                effect="blur"
+                loading="lazy"
               />
             </figure>
           </div>
           <div className={classes.info}>
             <div className={classes.title}>
-              <h1 id="productCardTitle">
-                {data.title}
-                {/* {title.map((item) => {
-                  return item.textContent.substring(0, 20) + "...";
-                })} */}
-              </h1>
+              <h1 id="productCardTitle">{data.title}</h1>
             </div>
             <div className={classes.details}>
               <Rate rate={data.rate} />

@@ -63,14 +63,14 @@ export default function Search() {
                 searchItems.slice(0, 3).map((item) => {
                   return (
                     <div className={classes.item} key={item.id}>
-                      <Link to={"#"}>
+                      <Link to={`/product/${item.category}/${item.id}`}>
                         <div className={classes.card}>
                           <div className={classes.card__image}>
                             <figure className={classes.card__figure}>
-                              <LazyLoadImage
-                                effect="blur"
-                                src={`./assets/images/products/${item.image.mainImage}`}
+                              <img
+                                src={`http://127.0.0.1:3000/assets/images/products/${item.image[0]}`}
                                 alt="#"
+                                loading="lazy"
                               />
                             </figure>
                           </div>
@@ -99,9 +99,9 @@ export default function Search() {
               ) : (
                 <div className={classes.msg}>
                   <figure>
-                    <LazyLoadImage
-                      effect="blur"
-                      src="./assets/images/error.png"
+                    <img
+                      loading="lazy"
+                      src="http://127.0.0.1:3000/assets/images/error.png"
                       alt=""
                     />
                   </figure>
@@ -111,9 +111,9 @@ export default function Search() {
             ) : (
               <div className={classes.msg}>
                 <figure>
-                  <LazyLoadImage
-                    effect="blur"
-                    src="./assets/images/search.png"
+                  <img
+                    loading="lazy"
+                    src="http://127.0.0.1:3000/assets/images/search.png"
                     alt=""
                   />
                 </figure>

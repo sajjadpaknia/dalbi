@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import Breadcrumbs from "../../Common/Breadcrumbs/Breadcrumbs";
+
 import Boxes from "../../Components/Boxes/Boxes";
 import Container from "../../Components/Container/Container";
 import DiscountCard from "../../Components/DiscountCard/DiscountCard";
@@ -16,15 +15,18 @@ import Subcategories from "../../Components/Subcategories/Subcategories";
 import TopBrands from "../../Components/TopBrands/TopBrands";
 import TopCellPhones from "../../Components/TopCellPhones/TopCellPhones";
 import WideBanner from "../../Components/WideBanner/WideBanner";
-import classes from "./Home.module.css";
 export default function Home() {
   const [phones, setPhones] = useState();
-  const [topSellPhones, setTopSellPhones] = useState();
+  const [topProducts, setTopProducts] = useState();
   useEffect(() => {
     const getItems = async () => {
       await axios.get("/products").then((res) => {
-        setPhones(res.data);
-        setTopSellPhones(
+        setPhones(
+          res.data.filter((item) => {
+            return item.category === "phone";
+          })
+        );
+        setTopProducts(
           res.data.sort((a, b) => b.sellCount - a.sellCount).slice(0, 10)
         );
       });
@@ -36,14 +38,13 @@ export default function Home() {
     <>
       <Container>
         <Header />
-        <Breadcrumbs />
         <Slider />
         <Subcategories />
-        {topSellPhones && (
+        {topProducts && (
           <Slides
             title={"Todays best deals for you!"}
             bkColor={"--color-blue-gray-bk"}
-            products={topSellPhones}
+            products={topProducts}
           />
         )}
         <Boxes />
@@ -51,11 +52,11 @@ export default function Home() {
         <HugeBanner />
         <TopBrands />
         <WideBanner />
-        {topSellPhones && (
+        {topProducts && (
           <Slides
             title={"Weekly popular products"}
             bkColor={"--color-blue-gray-bk"}
-            products={topSellPhones}
+            products={topProducts}
           />
         )}
         <DiscountCard />

@@ -38,7 +38,10 @@ export default function UserDropdown({ dropdownRef, state }) {
             {items}
             <li
               className={classes.userDropdown__item}
-              onClick={() => localStorage.removeItem("auth-user")}
+              onClick={() => {
+                localStorage.removeItem("auth-user");
+                window.location.reload();
+              }}
             >
               <a>
                 <i className={"fa-regular fa-arrow-right-from-bracket"}></i>

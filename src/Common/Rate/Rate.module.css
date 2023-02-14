@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  margin-inline-end: 0.5rem;
 }
 .container i {
   display: block;
@@ -8,5 +9,6 @@
   margin-inline-end: 0.3rem;
 }
 .degree {
+  color: var(--text-primary) !important;
   font-weight: 600;
 }

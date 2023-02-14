@@ -9,6 +9,8 @@
 :root {
   /* color  */
   --color-primary: #0066b8;
+  --color-primary-light: rgba(0, 101, 184, 0.2);
+  --color-primary-light-hover: rgba(0, 101, 184, 0.25);
   --color-primary-hover: hsl(207, 100%, 33%);
   --color-secondary: #06c;
   --color-third: #00963c;
@@ -50,9 +52,8 @@
 }
 
 /* config */
-html,
 body {
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 body {
@@ -60,6 +61,13 @@ body {
   font-size: var(--font-size);
   color: var(--text-primary);
   padding-inline: 2rem;
+  font-weight: 500;
+}
+.mySwiper {
+  height: 100%;
+}
+.swiper-slide {
+  display: grid;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -80,6 +88,9 @@ body {
 .swiper-button-next::after {
   color: var(--color-black);
   font-size: 1.2rem !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-dark-50) !important;
 }
 @media (max-width: 750px) {
   .swiper-button-prev,

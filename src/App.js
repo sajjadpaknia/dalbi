@@ -6,6 +6,8 @@ import SignUp from "./Pages/Signup/Signup";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/effect-creative";
+import Product from "./Pages/Product/Product";
 axios.defaults.baseURL = "http://localhost:4433";
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/product/:category/:id" element={<Product />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>

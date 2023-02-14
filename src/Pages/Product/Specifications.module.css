@@ -1,0 +1,21 @@
+.container {
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td {
+  padding: 1.5rem 1rem;
+}
+.table__title {
+  width: 200px;
+  font-weight: bold;
+}
+.table tr:nth-child(odd) {
+  background-color: var(--color-blue-gray-light);
+}
+.table__item_amount:not(:last-child)::after {
+  content: " - ";
+}

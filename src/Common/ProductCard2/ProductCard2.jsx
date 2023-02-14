@@ -7,14 +7,14 @@ import classes from "./ProductCard2.module.css";
 export default function ProductCard2({ data }) {
   return (
     <div className={classes.card}>
-      <Link to={"#"}>
+      <Link to={`/product/${data.category}/${data.id}`}>
         <div className={classes.wrapper}>
           <div className={classes.image}>
             <figure className={classes.figure}>
-              <LazyLoadImage
-                src={`./assets/images/products/${data.image.mainImage}`}
+              <img
+                src={`./assets/images/products/${data.image[0]}`}
                 alt="#"
-                effect="blur"
+                loading="lazy"
               />
             </figure>
           </div>

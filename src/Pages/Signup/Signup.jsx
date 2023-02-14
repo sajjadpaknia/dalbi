@@ -64,6 +64,7 @@ export default function SignUp() {
       email: email.email,
       password: password.password,
       name: name.name,
+      favorites: [],
     };
     // Post "data"
     await axios
@@ -80,8 +81,10 @@ export default function SignUp() {
         localStorage.setItem(
           "auth-user",
           JSON.stringify({
+            id: res.data.id,
             email: res.data.email,
             name: res.data.name,
+            favorites: res.data.favorites,
           })
         );
         setTimeout(() => {

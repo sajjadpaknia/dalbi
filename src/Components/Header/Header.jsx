@@ -18,8 +18,11 @@ export default function Header() {
   useEffect(() => {
     if (megaMenuState) {
       document.body.style.height = "100vh";
+      document.body.style.overflow = "hidden";
       return;
     }
+    document.body.style.overflowY = "visible";
+    document.body.style.overflowX = "hidden";
     document.body.style.height = "auto";
   }, [megaMenuState]);
   // Closing the "User dropdown" when the user clicks outside of it
@@ -38,7 +41,7 @@ export default function Header() {
             <Link to={"/"}>
               <LazyLoadImage
                 effect="blur"
-                src="./assets/svg/light-logo.svg"
+                src="http://127.0.0.1:3000/assets/svg/light-logo.svg"
                 alt="logo"
               />
             </Link>
@@ -58,7 +61,7 @@ export default function Header() {
             </div>
             <div className={classes.buttonGroup__btn}>
               <div className={classes.cartWrapper}>
-                <Link to={"/cart"}>
+                <Link to={"/"}>
                   {count > 0 && (
                     <span className={classes.CartCount}>{count}</span>
                   )}

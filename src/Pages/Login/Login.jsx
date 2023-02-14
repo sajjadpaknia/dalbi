@@ -62,8 +62,10 @@ export default function Login() {
     localStorage.setItem(
       "auth-user",
       JSON.stringify({
+        id: loggedUser.id,
         email: loggedUser.email,
         name: loggedUser.name,
+        favorites: loggedUser.favorites,
       })
     );
     setTimeout(() => {
