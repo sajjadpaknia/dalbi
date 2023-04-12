@@ -6,7 +6,7 @@ export default function UserDropdown({ dropdownRef, state }) {
   const items = data.map((item) => {
     return (
       <li className={classes.userDropdown__item} key={item.id}>
-        <Link to={item.to}>
+        <Link to={`/profile/${item.to}`}>
           <i className={item.icon}></i>
           <span>{item.title}</span>
         </Link>
@@ -21,7 +21,7 @@ export default function UserDropdown({ dropdownRef, state }) {
     >
       {user && (
         <div className={classes.user}>
-          <Link to={"#"}>
+          <Link to={"/profile/dashboard"}>
             <div className={classes.userIcon}>
               <i className="fa-regular fa-user"></i>
             </div>

@@ -98,3 +98,15 @@ body {
     display: none !important;
   }
 }
+::placeholder {
+  color: var(--color-dark-40);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: var(--color-dark-40);
+}
+
+::-ms-input-placeholder {
+  color: var(--color-dark-40);
+}

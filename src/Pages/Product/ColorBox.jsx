@@ -1,8 +1,9 @@
 import { logDOM } from "@testing-library/react";
 import classes from "./ColorBox.module.css";
 
-export default function ColorBox({ data, setPrice }) {
+export default function ColorBox({ data, setPrice, setSelectedColor }) {
   const handleChange = (item) => {
+    setSelectedColor(item);
     setPrice(item.increase);
   };
   return (

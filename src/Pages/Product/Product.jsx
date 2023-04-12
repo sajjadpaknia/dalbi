@@ -20,15 +20,93 @@ export default function Product() {
   const [increaseColorPrice, setIncreaseColorPrice] = useState(0);
   const [increaseConfigurationPrice, setIncreaseConfigurationPrice] =
     useState(0);
+  const [textareaError, setTextareaError] = useState(false);
   const [productPrice, setProductPrice] = useState();
   const [satisfaction, setSatisfaction] = useState();
+  const [selectedConfiguration, setSelectedConfiguration] = useState();
+  const [selectedColor, setSelectedColor] = useState();
   const [configurationError, setConfigurationError] = useState(false);
   const [colorError, setColorError] = useState(false);
   const [addToFavorites, setAddToFavorites] = useState(false);
+  const [addToCartFnc, setAddToCartFnc] = useState(false);
+  const [addToCartBTN, setAddToCartBTN] = useState("");
   const [showComment, setShowComment] = useState(false);
   const [getUser, setGetUser] = useState(
     JSON.parse(localStorage.getItem("auth-user"))
   );
+  useEffect(() => {
+    if (getUser) {
+      if (addToCartFnc) {
+        async function patchToOrders() {
+          await axios.get(`/users/${getUser.id}`).then((res) => {
+            let arrayOfOrders = res.data.dashboard.orders;
+            let newItem = {
+              id: data.id,
+              title: data.title,
+              price:
+                increaseColorPrice + increaseConfigurationPrice + productPrice,
+              configuration: selectedConfiguration,
+              color: selectedColor,
+              image: data.image[0],
+              count: 1,
+              seller: data.seller.name,
+              date: new Date().toISOString().slice(0, 10),
+            };
+            const obj = {
+              dashboard: {
+                information: res.data.dashboard.information,
+                orders: [...arrayOfOrders, newItem],
+                favorites: res.data.dashboard.favorites,
+                comments: res.data.dashboard.comments,
+                tickets: res.data.dashboard.tickets,
+                reviews: res.data.dashboard.reviews,
+                returns: res.data.dashboard.returns,
+                buy: res.data.dashboard.buy,
+                totalPurchases: res.data.dashboard.totalPurchases,
+                totalDiscounts: res.data.dashboard.totalDiscounts,
+                numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+                salesAmount: res.data.dashboard.salesAmount,
+                offers: res.data.dashboard.offers,
+              },
+            };
+            axios.patch(`/users/${getUser.id}`, obj).then((res) => {
+              if (res.status == 200) {
+                localStorage.setItem(
+                  "auth-user",
+                  JSON.stringify({
+                    id: res.data.id,
+                    email: res.data.email,
+                    name: res.data.name,
+                    dashboard: {
+                      information: res.data.dashboard.information,
+                      orders: res.data.dashboard.orders,
+                      favorites: res.data.dashboard.favorites,
+                      tickets: res.data.dashboard.tickets,
+                      comments: res.data.dashboard.comments,
+                      reviews: res.data.dashboard.reviews,
+                      returns: res.data.dashboard.returns,
+                      buy: res.data.dashboard.buy,
+                      totalPurchases: res.data.dashboard.totalPurchases,
+                      totalDiscounts: res.data.dashboard.totalDiscounts,
+                      numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+                      salesAmount: res.data.dashboard.salesAmount,
+                      offers: res.data.dashboard.offers,
+                    },
+                  })
+                );
+                setAddToCartBTN("It was added to cart");
+              }
+            });
+          });
+        }
+        patchToOrders();
+      } else {
+        setAddToCartBTN("Add to cart");
+      }
+    } else {
+      setAddToCartBTN("login");
+    }
+  }, [addToCartFnc]);
   useEffect(() => {
     const getItems = async () => {
       await axios.get("/products").then((res) => {
@@ -69,15 +147,41 @@ export default function Product() {
     const optionColor = Array.from(
       document.querySelectorAll("[data-type='option-color']:checked")
     );
-    if (optionConfiguration.length === 1) {
-      setConfigurationError(false);
+    if (data.category === "super-market") {
+      if (optionConfiguration.length === 1) {
+        setConfigurationError(false);
+        setAddToCartFnc(true);
+      } else {
+        setConfigurationError(true);
+      }
+    } else if (data.category === "sports-goods") {
+      if (optionColor.length === 1) {
+        setColorError(false);
+        setAddToCartFnc(true);
+      } else {
+        setColorError(true);
+      }
+    } else if (
+      data.category === "books-podcasts" ||
+      data.category === "Health-Personal-Care" ||
+      data.category === "stationery"
+    ) {
+      setAddToCartFnc(true);
     } else {
-      setConfigurationError(true);
-    }
-    if (optionColor.length === 1) {
-      setColorError(false);
-    } else {
-      setColorError(true);
+      if (optionConfiguration.length === 1) {
+        setConfigurationError(false);
+      } else {
+        setConfigurationError(true);
+      }
+      if (optionColor.length === 1) {
+        setColorError(false);
+      } else {
+        setColorError(true);
+      }
+      if (optionColor.length === 1 && optionConfiguration.length === 1) {
+        setAddToCartFnc(true);
+        return;
+      }
     }
   };
   const goToComments = () => {
@@ -99,22 +203,35 @@ export default function Product() {
   };
   useEffect(() => {
     if (getUser) {
-      if (getUser.favorites.length > 0) {
-        getUser.favorites.find((i) => {
-          if (i == id) {
-            setAddToFavorites(true);
-            return;
-          }
-        });
+      if (getUser.dashboard.favorites) {
+        if (getUser.dashboard.favorites.includes(+id)) {
+          setAddToFavorites(true);
+        } else {
+          setAddToFavorites(false);
+        }
       }
     }
-  }, []);
+  }, [id]);
   const handlePatchItem = async () => {
     if (!addToFavorites) {
       await axios.get(`/users/${getUser.id}`).then((res) => {
-        let arrayOfFavorite = res.data.favorites;
+        let arrayOfFavorite = res.data.dashboard.favorites;
         const obj = {
-          favorites: [...arrayOfFavorite, data.id],
+          dashboard: {
+            information: res.data.dashboard.information,
+            orders: res.data.dashboard.orders,
+            favorites: [...arrayOfFavorite, data.id],
+            comments: res.data.dashboard.comments,
+            tickets: res.data.dashboard.tickets,
+            reviews: res.data.dashboard.reviews,
+            returns: res.data.dashboard.returns,
+            buy: res.data.dashboard.buy,
+            totalPurchases: res.data.dashboard.totalPurchases,
+            totalDiscounts: res.data.dashboard.totalDiscounts,
+            numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+            salesAmount: res.data.dashboard.salesAmount,
+            offers: res.data.dashboard.offers,
+          },
         };
         axios.patch(`/users/${getUser.id}`, obj).then((res) => {
           if (res.status == 200) {
@@ -124,7 +241,21 @@ export default function Product() {
                 id: res.data.id,
                 email: res.data.email,
                 name: res.data.name,
-                favorites: res.data.favorites,
+                dashboard: {
+                  information: res.data.dashboard.information,
+                  orders: res.data.dashboard.orders,
+                  favorites: res.data.dashboard.favorites,
+                  tickets: res.data.dashboard.tickets,
+                  comments: res.data.dashboard.comments,
+                  reviews: res.data.dashboard.reviews,
+                  returns: res.data.dashboard.returns,
+                  buy: res.data.dashboard.buy,
+                  totalPurchases: res.data.dashboard.totalPurchases,
+                  totalDiscounts: res.data.dashboard.totalDiscounts,
+                  numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+                  salesAmount: res.data.dashboard.salesAmount,
+                  offers: res.data.dashboard.offers,
+                },
               })
             );
             setAddToFavorites(true);
@@ -132,12 +263,26 @@ export default function Product() {
         });
       });
     } else {
-      if (getUser.favorites.length > 0) {
+      if (getUser.dashboard.favorites.length > 0) {
         await axios.get(`/users/${getUser.id}`).then((res) => {
           const obj = {
-            favorites: res.data.favorites.filter((i) => {
-              return i !== data.id;
-            }),
+            dashboard: {
+              information: res.data.dashboard.information,
+              orders: res.data.dashboard.orders,
+              favorites: res.data.dashboard.favorites.filter((i) => {
+                return i !== data.id;
+              }),
+              comments: res.data.dashboard.comments,
+              tickets: res.data.dashboard.tickets,
+              reviews: res.data.dashboard.reviews,
+              returns: res.data.dashboard.returns,
+              buy: res.data.dashboard.buy,
+              totalPurchases: res.data.dashboard.totalPurchases,
+              totalDiscounts: res.data.dashboard.totalDiscounts,
+              numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+              salesAmount: res.data.dashboard.salesAmount,
+              offers: res.data.dashboard.offers,
+            },
           };
           axios.patch(`/users/${getUser.id}`, obj).then((res) => {
             if (res.status == 200) {
@@ -147,7 +292,21 @@ export default function Product() {
                   id: res.data.id,
                   email: res.data.email,
                   name: res.data.name,
-                  favorites: res.data.favorites,
+                  dashboard: {
+                    information: res.data.dashboard.information,
+                    orders: res.data.dashboard.orders,
+                    favorites: res.data.dashboard.favorites,
+                    comments: res.data.dashboard.comments,
+                    tickets: res.data.dashboard.tickets,
+                    reviews: res.data.dashboard.reviews,
+                    returns: res.data.dashboard.returns,
+                    buy: res.data.dashboard.buy,
+                    totalPurchases: res.data.dashboard.totalPurchases,
+                    totalDiscounts: res.data.dashboard.totalDiscounts,
+                    numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+                    salesAmount: res.data.dashboard.salesAmount,
+                    offers: res.data.dashboard.offers,
+                  },
                 })
               );
               setAddToFavorites(false);
@@ -156,6 +315,69 @@ export default function Product() {
         });
       }
     }
+  };
+  const postComment = async () => {
+    const textarea = document.getElementById("comment_box");
+    if (textarea.value === "") {
+      setTextareaError(true);
+      return;
+    }
+    setTextareaError(false);
+    let newComment = {
+      postID: id,
+      title: data.title,
+      image: data.image[0],
+      date: new Date().toISOString().slice(0, 10),
+      comment: textarea.value,
+    };
+    await axios.get(`/users/${getUser.id}`).then((res) => {
+      let arrayOfComments = res.data.dashboard.comments;
+      const obj = {
+        dashboard: {
+          information: res.data.dashboard.information,
+          orders: res.data.dashboard.orders,
+          favorites: res.data.dashboard.favorites,
+          comments: [...arrayOfComments, newComment],
+          tickets: res.data.dashboard.tickets,
+          reviews: res.data.dashboard.reviews,
+          returns: res.data.dashboard.returns,
+          buy: res.data.dashboard.buy,
+          totalPurchases: res.data.dashboard.totalPurchases,
+          totalDiscounts: res.data.dashboard.totalDiscounts,
+          numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+          salesAmount: res.data.dashboard.salesAmount,
+          offers: res.data.dashboard.offers,
+        },
+      };
+      axios.patch(`/users/${getUser.id}`, obj).then((res) => {
+        if (res.status == 200) {
+          localStorage.setItem(
+            "auth-user",
+            JSON.stringify({
+              id: res.data.id,
+              email: res.data.email,
+              name: res.data.name,
+              dashboard: {
+                information: res.data.dashboard.information,
+                orders: res.data.dashboard.orders,
+                favorites: res.data.dashboard.favorites,
+                tickets: res.data.dashboard.tickets,
+                comments: res.data.dashboard.comments,
+                reviews: res.data.dashboard.reviews,
+                returns: res.data.dashboard.returns,
+                buy: res.data.dashboard.buy,
+                totalPurchases: res.data.dashboard.totalPurchases,
+                totalDiscounts: res.data.dashboard.totalDiscounts,
+                numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
+                salesAmount: res.data.dashboard.salesAmount,
+                offers: res.data.dashboard.offers,
+              },
+            })
+          );
+          // setAddToCartBTN("It was added to cart");
+        }
+      });
+    });
   };
   return (
     <>
@@ -220,7 +442,7 @@ export default function Product() {
                         >
                           <i className="fa-regular fa-heart"></i>
                           {addToFavorites
-                            ? "Added to favorites"
+                            ? "It was added to favorites"
                             : "Add to favorites"}
                         </div>
                       )}
@@ -250,35 +472,46 @@ export default function Product() {
 
                     {data.category === "books-podcasts" ||
                     data.category === "Health-Personal-Care" ||
+                    data.category === "stationery" ||
                     !getUser ? null : (
                       <ul className={classes.options}>
                         <div className={classes.division__title}>Options</div>
-                        <li className={classes.options__item}>
-                          <p className={classes.options__item__title}>
-                            {data.category === "phone"
-                              ? "Choose your configuration"
-                              : data.category === "clothing"
-                              ? "Choose your size"
-                              : ""}
-                          </p>
-                          <Configuration
-                            category={data.category}
-                            data={data.configuration}
-                            setPrice={setIncreaseConfigurationPrice}
-                          />
-                          {configurationError ? (
-                            <p className={classes.options__error}>
-                              <i className="fa-regular fa-triangle-exclamation"></i>
-                              Please choose the configuration you want.
+                        {data.category !== "sports-goods" && (
+                          <li className={classes.options__item}>
+                            <p className={classes.options__item__title}>
+                              {data.category === "phone"
+                                ? "Choose your configuration"
+                                : data.category === "clothing"
+                                ? "Choose your size"
+                                : data.category === "super-market"
+                                ? "Choose your weight"
+                                : ""}
                             </p>
-                          ) : null}
-                        </li>
+                            <Configuration
+                              setSelectedConfiguration={
+                                setSelectedConfiguration
+                              }
+                              category={data.category}
+                              data={data.configuration}
+                              setPrice={setIncreaseConfigurationPrice}
+                            />
+
+                            {configurationError ? (
+                              <p className={classes.options__error}>
+                                <i className="fa-regular fa-triangle-exclamation"></i>
+                                Please choose the configuration you want.
+                              </p>
+                            ) : null}
+                          </li>
+                        )}
+
                         {data.colors && (
                           <li className={classes.options__item}>
                             <p className={classes.options__item__title}>
                               Choose your color
                             </p>
                             <ColorBox
+                              setSelectedColor={setSelectedColor}
                               data={data.colors}
                               setPrice={setIncreaseColorPrice}
                             />
@@ -309,8 +542,16 @@ export default function Product() {
                   <div className={classes.division__title}>
                     Comments ({data.comments.length})
                   </div>
-                  <div className={classes.comments_box}>
+                  <form
+                    className={classes.comments_box}
+                    style={{
+                      border: textareaError
+                        ? "1px solid var(--color-error)"
+                        : "1px solid var(--color-dark-30)",
+                    }}
+                  >
                     <textarea
+                      id="comment_box"
                       onInput={({ target }) => {
                         target.style.height = "auto";
                         target.style.height = `${target.scrollHeight}px`;
@@ -318,10 +559,22 @@ export default function Product() {
                       name="comment"
                       placeholder="Write a comment..."
                     ></textarea>
-                    <div className={classes.send_icon}>
+                    <button
+                      className={classes.send_icon}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        postComment();
+                      }}
+                    >
                       <i className="fa-regular fa-paper-plane"></i>
-                    </div>
-                  </div>
+                    </button>
+                  </form>
+                  {textareaError ? (
+                    <p className={classes.comments_box_error}>
+                      Enter your comment please.
+                    </p>
+                  ) : null}
+
                   <ul className={classes.comments}>
                     {data.comments.map((i, idx) => {
                       return (
@@ -384,9 +637,10 @@ export default function Product() {
                       </ul>
                     </div>
                     <div
+                      id="add-to-cart-btn"
                       className={`${classes.button} ${
                         !getUser ? classes.disable : ""
-                      }`}
+                      } ${addToCartFnc ? classes.add : ""}`}
                       onClick={() => {
                         if (getUser) {
                           isOneChecked();
@@ -396,9 +650,14 @@ export default function Product() {
                       }}
                     >
                       <Link to={`${getUser ? "#" : "/login"}`}>
-                        {getUser ? "Add to cart" : "Login"}
+                        {addToCartBTN}
                       </Link>
                     </div>
+                    {configurationError || colorError ? (
+                      <p className={classes.product_right__error}>
+                        There are options to choose from.
+                      </p>
+                    ) : null}
                   </div>
                   <div className={classes.product_offers__seller}>
                     <p className={classes.product_right__title}>Seller</p>

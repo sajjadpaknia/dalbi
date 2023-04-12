@@ -38,6 +38,7 @@ export default function Search() {
     <>
       <div className={classes.search}>
         <input
+          id="search-input"
           ref={search}
           type="text"
           placeholder="Search..."
@@ -62,8 +63,16 @@ export default function Search() {
               searchItems.length > 0 ? (
                 searchItems.slice(0, 3).map((item) => {
                   return (
-                    <div className={classes.item} key={item.id}>
-                      <Link to={`/product/${item.category}/${item.id}`}>
+                    <div
+                      className={classes.item}
+                      key={item.id}
+                      onClick={() => {
+                        document.getElementById("search-input").value = "";
+                      }}
+                    >
+                      <Link
+                        to={`/explore/${item.category}/${item.id}/${item.title}`}
+                      >
                         <div className={classes.card}>
                           <div className={classes.card__image}>
                             <figure className={classes.card__figure}>

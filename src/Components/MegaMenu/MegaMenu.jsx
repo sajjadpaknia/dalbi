@@ -30,8 +30,13 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
             <div className={classes.gallery}>
               {galleryData.map((item) => {
                 return (
-                  <Link key={item.id} to={`/products${item.to}`}>
-                    <div className={classes.gallery__container}>
+                  <Link key={item.id} to={`/explore${item.to}`}>
+                    <div
+                      className={classes.gallery__container}
+                      onClick={() => {
+                        setMegaMenuState(false);
+                      }}
+                    >
                       <div className={classes.gallery__info}>
                         <div
                           className={classes.badge}

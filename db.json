@@ -2345,7 +2345,9 @@
       },
       "sellCount": 3872,
       "rate": 5,
-      "image": ["Books-Podcasts/Inciting-Joy-Ross-Gay/pic.jpg"],
+      "image": [
+        "Books-Podcasts/Inciting-Joy-Ross-Gay/pic.jpg"
+      ],
       "price": 27,
       "seller": {
         "name": "Algonquin Books",
@@ -2503,7 +2505,9 @@
       },
       "sellCount": 1882,
       "rate": 4.4,
-      "image": ["Books-Podcasts/The-Persuaders-Anand-Giridharadas/pic.jpg"],
+      "image": [
+        "Books-Podcasts/The-Persuaders-Anand-Giridharadas/pic.jpg"
+      ],
       "price": 40.59,
       "seller": {
         "name": "Knopf",
@@ -2553,7 +2557,9 @@
       },
       "sellCount": 3117,
       "rate": 3.7,
-      "image": ["Books-Podcasts/Viral-Justice-Ruha-Benjamin/pic.jpg"],
+      "image": [
+        "Books-Podcasts/Viral-Justice-Ruha-Benjamin/pic.jpg"
+      ],
       "price": 33.25,
       "seller": {
         "name": "Princeton University Press",
@@ -2596,7 +2602,9 @@
       },
       "sellCount": 651,
       "rate": 1.9,
-      "image": ["Books-Podcasts/Confidence-Man-Maggie-Haberman/pic.jpg"],
+      "image": [
+        "Books-Podcasts/Confidence-Man-Maggie-Haberman/pic.jpg"
+      ],
       "price": 69,
       "seller": {
         "name": "Penguin Press",
@@ -2646,7 +2654,9 @@
       },
       "sellCount": 4151,
       "rate": 4.9,
-      "image": ["Books-Podcasts/Liberation-Day-George-Saunders/pic.jpg"],
+      "image": [
+        "Books-Podcasts/Liberation-Day-George-Saunders/pic.jpg"
+      ],
       "price": 37.99,
       "seller": {
         "name": "Random House",
@@ -2696,7 +2706,9 @@
       },
       "sellCount": 1985,
       "rate": 3.2,
-      "image": ["Books-Podcasts/Demon-Copperhead-Barbara-Kingsolver/pic.jpg"],
+      "image": [
+        "Books-Podcasts/Demon-Copperhead-Barbara-Kingsolver/pic.jpg"
+      ],
       "price": 67.99,
       "seller": {
         "name": "HarperCollins B and Blackstone Publishing",
@@ -2735,12 +2747,12 @@
       "id": 31,
       "available": true,
       "category": "clothing",
-      "title": "FILA X The Museum Printed Polo",
+      "title": "EASY CARE TEXTURED SHIRT",
       "specifications": {
-        "brand": "FILA",
+        "brand": "zara",
         "composition": "100% cotton",
         "size": "S - M - L - XL - XXL - 3XL",
-        "color": "White"
+        "color": "cream"
       },
       "configuration": [
         {
@@ -2783,8 +2795,8 @@
       "colors": [
         {
           "id": 1,
-          "colorName": "white",
-          "hexCode": "#cccccc",
+          "colorName": "cream",
+          "hexCode": "#E8DDCC",
           "available": true,
           "increase": 0
         }
@@ -2792,16 +2804,16 @@
       "sellCount": 3109,
       "rate": 4.7,
       "image": [
-        "Clothing/Fila/Pic-1/Pic-1.jpg",
-        "Clothing/Fila/Pic-1/Pic-2.jpg",
-        "Clothing/Fila/Pic-1/Pic-3.jpg",
-        "Clothing/Fila/Pic-1/Pic-4.jpg"
+        "Clothing/zara/Pic-1/Pic-1.jpg",
+        "Clothing/zara/Pic-1/Pic-2.jpg",
+        "Clothing/zara/Pic-1/Pic-3.jpg",
+        "Clothing/zara/Pic-1/Pic-4.jpg"
       ],
       "price": 98,
       "seller": {
-        "name": "FILA",
-        "company": "Sportswear/Sports goods company",
-        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/fila.jpg",
+        "name": "zara",
+        "company": "Retail company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/zara.jpg",
         "satisfaction": 87,
         "status": "Confirmed"
       },
@@ -2835,12 +2847,12 @@
       "id": 32,
       "available": true,
       "category": "clothing",
-      "title": "Settanta II Jacket",
+      "title": "DENIM SHIRT",
       "specifications": {
-        "brand": "FILA",
+        "brand": "zara",
         "composition": "80% cotton / 20% polyester",
         "size": "XS - S - M - L - XL - XXL",
-        "color": "Red"
+        "color": "blue"
       },
       "configuration": [
         {
@@ -2883,8 +2895,8 @@
       "colors": [
         {
           "id": 1,
-          "colorName": "Red",
-          "hexCode": "#D5393C",
+          "colorName": "blue",
+          "hexCode": "#4A6C94",
           "available": true,
           "increase": 0
         }
@@ -2892,16 +2904,16 @@
       "sellCount": 4287,
       "rate": 5,
       "image": [
-        "Clothing/Fila/Pic-2/Pic-1.jpg",
-        "Clothing/Fila/Pic-2/Pic-2.jpg",
-        "Clothing/Fila/Pic-2/Pic-3.jpg",
-        "Clothing/Fila/Pic-2/Pic-4.jpg"
+        "Clothing/zara/Pic-2/Pic-1.jpg",
+        "Clothing/zara/Pic-2/Pic-2.jpg",
+        "Clothing/zara/Pic-2/Pic-3.jpg",
+        "Clothing/zara/Pic-2/Pic-4.jpg"
       ],
       "price": 95,
       "seller": {
-        "name": "FILA",
-        "company": "Sportswear/Sports goods company",
-        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/fila.jpg",
+        "name": "zara",
+        "company": "Retail company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/zara.jpg",
         "satisfaction": 87,
         "status": "Confirmed"
       },
@@ -3838,7 +3850,7 @@
       "id": 42,
       "available": true,
       "category": "Health-Personal-Care",
-      "title": "Clinique Smart Clinical Repair Wrinkle Correcting Cream 1.7 oz/50 ml",
+      "title": "Clinique Smart Clinical Repair Wrinkle Correcting Cream 1.7 oz-50 ml",
       "specifications": {
         "brand": "Clinique",
         "Item volume": "50.0 millilitre",
@@ -5375,6 +5387,2121 @@
       ],
       "introduction": "It dominates the road and looks perfectly with these adidas original samba super men's adidas sneakers! Characterized by a sudden leather upper and resistant rubber protection for protection and to add to their elegant design. Other features include: samba brand on the most logos of the clover on the tongue and on the tip of the heel.",
       "badge": null
+    },
+    {
+      "id": 61,
+      "available": true,
+      "category": "super-market",
+      "title": "Red apple - Fresh - 1Kg",
+      "specifications": {
+        "brand": "Fresh",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 10,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 20,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 25,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 30,
+          "available": true
+        }
+      ],
+      "sellCount": 2665,
+      "rate": 3.8,
+      "image": [
+        "Super-Market/Fresh/apple/Pic-1.jpg",
+        "Super-Market/Fresh/apple/Pic-2.jpg",
+        "Super-Market/Fresh/apple/Pic-3.jpg"
+      ],
+      "price": 10,
+      "seller": {
+        "name": "Fresh",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/fresh.jpg",
+        "satisfaction": 87,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "new"
+    },
+    {
+      "id": 62,
+      "available": true,
+      "category": "super-market",
+      "title": "Avocado - Fresh - 1Kg",
+      "specifications": {
+        "brand": "Fresh",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 38,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 72,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 100,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 135,
+          "available": true
+        }
+      ],
+      "sellCount": 3391,
+      "rate": 4.5,
+      "image": [
+        "Super-Market/Fresh/avocado/Pic-1.jpg",
+        "Super-Market/Fresh/avocado/Pic-2.jpg",
+        "Super-Market/Fresh/avocado/Pic-3.jpg"
+      ],
+      "price": 38,
+      "seller": {
+        "name": "Fresh",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/fresh.jpg",
+        "satisfaction": 87,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "fresh"
+    },
+    {
+      "id": 63,
+      "available": true,
+      "category": "super-market",
+      "title": "orange - Fresh - 1Kg",
+      "specifications": {
+        "brand": "Fresh",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 15,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 30,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 40,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 55,
+          "available": true
+        }
+      ],
+      "sellCount": 2551,
+      "rate": 4.3,
+      "image": [
+        "Super-Market/Fresh/orange/Pic-1.jpg",
+        "Super-Market/Fresh/orange/Pic-2.jpg",
+        "Super-Market/Fresh/orange/Pic-3.jpg"
+      ],
+      "price": 15,
+      "seller": {
+        "name": "Fresh",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/fresh.jpg",
+        "satisfaction": 87,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "bestseller"
+    },
+    {
+      "id": 64,
+      "available": true,
+      "category": "super-market",
+      "title": "lime - Mivery - 1Kg",
+      "specifications": {
+        "brand": "Mivery",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 23,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 46,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 60,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 80,
+          "available": true
+        }
+      ],
+      "sellCount": 1173,
+      "rate": 4.6,
+      "image": [
+        "Super-Market/Mivery/lime/Pic-1.jpg",
+        "Super-Market/Mivery/lime/Pic-2.jpg",
+        "Super-Market/Mivery/lime/Pic-3.jpg"
+      ],
+      "price": 23,
+      "seller": {
+        "name": "Mivery",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Mivery.jpg",
+        "satisfaction": 56,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "new"
+    },
+    {
+      "id": 65,
+      "available": true,
+      "category": "super-market",
+      "title": "banana - Mivery - 1Kg",
+      "specifications": {
+        "brand": "Mivery",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 31,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 62,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 85,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 110,
+          "available": true
+        }
+      ],
+      "sellCount": 4191,
+      "rate": 3.2,
+      "image": [
+        "Super-Market/Mivery/banana/Pic-1.jpg",
+        "Super-Market/Mivery/banana/Pic-2.jpg",
+        "Super-Market/Mivery/banana/Pic-3.jpg"
+      ],
+      "price": 31,
+      "seller": {
+        "name": "Mivery",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Mivery.jpg",
+        "satisfaction": 56,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "fresh"
+    },
+    {
+      "id": 66,
+      "available": true,
+      "category": "super-market",
+      "title": "grape - Mivery - 1Kg",
+      "specifications": {
+        "brand": "Mivery",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 66,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 132,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 190,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 250,
+          "available": true
+        }
+      ],
+      "sellCount": 2110,
+      "rate": 4.4,
+      "image": [
+        "Super-Market/Mivery/grape/Pic-1.jpg",
+        "Super-Market/Mivery/grape/Pic-2.jpg",
+        "Super-Market/Mivery/grape/Pic-3.jpg"
+      ],
+      "price": 66,
+      "seller": {
+        "name": "Mivery",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Mivery.jpg",
+        "satisfaction": 56,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "bestseller"
+    },
+    {
+      "id": 67,
+      "available": true,
+      "category": "super-market",
+      "title": "coconut - Mivery - 1Kg",
+      "specifications": {
+        "brand": "Mivery",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 112,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 224,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 330,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 440,
+          "available": true
+        }
+      ],
+      "sellCount": 1796,
+      "rate": 3.4,
+      "image": [
+        "Super-Market/Mivery/coconut/Pic-1.jpg",
+        "Super-Market/Mivery/coconut/Pic-2.jpg",
+        "Super-Market/Mivery/coconut/Pic-3.jpg"
+      ],
+      "price": 112,
+      "seller": {
+        "name": "Mivery",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Mivery.jpg",
+        "satisfaction": 56,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": null
+    },
+    {
+      "id": 68,
+      "available": true,
+      "category": "super-market",
+      "title": "peach - Lookoma - 1Kg",
+      "specifications": {
+        "brand": "Lookoma",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 29,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 58,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 80,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 100,
+          "available": true
+        }
+      ],
+      "sellCount": 3512,
+      "rate": 4.7,
+      "image": [
+        "Super-Market/Lookoma/peach/Pic-1.jpg",
+        "Super-Market/Lookoma/peach/Pic-2.jpg",
+        "Super-Market/Lookoma/peach/Pic-3.jpg"
+      ],
+      "price": 29,
+      "seller": {
+        "name": "Lookoma",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Lookoma.jpg",
+        "satisfaction": 18,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "new"
+    },
+    {
+      "id": 69,
+      "available": true,
+      "category": "super-market",
+      "title": "pineapple - Lookoma - 1Kg",
+      "specifications": {
+        "brand": "Lookoma",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 99,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 198,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 290,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 385,
+          "available": true
+        }
+      ],
+      "sellCount": 1339,
+      "rate": 4.1,
+      "image": [
+        "Super-Market/Lookoma/pineapple/Pic-1.jpg",
+        "Super-Market/Lookoma/pineapple/Pic-2.jpg",
+        "Super-Market/Lookoma/pineapple/Pic-3.jpg"
+      ],
+      "price": 99,
+      "seller": {
+        "name": "Lookoma",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Lookoma.jpg",
+        "satisfaction": 18,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": null
+    },
+    {
+      "id": 70,
+      "available": true,
+      "category": "super-market",
+      "title": "pomegranate - Lookoma - 1Kg",
+      "specifications": {
+        "brand": "Lookoma",
+        "weight": "1kg - 2kg - 3kg - 4kg - 5kg",
+        "country": "Iran"
+      },
+      "configuration": [
+        {
+          "id": 1,
+          "weight": 1,
+          "increase": 0,
+          "available": true
+        },
+        {
+          "id": 2,
+          "weight": 2,
+          "increase": 35,
+          "available": true
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "increase": 70,
+          "available": true
+        },
+        {
+          "id": 4,
+          "weight": 4,
+          "increase": 100,
+          "available": true
+        },
+        {
+          "id": 5,
+          "weight": 5,
+          "increase": 130,
+          "available": true
+        }
+      ],
+      "sellCount": 2511,
+      "rate": 3.6,
+      "image": [
+        "Super-Market/Lookoma/pomegranate/Pic-1.jpg",
+        "Super-Market/Lookoma/pomegranate/Pic-2.jpg",
+        "Super-Market/Lookoma/pomegranate/Pic-3.jpg"
+      ],
+      "price": 35,
+      "seller": {
+        "name": "Lookoma",
+        "company": "Online fruit shop",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Lookoma.jpg",
+        "satisfaction": 18,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This box of fruit is consistently nice. It's the box to buy if you can't get to a grocery store. The fruit is seasonal, sometimes you get bananas, and sometimes you get an avocado. The fruit is excellent quality. It makes a wonderful gift!"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "The oranges were lacking in flavor, the pears were delicious the apples were ok, the bananas were bruised i contacted the seller who was very professional, and did send a replacement box ."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "Packaging protects fruit well. I received one of these as a gift and liked it so much that I bought one to share with my coworkers. Some fruit is more ripe than others which I like. Also, fruit variety varies. I enjoyed trying new fruits."
+        }
+      ],
+      "introduction": "Branch to Box delivers orchard fresh fruit direct to you. Why is our fruit so fresh? Because we're farmers! Located in the fertile Central Valley of California; we grow apples, pears, cherries, pluots, Asian pears and avocados. We also work with trusted partner growers to source peaches, plums, nectarines, specialty citrus and more. Each box is hand packed in our custom designed (and fully recyclable) corrugate shipper to ensure that your fruit and snacks arrive in great condition. You'll love this box of fresh fruit and wholesome snacks - straight from the branch to the box; perfect for offices, family gatherings, or events!",
+      "badge": "bestseller"
+    },
+    {
+      "id": 71,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Deuter - Freescape lite 26l sl - marine ink",
+      "specifications": {
+        "brand": "Deuter",
+        "weight": "1180 g",
+        "color": "Navy Blue - Black - Red - Yellow",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "Navy Blue",
+          "hexCode": "#2E3F4F",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "Black",
+          "hexCode": "#141414",
+          "available": false,
+          "increase": 90
+        },
+        {
+          "id": 3,
+          "colorName": "Red",
+          "hexCode": "#ff072c",
+          "available": true,
+          "increase": 50
+        },
+        {
+          "id": 4,
+          "colorName": "Yellow",
+          "hexCode": "#ffcc00",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 2394,
+      "rate": 3.2,
+      "image": [
+        "Sports-Goods/Deuter/Pic-1/Pic-1.jpg",
+        "Sports-Goods/Deuter/Pic-1/Pic-2.jpg",
+        "Sports-Goods/Deuter/Pic-1/Pic-3.jpg",
+        "Sports-Goods/Deuter/Pic-1/Pic-4.jpg"
+      ],
+      "price": 154,
+      "seller": {
+        "name": "Deuter",
+        "company": "Leading manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Deuter.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "bestseller"
+    },
+    {
+      "id": 72,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Deuter - Gröden 32l - lapis navy",
+      "specifications": {
+        "brand": "Deuter",
+        "weight": "1170 g",
+        "color": "Blue - White - Green",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "Blue",
+          "hexCode": "#3176B7",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "White",
+          "hexCode": "#cecece",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 3,
+          "colorName": "Green",
+          "hexCode": "#377f28",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 4101,
+      "rate": 3.6,
+      "image": [
+        "Sports-Goods/Deuter/Pic-2/Pic-1.jpg",
+        "Sports-Goods/Deuter/Pic-2/Pic-2.jpg",
+        "Sports-Goods/Deuter/Pic-2/Pic-3.jpg",
+        "Sports-Goods/Deuter/Pic-2/Pic-4.jpg"
+      ],
+      "price": 119,
+      "seller": {
+        "name": "Deuter",
+        "company": "Leading manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Deuter.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "original"
+    },
+    {
+      "id": 73,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Deuter - Climber 22l jr - fern ink",
+      "specifications": {
+        "brand": "Deuter",
+        "weight": "680 g",
+        "color": "ice green - Yellow - Orange - Crimson - black - dark brown - gray",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "ice green",
+          "hexCode": "#37B295",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "Yellow",
+          "hexCode": "#EBBC38",
+          "available": true,
+          "increase": 20
+        },
+        {
+          "id": 3,
+          "colorName": "Orange",
+          "hexCode": "#ea5e38",
+          "available": false,
+          "increase": 0
+        },
+        {
+          "id": 4,
+          "colorName": "Crimson",
+          "hexCode": "#6A0E29",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 5,
+          "colorName": "black",
+          "hexCode": "#141414",
+          "available": true,
+          "increase": 35
+        },
+        {
+          "id": 6,
+          "colorName": "brown",
+          "hexCode": "#3D2318",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 7,
+          "colorName": "gray",
+          "hexCode": "#919191",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 3688,
+      "rate": 4.2,
+      "image": [
+        "Sports-Goods/Deuter/Pic-3/Pic-1.jpg",
+        "Sports-Goods/Deuter/Pic-3/Pic-2.jpg",
+        "Sports-Goods/Deuter/Pic-3/Pic-3.jpg",
+        "Sports-Goods/Deuter/Pic-3/Pic-4.jpg"
+      ],
+      "price": 79,
+      "seller": {
+        "name": "Deuter",
+        "company": "Leading manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Deuter.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "new"
+    },
+    {
+      "id": 74,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Deuter - Guide 32+ - chilli navy",
+      "specifications": {
+        "brand": "Deuter",
+        "weight": "1260 g",
+        "color": "Red - Green",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "Red",
+          "hexCode": "#D02930",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "Green",
+          "hexCode": "#55AB26",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 1199,
+      "rate": 2.1,
+      "image": [
+        "Sports-Goods/Deuter/Pic-4/Pic-1.jpg",
+        "Sports-Goods/Deuter/Pic-4/Pic-2.jpg",
+        "Sports-Goods/Deuter/Pic-4/Pic-3.jpg",
+        "Sports-Goods/Deuter/Pic-4/Pic-4.jpg"
+      ],
+      "price": 169,
+      "seller": {
+        "name": "Deuter",
+        "company": "Leading manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Deuter.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "non original"
+    },
+    {
+      "id": 75,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Ortovox - Traverse 18l w - dirty daisy",
+      "specifications": {
+        "brand": "Ortovox",
+        "weight": "680 g",
+        "color": "yellow - black - white",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "yellow",
+          "hexCode": "#CFC853",
+          "available": false,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "black",
+          "hexCode": "#141414",
+          "available": true,
+          "increase": 59
+        },
+        {
+          "id": 3,
+          "colorName": "white",
+          "hexCode": "#e0e0e0",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 2594,
+      "rate": 3.9,
+      "image": [
+        "Sports-Goods/Ortovox/Pic-1/Pic-1.jpg",
+        "Sports-Goods/Ortovox/Pic-1/Pic-2.jpg"
+      ],
+      "price": 129,
+      "seller": {
+        "name": "Ortovox",
+        "company": "sporting goods manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Ortovox.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": null
+    },
+    {
+      "id": 76,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Ortovox - Traverse 28l w - mountain rose",
+      "specifications": {
+        "brand": "Ortovox",
+        "weight": "680 g",
+        "color": "Purple - dark blue - red",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "Purple",
+          "hexCode": "#55384C",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "dark blue",
+          "hexCode": "#1A2B56",
+          "available": false,
+          "increase": 0
+        },
+        {
+          "id": 3,
+          "colorName": "red",
+          "hexCode": "#C41F27",
+          "available": false,
+          "increase": 0
+        }
+      ],
+      "sellCount": 1009,
+      "rate": 1.9,
+      "image": [
+        "Sports-Goods/Ortovox/Pic-2/Pic-1.jpg",
+        "Sports-Goods/Ortovox/Pic-2/Pic-2.jpg",
+        "Sports-Goods/Ortovox/Pic-2/Pic-3.jpg"
+      ],
+      "price": 160,
+      "seller": {
+        "name": "Ortovox",
+        "company": "sporting goods manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Ortovox.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "new"
+    },
+    {
+      "id": 77,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Ortovox - Peak light 38l - black raven",
+      "specifications": {
+        "brand": "Ortovox",
+        "weight": "1170 g",
+        "color": "black - blue - yellow - purple",
+        "country": "Germany"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "black",
+          "hexCode": "#212121",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "blue",
+          "hexCode": "#1A2B56",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 3,
+          "colorName": "yellow",
+          "hexCode": "#ffd400",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 4,
+          "colorName": "purple",
+          "hexCode": "#855aa8",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 3093,
+      "rate": 3.9,
+      "image": [
+        "Sports-Goods/Ortovox/Pic-3/Pic-1.jpg",
+        "Sports-Goods/Ortovox/Pic-3/Pic-2.jpg"
+      ],
+      "price": 215,
+      "seller": {
+        "name": "Ortovox",
+        "company": "sporting goods manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Ortovox.jpg",
+        "satisfaction": 96,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "bestseller"
+    },
+    {
+      "id": 78,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Osprey - Sportlite 30 - blue sky",
+      "specifications": {
+        "brand": "Osprey",
+        "weight": "1300 g",
+        "color": "blue",
+        "country": "U.S."
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "blue",
+          "hexCode": "#22388D",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 2637,
+      "rate": 4.5,
+      "image": [
+        "Sports-Goods/Osprey/Pic-1/Pic-1.jpg",
+        "Sports-Goods/Osprey/Pic-1/Pic-2.jpg",
+        "Sports-Goods/Osprey/Pic-1/Pic-3.jpg"
+      ],
+      "price": 107,
+      "seller": {
+        "name": "Osprey",
+        "company": "sporting goods manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Osprey.jpg",
+        "satisfaction": 68,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "original"
+    },
+    {
+      "id": 79,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Osprey - Sportlite 20 - aubergine",
+      "specifications": {
+        "brand": "Osprey",
+        "weight": "1300 g",
+        "color": "Black - Yellow - White - Purple - Red",
+        "country": "U.S."
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "Black",
+          "hexCode": "#161616",
+          "available": false,
+          "increase": 0
+        },
+        {
+          "id": 2,
+          "colorName": "Yellow",
+          "hexCode": "#ffe500",
+          "available": false,
+          "increase": 0
+        },
+        {
+          "id": 3,
+          "colorName": "White",
+          "hexCode": "#eaeaea",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 4,
+          "colorName": "Purple",
+          "hexCode": "#562A4B",
+          "available": true,
+          "increase": 0
+        },
+        {
+          "id": 5,
+          "colorName": "Red",
+          "hexCode": "#D2143A",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 3070,
+      "rate": 4.1,
+      "image": [
+        "Sports-Goods/Osprey/Pic-2/Pic-1.jpg",
+        "Sports-Goods/Osprey/Pic-2/Pic-2.jpg",
+        "Sports-Goods/Osprey/Pic-2/Pic-3.jpg"
+      ],
+      "price": 80,
+      "seller": {
+        "name": "Osprey",
+        "company": "sporting goods manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Osprey.jpg",
+        "satisfaction": 68,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "original"
+    },
+    {
+      "id": 80,
+      "available": true,
+      "category": "sports-goods",
+      "title": "Blue-ice - firecrest 28l",
+      "specifications": {
+        "brand": "Blue-ice",
+        "weight": "746 g",
+        "color": "Wood",
+        "country": "U.S."
+      },
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "Wood",
+          "hexCode": "#DF9625",
+          "available": true,
+          "increase": 0
+        }
+      ],
+      "sellCount": 2288,
+      "rate": 4.7,
+      "image": [
+        "Sports-Goods/Blue-ice/Pic-1/Pic-1.jpg",
+        "Sports-Goods/Blue-ice/Pic-1/Pic-2.jpg",
+        "Sports-Goods/Blue-ice/Pic-1/Pic-3.jpg",
+        "Sports-Goods/Blue-ice/Pic-1/Pic-4.jpg",
+        "Sports-Goods/Blue-ice/Pic-1/Pic-5.jpg"
+      ],
+      "price": 134,
+      "seller": {
+        "name": "Blue-ice",
+        "company": "sporting goods manufacturer",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Blue-ice.jpg",
+        "satisfaction": 77,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "The backpack I received initially pulled apart at the zipper seam a few months after I received it. I left the review below and the company reached out and sent me a replacement for free on the same day my review posted! Great customer service. I’m hopeful the new one will hold up better and I’ll update this review again at a later date. I had rated it 1 star due to the quality but Have upgraded my rating assuming that this one will hold up better."
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "I like the backpack and use it for work. Plenty of pockets and room for all of the things I need to keep. The only issue I found is the padding in the straps slide. So after every few days I have to readjust the padding inside its sleeve.Update-The padding was able to be adjusted at first, but now I can't get them anywhere near the original position. In addition one of the seems where the strap attaches at the top of the backpack is now pulling apart.I do really like the layout of the packets, but I have only had this pack for 6 months and am looking for a replacement."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I've went through about 3 different backpacks for carrying my 2 laptops and IPAD. They've all lasted less than a few months due to the weight of all my gadgets plus the constant moving around I have to do for work. This backpack seems to be a cut above. Looks cool, robust zippers, charging port, water-resistant, and still looks rather new considering I've had it for several months and use the heck out of it with my busy work schedule. The padded shoulder straps and rear pads also make it really comfortable considering the amount of weight I have inside. Looks like its going to last longer than my previous bags, and am already considering purchasing another one. Great backpack!"
+        }
+      ],
+      "introduction": "Made out of 37 plastic bottles, the UP Stockholm features fully recycled fabric and a unique, U-shaped, zip-top design. Inside, the Stockholm boasts a padded laptop compartment (up to 15”) plus a tablet compartment, smartphone pocket and internal valuables pocket with a key clip. For commuters, the UP Stockholm has a comfortable Contact back system, detachable waist belt, two open side pockets and a sternum strap to keep shoulder straps in place.",
+      "badge": "non original"
+    },
+    {
+      "id": 81,
+      "available": true,
+      "category": "stationery",
+      "title": "Caran d'Ache - 849 Goldbar Ballpoint",
+      "specifications": {
+        "brand": "Caran d'Ache",
+        "weight": "18 g",
+        "tip color": "black",
+        "country": "France"
+      },
+      "sellCount": 449,
+      "rate": 2.2,
+      "image": [
+        "Stationery/Caran d'Ache/Pic-1/Pic-1.jpg",
+        "Stationery/Caran d'Ache/Pic-1/Pic-2.jpg"
+      ],
+      "price": 47.5,
+      "seller": {
+        "name": "Caran d'Ache",
+        "company": "Manufacturer of pencils and pens",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Caran-d'Ache.jpg",
+        "satisfaction": 95,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "original"
+    },
+    {
+      "id": 82,
+      "available": true,
+      "category": "stationery",
+      "title": "Caran d'Ache - 849 Fountain pen Black",
+      "specifications": {
+        "brand": "Caran d'Ache",
+        "weight": "23 g",
+        "tip color": "blue",
+        "country": "France"
+      },
+      "sellCount": 4937,
+      "rate": 5,
+      "image": [
+        "Stationery/Caran d'Ache/Pic-2/Pic-1.jpg",
+        "Stationery/Caran d'Ache/Pic-2/Pic-2.jpg"
+      ],
+      "price": 65,
+      "seller": {
+        "name": "Caran d'Ache",
+        "company": "Manufacturer of pencils and pens",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Caran-d'Ache.jpg",
+        "satisfaction": 95,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "new"
+    },
+    {
+      "id": 83,
+      "available": true,
+      "category": "stationery",
+      "title": "Caran d'Ache - Ecridor Retro Silver Ballpoint",
+      "specifications": {
+        "brand": "Caran d'Ache",
+        "weight": "25 g",
+        "tip color": "blue",
+        "country": "France"
+      },
+      "sellCount": 2807,
+      "rate": 3.6,
+      "image": [
+        "Stationery/Caran d'Ache/Pic-3/Pic-1.jpg"
+      ],
+      "price": 120.59,
+      "seller": {
+        "name": "Caran d'Ache",
+        "company": "Manufacturer of pencils and pens",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Caran-d'Ache.jpg",
+        "satisfaction": 95,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "bestseller"
+    },
+    {
+      "id": 84,
+      "available": true,
+      "category": "stationery",
+      "title": "Faber-Castell - Essentio Fountain Pen Blue",
+      "specifications": {
+        "brand": "Faber-Castell",
+        "weight": "29 g",
+        "tip color": "blue",
+        "country": "Germany"
+      },
+      "sellCount": 2227,
+      "rate": 2.6,
+      "image": [
+        "Stationery/Faber-Castell/Pic-1/Pic-1.jpg",
+        "Stationery/Faber-Castell/Pic-1/Pic-2.jpg"
+      ],
+      "price": 49.8,
+      "seller": {
+        "name": "Faber-Castell",
+        "company": "Manufacturer of pens",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Faber-Castell.jpg",
+        "satisfaction": 48,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "non original"
+    },
+    {
+      "id": 85,
+      "available": true,
+      "category": "stationery",
+      "title": "Faber-Castell - Ambition OpArt Fountain Pen White Sand",
+      "specifications": {
+        "brand": "Faber-Castell",
+        "weight": "27 g",
+        "tip color": "black",
+        "country": "Germany"
+      },
+      "sellCount": 1808,
+      "rate": 3.7,
+      "image": [
+        "Stationery/Faber-Castell/Pic-2/Pic-1.jpg",
+        "Stationery/Faber-Castell/Pic-2/Pic-2.jpg"
+      ],
+      "price": 74.99,
+      "seller": {
+        "name": "Faber-Castell",
+        "company": "Manufacturer of pens",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Faber-Castell.jpg",
+        "satisfaction": 48,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "bestseller"
+    },
+    {
+      "id": 86,
+      "available": true,
+      "category": "stationery",
+      "title": "Lamy - Safari Fountain pen Terra",
+      "specifications": {
+        "brand": "Lamy",
+        "weight": "22 g",
+        "tip color": "blue",
+        "country": "Germany"
+      },
+      "sellCount": 2637,
+      "rate": 3.8,
+      "image": [
+        "Stationery/Lamy/Pic-1/Pic-1.jpg",
+        "Stationery/Lamy/Pic-1/Pic-2.jpg"
+      ],
+      "price": 13.8,
+      "seller": {
+        "name": "Lamy",
+        "company": "Manufacturing company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Lamy.jpg",
+        "satisfaction": 93,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": null
+    },
+    {
+      "id": 87,
+      "available": true,
+      "category": "stationery",
+      "title": "Lamy - Studio Dark Brown Fountain Pen",
+      "specifications": {
+        "brand": "Lamy",
+        "weight": "30 g",
+        "tip color": "black",
+        "country": "Germany"
+      },
+      "sellCount": 3007,
+      "rate": 3.9,
+      "image": [
+        "Stationery/Lamy/Pic-2/Pic-1.jpg",
+        "Stationery/Lamy/Pic-2/Pic-2.jpg"
+      ],
+      "price": 55.3,
+      "seller": {
+        "name": "Lamy",
+        "company": "Manufacturing company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Lamy.jpg",
+        "satisfaction": 93,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "original"
+    },
+    {
+      "id": 88,
+      "available": true,
+      "category": "stationery",
+      "title": "Lamy - Capless Decimo Red",
+      "specifications": {
+        "brand": "Lamy",
+        "weight": "30 g",
+        "tip color": "blue",
+        "country": "Germany"
+      },
+      "sellCount": 2707,
+      "rate": 3.5,
+      "image": [
+        "Stationery/Lamy/Pic-3/Pic-1.jpg",
+        "Stationery/Lamy/Pic-3/Pic-2.jpg",
+        "Stationery/Lamy/Pic-3/Pic-3.jpg",
+        "Stationery/Lamy/Pic-3/Pic-4.jpg",
+        "Stationery/Lamy/Pic-3/Pic-5.jpg"
+      ],
+      "price": 179,
+      "seller": {
+        "name": "Lamy",
+        "company": "Manufacturing company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Lamy.jpg",
+        "satisfaction": 93,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "new"
+    },
+    {
+      "id": 89,
+      "available": true,
+      "category": "stationery",
+      "title": "Pilot - Heritage 91 Fountain Pen Black",
+      "specifications": {
+        "brand": "Pilot",
+        "weight": "27 g",
+        "tip color": "Black",
+        "country": "France"
+      },
+      "sellCount": 2192,
+      "rate": 3.3,
+      "image": [
+        "Stationery/Pilot/Pic-1/Pic-1.jpg"
+      ],
+      "price": 145,
+      "seller": {
+        "name": "Pilot",
+        "company": "Stationery company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Pilot.jpg",
+        "satisfaction": 31,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": null
+    },
+    {
+      "id": 90,
+      "available": true,
+      "category": "stationery",
+      "title": "Pilot - Capless Fountain Pen Grey",
+      "specifications": {
+        "brand": "Pilot",
+        "weight": "33 g",
+        "tip color": "Black",
+        "country": "France"
+      },
+      "sellCount": 1999,
+      "rate": 3.2,
+      "image": [
+        "Stationery/Pilot/Pic-2/Pic-1.jpg"
+      ],
+      "price": 245,
+      "seller": {
+        "name": "Pilot",
+        "company": "Stationery company",
+        "profileImg": "http://127.0.0.1:3000/assets/images/sellers/Pilot.jpg",
+        "satisfaction": 31,
+        "status": "Confirmed"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah D. Levine",
+          "rate": 2,
+          "date": "Nov 09, 2022",
+          "text": "This was a gift for my husband. He loved it! He loves to use it and asked me to buy more ink for it.The pen looks far more expensive than it was…very good quality!Would recommend"
+        },
+        {
+          "id": 2,
+          "author": "Verna P. Hernandez",
+          "rate": 3,
+          "date": "Nov 09, 2022",
+          "text": "For me, a pen is a pen…but for my husband? The bolder, fancier, and shinier, the better! This beautiful black and gold rollerball pen certainly fits the bill. It’s lovely, affordable, and good quality. This was supposed to be a Xmas gift, but he found the Amazon box before I did. LOL And he has not stopped RAVING about how cool it is! He says it has a great heft in his hand – something “cheap pens do not have”. He’s been showing it off to everyone and the envy is obvious. I did try it out and have to agree that it writes very smoothly with the black ink flowing freely."
+        },
+        {
+          "id": 3,
+          "author": "Jonathon A. Bartley",
+          "rate": 5,
+          "date": "Nov 09, 2022",
+          "text": "I received the Beiluner luxury rollerball pen and couldn’t be happier! With a reasonable price and luxury looks, I feel as though this would be an amazing gift for a parent or coworker - though I won’t be giving mine away! It’s quite heavy, heavier than I expected, but that gives it a really good feel in the hand. It’s well weighted to the center, so it flows with my movements well. I like a pen heavy enough to remind you it’s there. I both doodled a bit, as well as did some writing, and I found it did both wonderfully. "
+        }
+      ],
+      "introduction": "Choose high-quality neutral ink with stable quality, fast drying, no ink spillage, and no dizziness when exposed to water. At the same time, the viscosity of the ink is just right, and it is not easy to penetrate the paper. The smooth water flow and silky smooth writing experience are derived from the 0.7mm tungsten carbide ball on the pen tip. The hardness of the tungsten carbide ball is similar to that of diamond, which is reliable and durable, and can be used for a long time. .The connection process of the pen refill and the jade refill head ensures that writing does not slip, and it is not easy to break the ink. The large-capacity and high-flow ink design ensures a smooth and coherent writing experience. .Large capacity, long-lasting writing, a brand new gel pen with a writing length of up to 300 meters. Just the right grip, plus the design concept of soft rubber non-slip sheath, truly achieves both beauty and comfort. Gently press, the hair tip slowly appears, simple, convenient and fast. Easy to do with one hand, high strength, high toughness.",
+      "badge": "new"
     }
   ],
   "comments": [
@@ -5457,14 +7584,20 @@
       "email": "hosein@gmail.com",
       "password": "0r9fupijD",
       "name": "kjhkjh eeoiueou",
-      "favorites": [3],
+      "favorites": [
+        3
+      ],
       "id": 12
     },
     {
       "email": "kkk@gms.cin",
       "password": "ih97gDDDDD]",
       "name": "kjh kh",
-      "favorites": [20, 16, 10],
+      "favorites": [
+        20,
+        16,
+        10
+      ],
       "id": 13
     },
     {
@@ -5485,36 +7618,258 @@
       "email": "ddfkjdhd@gmail.com",
       "password": "fgj-35934jF",
       "name": "kjhkjh eeoiueou",
-      "favorites": [10, 6],
+      "favorites": [
+        10,
+        6
+      ],
       "id": 16
     },
     {
       "email": "fdjhdfdf@gmail.com",
       "password": "5908h508h45K",
       "name": "sajjad vpaknia",
-      "favorites": [3],
+      "favorites": [
+        3
+      ],
       "id": 17
     },
     {
       "email": "sajjadf@gmi.com",
       "password": "ffddfdfdf4T",
       "name": "sajjad vpaknia",
-      "favorites": [2, 3],
+      "favorites": [
+        2,
+        3
+      ],
       "id": 18
     },
     {
       "email": "76@gmail.com",
       "password": "8y34yhouhD",
       "name": "kjhkjh eeoiueou",
-      "favorites": [14, 9],
+      "favorites": [
+        14,
+        9
+      ],
       "id": 19
     },
     {
       "email": "dfkjfdkjhd@ggg.com",
       "password": "987e9odD",
       "name": "sajjad vpaknia",
-      "favorites": [37, 36, 12, 40, 38, 5, 32, 39, 1],
+      "favorites": [
+        37,
+        36,
+        12,
+        40,
+        38,
+        5,
+        39,
+        58,
+        24,
+        3,
+        5,
+        8,
+        27,
+        31
+      ],
       "id": 20
+    },
+    {
+      "email": "ddddddd@gmail.com",
+      "password": "04ur08fDD",
+      "name": "ali forootan",
+      "dashboard": {
+        "orders": [],
+        "favorites": [],
+        "comments": [
+          {
+            "postID": 1,
+            "comment": "text"
+          }
+        ],
+        "reviews": [],
+        "returns": [],
+        "buy": [],
+        "totalPurchases": 0,
+        "totalDiscounts": 0,
+        "numberOfGoodsSold": 0,
+        "salesAmount": 0,
+        "offers": 0
+      },
+      "id": 21
+    },
+    {
+      "email": "tttttttttttt@gmail.com",
+      "password": "508uyedofD",
+      "name": "ali forootan",
+      "dashboard": {
+        "orders": [],
+        "favorites": [
+          31
+        ],
+        "comments": [
+          {
+            "postID": 1,
+            "comment": "text"
+          }
+        ],
+        "reviews": [],
+        "returns": [],
+        "buy": [],
+        "totalPurchases": 0,
+        "totalDiscounts": 0,
+        "numberOfGoodsSold": 0,
+        "salesAmount": 0,
+        "offers": 0
+      },
+      "id": 22
+    },
+    {
+      "email": "76r86@gmILC.COM",
+      "password": "098YOUGUj",
+      "name": "sajjad vpaknia",
+      "dashboard": {
+        "information": {
+          "fName": "sajjad",
+          "lName": "vpaknia",
+          "email": "76r86@gmILC.COM",
+          "phone": "09361234567",
+          "gender": "male",
+          "state": "California",
+          "city": "Los Angeles",
+          "zipCode": null,
+          "address": "19 Pheasant Drive, Lava Hot Springs,id, 83246 United States"
+        },
+        "orders": [
+          {
+            "id": 2,
+            "title": "samsung Galaxy S22",
+            "price": 0,
+            "configuration": {
+              "id": 1,
+              "ram": 8,
+              "storage": 128,
+              "increase": 190,
+              "available": true
+            },
+            "color": {
+              "id": 4,
+              "colorName": "sky blue",
+              "hexCode": "#ADBFDB",
+              "available": true,
+              "increase": 99
+            },
+            "image": "Cell-Phones/Samsung/Pic-1/Pic-1.jpg",
+            "count": 1,
+            "seller": "Samsung",
+            "data": "2023-04-08"
+          },
+          {
+            "id": 7,
+            "title": "Apple iPhone 13 Pro Max",
+            "price": 814,
+            "configuration": {
+              "id": 4,
+              "ram": 6,
+              "storage": 1000,
+              "increase": 340,
+              "available": true
+            },
+            "color": {
+              "id": 4,
+              "colorName": "blue",
+              "hexCode": "#90A9C3",
+              "available": true,
+              "increase": 99
+            },
+            "image": "Cell-Phones/Apple/Pic-2/Pic-1.jpg",
+            "count": 1,
+            "seller": "Apple",
+            "date": "2023-04-08"
+          }
+        ],
+        "favorites": [
+          43,
+          6,
+          82,
+          42,
+          44
+        ],
+        "comments": [
+          {
+            "postID": "72",
+            "title": "Deuter - Gröden 32l - lapis navy",
+            "image": "Sports-Goods/Deuter/Pic-2/Pic-1.jpg",
+            "date": "2023-04-10",
+            "comment": "For a few days, I always take this backpack. It is easy to wear. The fact that the lap belt is fixed does not disturb even in the city where I do not close it. The compartments are more practical than those nets I found on the outside of backpacks. Since the back part is always fixed to allow air to circulate, I have not transported a laptop in my backpack so far."
+          },
+          {
+            "postID": "44",
+            "title": "Drunk Elephant Lala Retro Whipped Cream. Replenishing Moisturizer for Skin Protection and Rejuvenation. 1.69 Ounce. - Lala Whipped Cream 50 Milliliters",
+            "image": "Health-Personal-Care/Drunk-Elephant/Pic-1/Pic-1.jpg",
+            "date": "2023-04-10",
+            "comment": "Hello dear!\nI'm gonna buy this product :)"
+          }
+        ],
+        "tickets": [],
+        "reviews": [],
+        "returns": [],
+        "buy": [],
+        "totalPurchases": 0,
+        "totalDiscounts": 0,
+        "numberOfGoodsSold": 0,
+        "salesAmount": 0,
+        "offers": 0
+      },
+      "id": 23
+    },
+    {
+      "email": "ljfljhlsslsd@gmail.com",
+      "password": "0429u-s9us-K",
+      "name": "DDDD paklo",
+      "dashboard": {
+        "information": {
+          "fName": "DDDD",
+          "lName": "paklo",
+          "email": "ljfljhlsslsd@gmail.com",
+          "phone": "0123456789",
+          "gender": "",
+          "state": "tehran",
+          "city": "karaj",
+          "zipCode": "4556",
+          "address": "NO 123 ,Enghelab Street,Azadi square"
+        },
+        "orders": [],
+        "favorites": [],
+        "comments": [],
+        "tickets": [
+          {
+            "title": "What's Shop Pay?",
+            "msg": "Shop Pay is Shopify’s accelerated checkout. Customers can save their email address, credit card, shipping, and billing information for a streamlined checkout experience. Learn more about Shop Pay.",
+            "date": "2023-04-12"
+          },
+          {
+            "title": "How do I set up a post-purchase offer?",
+            "msg": "In the Shop channel, you can create, edit, deactivate, delete, or pause a post-purchase offer that gives returning customers an in-app discount that they can use at your store. Learn more about post-purchase marketing automation campaigns.",
+            "date": "2023-04-12"
+          },
+          {
+            "title": "How does order tracking work?",
+            "msg": "After you ship an order, and provide a tracking number, your customer can track their order using Shop. Shop connects with shipping carriers to provide updates to customers throughout the delivery journey. Shop and Shopify are't involved in the delivery of goods and services, and all shipping related questions should be directed to the shipping carrier.",
+            "date": "2023-04-12"
+          }
+        ],
+        "reviews": [],
+        "returns": [],
+        "buy": [],
+        "totalPurchases": 0,
+        "totalDiscounts": 0,
+        "numberOfGoodsSold": 0,
+        "salesAmount": 0,
+        "offers": 0
+      },
+      "id": 24
     }
   ]
 }

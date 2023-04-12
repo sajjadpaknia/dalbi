@@ -6,12 +6,17 @@ import classes from "./ProductCard.module.css";
 export default function ProductCard({ data }) {
   return (
     <div className={classes.card}>
-      <Link to={`/product/${data.category}/${data.id}`}>
+      <Link to={`/explore/${data.category}/${data.id}/${data.title}`}>
         <div className={classes.wrapper}>
           <div className={classes.image}>
             <figure className={classes.figure}>
               <img
-                src={`./assets/images/products/${data.image[0]}`}
+                style={
+                  data.category === "shoes"
+                    ? { objectFit: "cover" }
+                    : { objectFit: "contain" }
+                }
+                src={`http://127.0.0.1:3000/assets/images/products/${data.image[0]}`}
                 alt="#"
                 loading="lazy"
               />

@@ -7,12 +7,12 @@ import classes from "./ProductCard2.module.css";
 export default function ProductCard2({ data }) {
   return (
     <div className={classes.card}>
-      <Link to={`/product/${data.category}/${data.id}`}>
+      <Link to={`/explore/${data.category}/${data.id}/${data.title}`}>
         <div className={classes.wrapper}>
           <div className={classes.image}>
             <figure className={classes.figure}>
               <img
-                src={`./assets/images/products/${data.image[0]}`}
+                src={`http://127.0.0.1:3000/assets/images/products/${data.image[0]}`}
                 alt="#"
                 loading="lazy"
               />
@@ -20,12 +20,7 @@ export default function ProductCard2({ data }) {
           </div>
           <div className={classes.info}>
             <div className={classes.title}>
-              <h1 id="productCardTitle">
-                {data.title}
-                {/* {title.map((item) => {
-                  return item.textContent.substring(0, 20) + "...";
-                })} */}
-              </h1>
+              <h1 id="productCardTitle">{data.title}</h1>
             </div>
             <div className={classes.details}>
               <Rate rate={data.rate} />

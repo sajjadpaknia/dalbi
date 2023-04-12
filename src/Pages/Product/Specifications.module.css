@@ -2,7 +2,9 @@
   margin-bottom: 4rem;
   text-transform: capitalize;
 }
+
 .table {
+   line-height: 1.5;
   width: 100%;
   border-collapse: collapse;
 }

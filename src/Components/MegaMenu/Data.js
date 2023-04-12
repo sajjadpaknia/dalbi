@@ -55,7 +55,7 @@ export const galleryData = [
     background:
       "http://127.0.0.1:3000/assets/images/category/Health&PersonalCare.jpg",
     alt: "Health & Personal Care",
-    to: "/health-personal-care",
+    to: "/Health-Personal-Care",
   },
   {
     id: 7,

@@ -11,6 +11,8 @@ export default function Badge({ title }) {
     color = "#00acee";
   } else if (title === "non original") {
     color = "#ee6b00";
+  } else if (title === "fresh") {
+    color = "#8106C4";
   }
   return (
     <>
