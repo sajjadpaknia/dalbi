@@ -61,7 +61,7 @@ export default function Header() {
             </div>
             <div className={classes.buttonGroup__btn}>
               <div className={classes.cartWrapper}>
-                <Link to={"/"}>
+                <Link to={"/cart"}>
                   {count > 0 && (
                     <span className={classes.CartCount}>{count}</span>
                   )}

@@ -10,6 +10,7 @@ import "swiper/css/effect-creative";
 import Product from "./Pages/Product/Product";
 import Explore from "./Pages/Explore/Explore";
 import Profile from "./Pages/Profile/Profile";
+import Cart from "./Pages/Cart/Cart";
 axios.defaults.baseURL = "http://localhost:4433";
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/explore/:category" element={<Explore />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/profile/:category" element={<Profile />} />
         </Routes>
       </BrowserRouter>

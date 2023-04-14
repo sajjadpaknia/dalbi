@@ -5099,6 +5099,7 @@
       "specifications": {
         "brand": "reebok",
         "size": "5 - 6 - 7 - 8 - 9",
+        "color": "cream - white - red",
         "country": "U.S."
       },
       "configuration": [
@@ -5131,6 +5132,29 @@
           "size": 9,
           "increase": 20,
           "available": true
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "colorName": "cream",
+          "hexCode": "#D3BFA1",
+          "available": true,
+          "increase": 10
+        },
+        {
+          "id": 2,
+          "colorName": "white",
+          "hexCode": "#d3d3d3",
+          "available": true,
+          "increase": 20
+        },
+        {
+          "id": 3,
+          "colorName": "red",
+          "hexCode": "#F41421",
+          "available": true,
+          "increase": 30
         }
       ],
       "sellCount": 4152,
@@ -7840,8 +7864,183 @@
           "zipCode": "4556",
           "address": "NO 123 ,Enghelab Street,Azadi square"
         },
-        "orders": [],
-        "favorites": [],
+        "orders": [
+          {
+            "id": 3,
+            "category": "phone",
+            "title": "huawei nova 9 NAM-LX9",
+            "price": 549.99,
+            "configuration": {
+              "id": 2,
+              "ram": 8,
+              "storage": 256,
+              "increase": 120,
+              "available": true
+            },
+            "color": {
+              "id": 2,
+              "colorName": "green",
+              "hexCode": "#6E8784",
+              "available": true,
+              "increase": 150
+            },
+            "image": "Cell-Phones/Huawei/Pic-1/Pic-1.jpg",
+            "count": 1,
+            "seller": "huawei",
+            "date": "2023-04-13"
+          },
+          {
+            "id": 42,
+            "category": "Health-Personal-Care",
+            "title": "Clinique Smart Clinical Repair Wrinkle Correcting Cream 1.7 oz-50 ml",
+            "price": 55,
+            "image": "Health-Personal-Care/Clinique/Pic-1/Pic-1.jpg",
+            "count": 1,
+            "seller": "Clinique",
+            "date": "2023-04-13"
+          },
+          {
+            "id": 65,
+            "category": "super-market",
+            "title": "banana - Mivery - 1Kg",
+            "price": 93,
+            "configuration": {
+              "id": 3,
+              "weight": 3,
+              "increase": 62,
+              "available": true
+            },
+            "image": "Super-Market/Mivery/banana/Pic-1.jpg",
+            "count": 1,
+            "seller": "Mivery",
+            "date": "2023-04-13"
+          },
+          {
+            "id": 72,
+            "category": "sports-goods",
+            "title": "Deuter - Gröden 32l - lapis navy",
+            "price": 119,
+            "color": {
+              "id": 1,
+              "colorName": "Blue",
+              "hexCode": "#3176B7",
+              "available": true,
+              "increase": 0
+            },
+            "image": "Sports-Goods/Deuter/Pic-2/Pic-1.jpg",
+            "count": 1,
+            "seller": "Deuter",
+            "date": "2023-04-13"
+          },
+          {
+            "id": 82,
+            "category": "stationery",
+            "title": "Caran d'Ache - 849 Fountain pen Black",
+            "price": 65,
+            "image": "Stationery/Caran d'Ache/Pic-2/Pic-1.jpg",
+            "count": 1,
+            "seller": "Caran d'Ache",
+            "date": "2023-04-14"
+          },
+          {
+            "id": 8,
+            "category": "phone",
+            "title": "Nokia G11 Plus",
+            "price": 445,
+            "configuration": {
+              "id": 2,
+              "ram": 3,
+              "storage": 64,
+              "increase": 110,
+              "available": true
+            },
+            "color": {
+              "id": 1,
+              "colorName": "blue",
+              "hexCode": "#3D74A3",
+              "available": true,
+              "increase": 0
+            },
+            "image": "Cell-Phones/Nokia/Pic-2/Pic-1.jpg",
+            "count": 1,
+            "seller": "nokia",
+            "date": "2023-04-14"
+          },
+          {
+            "id": 32,
+            "category": "clothing",
+            "title": "DENIM SHIRT",
+            "price": 130,
+            "configuration": {
+              "id": 6,
+              "size": "XXL",
+              "increase": 35,
+              "available": true
+            },
+            "color": {
+              "id": 1,
+              "colorName": "blue",
+              "hexCode": "#4A6C94",
+              "available": true,
+              "increase": 0
+            },
+            "image": "Clothing/zara/Pic-2/Pic-1.jpg",
+            "count": 1,
+            "seller": "zara",
+            "date": "2023-04-14"
+          },
+          {
+            "id": 52,
+            "category": "shoes",
+            "title": "Nasty 2.0 Cleats",
+            "price": 240,
+            "configuration": {
+              "id": 3,
+              "size": 7,
+              "increase": 0,
+              "available": true
+            },
+            "color": {
+              "id": 2,
+              "colorName": "white",
+              "hexCode": "#e5e5e5",
+              "available": true,
+              "increase": 0
+            },
+            "image": "Shoes/Adidas/Pic-2/Pic-1.jpg",
+            "count": 1,
+            "seller": "Adidas",
+            "date": "2023-04-14"
+          },
+          {
+            "id": 58,
+            "category": "shoes",
+            "title": "Concepts X Question Mid Basketball Shoes",
+            "price": 150,
+            "configuration": {
+              "id": 2,
+              "size": 6,
+              "increase": 0,
+              "available": true
+            },
+            "color": {
+              "id": 2,
+              "colorName": "white",
+              "hexCode": "#d3d3d3",
+              "available": true,
+              "increase": 20
+            },
+            "image": "Shoes/Reebok/Pic-1/Pic-1.jpg",
+            "count": 1,
+            "seller": "reebok",
+            "date": "2023-04-14"
+          }
+        ],
+        "favorites": [
+          82,
+          58,
+          29
+        ],
         "comments": [],
         "tickets": [
           {

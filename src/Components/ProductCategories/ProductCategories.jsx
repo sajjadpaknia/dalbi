@@ -12,7 +12,11 @@ const ProductCategories = () => {
       <div className={classes.container}>
         {categoryData.map((item) => {
           return (
-            <Link to={"#"} className={classes.wrapper} key={item._id}>
+            <Link
+              to={`explore/${item.to}`}
+              className={classes.wrapper}
+              key={item._id}
+            >
               <div className={classes.bk}>
                 <h1 className={classes.title}>{item.title}</h1>
                 <p className={classes.productCount}>

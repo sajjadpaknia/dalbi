@@ -31,9 +31,10 @@ export default function Product() {
   const [addToCartFnc, setAddToCartFnc] = useState(false);
   const [addToCartBTN, setAddToCartBTN] = useState("");
   const [showComment, setShowComment] = useState(false);
-  const [getUser, setGetUser] = useState(
-    JSON.parse(localStorage.getItem("auth-user"))
-  );
+  const [getUser, setGetUser] = useState();
+  useEffect(() => {
+    setGetUser(JSON.parse(localStorage.getItem("auth-user")));
+  }, []);
   useEffect(() => {
     if (getUser) {
       if (addToCartFnc) {
@@ -42,6 +43,7 @@ export default function Product() {
             let arrayOfOrders = res.data.dashboard.orders;
             let newItem = {
               id: data.id,
+              category: data.category,
               title: data.title,
               price:
                 increaseColorPrice + increaseConfigurationPrice + productPrice,
@@ -202,8 +204,8 @@ export default function Product() {
     comments[idx].style.height = "auto";
   };
   useEffect(() => {
-    if (getUser) {
-      if (getUser.dashboard.favorites) {
+    if (getUser && getUser.dashboard) {
+      if (getUser.dashboard.favorites.length > 0) {
         if (getUser.dashboard.favorites.includes(+id)) {
           setAddToFavorites(true);
         } else {
@@ -325,6 +327,7 @@ export default function Product() {
     setTextareaError(false);
     let newComment = {
       postID: id,
+      author: getUser.name,
       title: data.title,
       image: data.image[0],
       date: new Date().toISOString().slice(0, 10),
@@ -334,19 +337,8 @@ export default function Product() {
       let arrayOfComments = res.data.dashboard.comments;
       const obj = {
         dashboard: {
-          information: res.data.dashboard.information,
-          orders: res.data.dashboard.orders,
-          favorites: res.data.dashboard.favorites,
+          ...res.data.dashboard,
           comments: [...arrayOfComments, newComment],
-          tickets: res.data.dashboard.tickets,
-          reviews: res.data.dashboard.reviews,
-          returns: res.data.dashboard.returns,
-          buy: res.data.dashboard.buy,
-          totalPurchases: res.data.dashboard.totalPurchases,
-          totalDiscounts: res.data.dashboard.totalDiscounts,
-          numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-          salesAmount: res.data.dashboard.salesAmount,
-          offers: res.data.dashboard.offers,
         },
       };
       axios.patch(`/users/${getUser.id}`, obj).then((res) => {
@@ -358,23 +350,12 @@ export default function Product() {
               email: res.data.email,
               name: res.data.name,
               dashboard: {
-                information: res.data.dashboard.information,
-                orders: res.data.dashboard.orders,
-                favorites: res.data.dashboard.favorites,
-                tickets: res.data.dashboard.tickets,
-                comments: res.data.dashboard.comments,
-                reviews: res.data.dashboard.reviews,
-                returns: res.data.dashboard.returns,
-                buy: res.data.dashboard.buy,
-                totalPurchases: res.data.dashboard.totalPurchases,
-                totalDiscounts: res.data.dashboard.totalDiscounts,
-                numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-                salesAmount: res.data.dashboard.salesAmount,
-                offers: res.data.dashboard.offers,
+                ...res.data.dashboard,
               },
             })
           );
-          // setAddToCartBTN("It was added to cart");
+          textarea.value = "";
+          setGetUser(JSON.parse(localStorage.getItem("auth-user")));
         }
       });
     });
@@ -383,7 +364,7 @@ export default function Product() {
     <>
       <Container>
         <Header />
-        {data && (
+        {data && getUser && getUser.dashboard && (
           <>
             <main className={classes.main} id="product_page">
               <section className={classes.product_info}>
@@ -457,7 +438,10 @@ export default function Product() {
                               goToComments();
                             }}
                           >
-                            ({data.comments.length} reviews)
+                            (
+                            {data.comments.length +
+                              getUser.dashboard.comments.length}{" "}
+                            reviews)
                           </span>
                         </div>
                         <div className={classes.compare}>
@@ -540,7 +524,8 @@ export default function Product() {
                 </section>
                 <section className={classes.product_comments} id="comments">
                   <div className={classes.division__title}>
-                    Comments ({data.comments.length})
+                    Comments (
+                    {data.comments.length + getUser.dashboard.comments.length})
                   </div>
                   <form
                     className={classes.comments_box}
@@ -576,6 +561,40 @@ export default function Product() {
                   ) : null}
 
                   <ul className={classes.comments}>
+                    {getUser.dashboard.comments.length > 0
+                      ? getUser.dashboard.comments.map((i, idx) => {
+                          if (i.postID == id) {
+                            return (
+                              <li className={classes.comment} key={idx}>
+                                <h1 className={classes.comments_author}>
+                                  {i.author}
+                                </h1>
+                                <div className={classes.comments_details}>
+                                  <div className={classes.comments_rate}>
+                                    <Rate rate={5} />
+                                  </div>
+                                  <p className={classes.comments_date}>
+                                    {i.date}
+                                  </p>
+                                </div>
+                                <p
+                                  className={classes.comments_text}
+                                  data-type="comment"
+                                >
+                                  <span
+                                    id="fader"
+                                    onClick={() => {
+                                      handleShowComment(idx);
+                                    }}
+                                  ></span>
+
+                                  {i.comment}
+                                </p>
+                              </li>
+                            );
+                          }
+                        })
+                      : ""}
                     {data.comments.map((i, idx) => {
                       return (
                         <li className={classes.comment} key={i.id}>

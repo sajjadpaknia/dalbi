@@ -18,9 +18,5 @@ export const menu = [
   {
     _id: 5,
     title: "xiaomi",
-  },
-  {
-    _id: 6,
-    title: "motorola",
-  },
+  }
 ];
