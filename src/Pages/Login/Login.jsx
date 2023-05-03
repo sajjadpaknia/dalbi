@@ -61,26 +61,7 @@ export default function Login() {
     });
     localStorage.setItem(
       "auth-user",
-      JSON.stringify({
-        id: loggedUser.id,
-        email: loggedUser.email,
-        name: loggedUser.name,
-        dashboard: {
-          information: loggedUser.dashboard.information,
-          orders: loggedUser.dashboard.orders,
-          favorites: loggedUser.dashboard.favorites,
-          comments: loggedUser.dashboard.comments,
-          tickets: loggedUser.dashboard.tickets,
-          reviews: loggedUser.dashboard.reviews,
-          returns: loggedUser.dashboard.returns,
-          buy: loggedUser.dashboard.buy,
-          totalPurchases: loggedUser.dashboard.totalPurchases,
-          totalDiscounts: loggedUser.dashboard.totalDiscounts,
-          numberOfGoodsSold: loggedUser.dashboard.numberOfGoodsSold,
-          salesAmount: loggedUser.dashboard.salesAmount,
-          offers: loggedUser.dashboard.offers,
-        },
-      })
+      JSON.stringify(loggedUser)
     );
     setTimeout(() => {
       navigate("/");

@@ -5,7 +5,6 @@ import Header from "../../Components/Header/Header";
 import classes from "./Explore.module.css";
 import FilterBrands from "./FilterBrands";
 import ProductCard2 from "../../Common/ProductCard2/ProductCard2";
-import Range from "./Range";
 import { generalSortData } from "./Data";
 import axios from "axios";
 import FilterRam from "./FilterRam";
@@ -135,7 +134,6 @@ export default function Explore() {
         <main className={classes.main}>
           <section className={classes.filter_section}>
             <h1 className={classes.filter_title}>filter</h1>
-            <Range />
             {data2 && (
               <>
                 <FilterBrands

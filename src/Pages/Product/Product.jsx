@@ -34,14 +34,13 @@ export default function Product() {
   const [getUser, setGetUser] = useState();
   useEffect(() => {
     setGetUser(JSON.parse(localStorage.getItem("auth-user")));
-  }, []);
+  }, [id]);
   useEffect(() => {
     if (getUser) {
       if (addToCartFnc) {
         async function patchToOrders() {
           await axios.get(`/users/${getUser.id}`).then((res) => {
-            let arrayOfOrders = res.data.dashboard.orders;
-            let newItem = {
+            const newItem = {
               id: data.id,
               category: data.category,
               title: data.title,
@@ -56,48 +55,13 @@ export default function Product() {
             };
             const obj = {
               dashboard: {
-                information: res.data.dashboard.information,
-                orders: [...arrayOfOrders, newItem],
-                favorites: res.data.dashboard.favorites,
-                comments: res.data.dashboard.comments,
-                tickets: res.data.dashboard.tickets,
-                reviews: res.data.dashboard.reviews,
-                returns: res.data.dashboard.returns,
-                buy: res.data.dashboard.buy,
-                totalPurchases: res.data.dashboard.totalPurchases,
-                totalDiscounts: res.data.dashboard.totalDiscounts,
-                numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-                salesAmount: res.data.dashboard.salesAmount,
-                offers: res.data.dashboard.offers,
+                ...res.data.dashboard,
+                cart: [...res.data.dashboard.cart, newItem],
               },
             };
             axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-              if (res.status == 200) {
-                localStorage.setItem(
-                  "auth-user",
-                  JSON.stringify({
-                    id: res.data.id,
-                    email: res.data.email,
-                    name: res.data.name,
-                    dashboard: {
-                      information: res.data.dashboard.information,
-                      orders: res.data.dashboard.orders,
-                      favorites: res.data.dashboard.favorites,
-                      tickets: res.data.dashboard.tickets,
-                      comments: res.data.dashboard.comments,
-                      reviews: res.data.dashboard.reviews,
-                      returns: res.data.dashboard.returns,
-                      buy: res.data.dashboard.buy,
-                      totalPurchases: res.data.dashboard.totalPurchases,
-                      totalDiscounts: res.data.dashboard.totalDiscounts,
-                      numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-                      salesAmount: res.data.dashboard.salesAmount,
-                      offers: res.data.dashboard.offers,
-                    },
-                  })
-                );
-                setAddToCartBTN("It was added to cart");
-              }
+              localStorage.setItem("auth-user", JSON.stringify(res.data));
+              setAddToCartBTN("It was added to cart");
             });
           });
         }
@@ -108,7 +72,7 @@ export default function Product() {
     } else {
       setAddToCartBTN("login");
     }
-  }, [addToCartFnc]);
+  }, [addToCartFnc, getUser]);
   useEffect(() => {
     const getItems = async () => {
       await axios.get("/products").then((res) => {
@@ -125,21 +89,23 @@ export default function Product() {
   useEffect(() => {
     const satisfactionItem = document.getElementById("satisfaction");
     const performanceItem = document.getElementById("performance");
-    if (satisfaction < 30) {
-      satisfactionItem.style.color = "#EE0034";
-      satisfactionItem.style.background = "#ff000026";
-      performanceItem.style.color = "#EE0034";
-      performanceItem.innerHTML = "Bad";
-    } else if (30 <= satisfaction && satisfaction < 80) {
-      satisfactionItem.style.color = "#F27800";
-      satisfactionItem.style.background = "#ff7b0033";
-      performanceItem.style.color = "#F27800";
-      performanceItem.innerHTML = "Good";
-    } else if (80 <= satisfaction && satisfaction <= 100) {
-      satisfactionItem.style.color = "#287818";
-      satisfactionItem.style.background = "#00891233";
-      performanceItem.style.color = "#287818";
-      performanceItem.innerHTML = "Excellent";
+    if (satisfaction && satisfactionItem) {
+      if (satisfaction < 30) {
+        satisfactionItem.style.color = "#EE0034";
+        satisfactionItem.style.background = "#ff000026";
+        performanceItem.style.color = "#EE0034";
+        performanceItem.innerHTML = "Bad";
+      } else if (30 <= satisfaction && satisfaction < 80) {
+        satisfactionItem.style.color = "#F27800";
+        satisfactionItem.style.background = "#ff7b0033";
+        performanceItem.style.color = "#F27800";
+        performanceItem.innerHTML = "Good";
+      } else if (80 <= satisfaction && satisfaction <= 100) {
+        satisfactionItem.style.color = "#287818";
+        satisfactionItem.style.background = "#00891233";
+        performanceItem.style.color = "#287818";
+        performanceItem.innerHTML = "Excellent";
+      }
     }
   }, [satisfaction]);
   const isOneChecked = () => {
@@ -204,64 +170,31 @@ export default function Product() {
     comments[idx].style.height = "auto";
   };
   useEffect(() => {
-    if (getUser && getUser.dashboard) {
-      if (getUser.dashboard.favorites.length > 0) {
-        if (getUser.dashboard.favorites.includes(+id)) {
-          setAddToFavorites(true);
-        } else {
-          setAddToFavorites(false);
-        }
+    if (
+      getUser &&
+      getUser.dashboard &&
+      getUser.dashboard.favorites.length > 0
+    ) {
+      if (getUser.dashboard.favorites.includes(+id)) {
+        console.log("hi");
+        setAddToFavorites(true);
+      } else {
+        setAddToFavorites(false);
       }
     }
-  }, [id]);
+  }, [id, getUser]);
   const handlePatchItem = async () => {
     if (!addToFavorites) {
       await axios.get(`/users/${getUser.id}`).then((res) => {
-        let arrayOfFavorite = res.data.dashboard.favorites;
         const obj = {
           dashboard: {
-            information: res.data.dashboard.information,
-            orders: res.data.dashboard.orders,
-            favorites: [...arrayOfFavorite, data.id],
-            comments: res.data.dashboard.comments,
-            tickets: res.data.dashboard.tickets,
-            reviews: res.data.dashboard.reviews,
-            returns: res.data.dashboard.returns,
-            buy: res.data.dashboard.buy,
-            totalPurchases: res.data.dashboard.totalPurchases,
-            totalDiscounts: res.data.dashboard.totalDiscounts,
-            numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-            salesAmount: res.data.dashboard.salesAmount,
-            offers: res.data.dashboard.offers,
+            ...res.data.dashboard,
+            favorites: [...res.data.dashboard.favorites, data.id],
           },
         };
         axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-          if (res.status == 200) {
-            localStorage.setItem(
-              "auth-user",
-              JSON.stringify({
-                id: res.data.id,
-                email: res.data.email,
-                name: res.data.name,
-                dashboard: {
-                  information: res.data.dashboard.information,
-                  orders: res.data.dashboard.orders,
-                  favorites: res.data.dashboard.favorites,
-                  tickets: res.data.dashboard.tickets,
-                  comments: res.data.dashboard.comments,
-                  reviews: res.data.dashboard.reviews,
-                  returns: res.data.dashboard.returns,
-                  buy: res.data.dashboard.buy,
-                  totalPurchases: res.data.dashboard.totalPurchases,
-                  totalDiscounts: res.data.dashboard.totalDiscounts,
-                  numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-                  salesAmount: res.data.dashboard.salesAmount,
-                  offers: res.data.dashboard.offers,
-                },
-              })
-            );
-            setAddToFavorites(true);
-          }
+          localStorage.setItem("auth-user", JSON.stringify(res.data));
+          setAddToFavorites(true);
         });
       });
     } else {
@@ -269,48 +202,15 @@ export default function Product() {
         await axios.get(`/users/${getUser.id}`).then((res) => {
           const obj = {
             dashboard: {
-              information: res.data.dashboard.information,
-              orders: res.data.dashboard.orders,
               favorites: res.data.dashboard.favorites.filter((i) => {
                 return i !== data.id;
               }),
-              comments: res.data.dashboard.comments,
-              tickets: res.data.dashboard.tickets,
-              reviews: res.data.dashboard.reviews,
-              returns: res.data.dashboard.returns,
-              buy: res.data.dashboard.buy,
-              totalPurchases: res.data.dashboard.totalPurchases,
-              totalDiscounts: res.data.dashboard.totalDiscounts,
-              numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-              salesAmount: res.data.dashboard.salesAmount,
-              offers: res.data.dashboard.offers,
+              ...res.data.dashboard,
             },
           };
           axios.patch(`/users/${getUser.id}`, obj).then((res) => {
             if (res.status == 200) {
-              localStorage.setItem(
-                "auth-user",
-                JSON.stringify({
-                  id: res.data.id,
-                  email: res.data.email,
-                  name: res.data.name,
-                  dashboard: {
-                    information: res.data.dashboard.information,
-                    orders: res.data.dashboard.orders,
-                    favorites: res.data.dashboard.favorites,
-                    comments: res.data.dashboard.comments,
-                    tickets: res.data.dashboard.tickets,
-                    reviews: res.data.dashboard.reviews,
-                    returns: res.data.dashboard.returns,
-                    buy: res.data.dashboard.buy,
-                    totalPurchases: res.data.dashboard.totalPurchases,
-                    totalDiscounts: res.data.dashboard.totalDiscounts,
-                    numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-                    salesAmount: res.data.dashboard.salesAmount,
-                    offers: res.data.dashboard.offers,
-                  },
-                })
-              );
+              localStorage.setItem("auth-user", JSON.stringify(res.data));
               setAddToFavorites(false);
             }
           });
@@ -334,26 +234,15 @@ export default function Product() {
       comment: textarea.value,
     };
     await axios.get(`/users/${getUser.id}`).then((res) => {
-      let arrayOfComments = res.data.dashboard.comments;
       const obj = {
         dashboard: {
           ...res.data.dashboard,
-          comments: [...arrayOfComments, newComment],
+          comments: [...res.data.dashboard.comments, newComment],
         },
       };
       axios.patch(`/users/${getUser.id}`, obj).then((res) => {
         if (res.status == 200) {
-          localStorage.setItem(
-            "auth-user",
-            JSON.stringify({
-              id: res.data.id,
-              email: res.data.email,
-              name: res.data.name,
-              dashboard: {
-                ...res.data.dashboard,
-              },
-            })
-          );
+          localStorage.setItem("auth-user", JSON.stringify(res.data));
           textarea.value = "";
           setGetUser(JSON.parse(localStorage.getItem("auth-user")));
         }
@@ -364,7 +253,7 @@ export default function Product() {
     <>
       <Container>
         <Header />
-        {data && getUser && getUser.dashboard && (
+        {data && (
           <>
             <main className={classes.main} id="product_page">
               <section className={classes.product_info}>
@@ -438,10 +327,11 @@ export default function Product() {
                               goToComments();
                             }}
                           >
-                            (
-                            {data.comments.length +
-                              getUser.dashboard.comments.length}{" "}
-                            reviews)
+                            {getUser &&
+                              `${
+                                data.comments.length +
+                                getUser.dashboard.comments.length
+                              }reviews`}
                           </span>
                         </div>
                         <div className={classes.compare}>
@@ -525,7 +415,10 @@ export default function Product() {
                 <section className={classes.product_comments} id="comments">
                   <div className={classes.division__title}>
                     Comments (
-                    {data.comments.length + getUser.dashboard.comments.length})
+                    {getUser
+                      ? data.comments.length + getUser.dashboard.comments.length
+                      : data.comments.length}
+                    )
                   </div>
                   <form
                     className={classes.comments_box}
@@ -561,7 +454,7 @@ export default function Product() {
                   ) : null}
 
                   <ul className={classes.comments}>
-                    {getUser.dashboard.comments.length > 0
+                    {getUser && getUser.dashboard.comments.length > 0
                       ? getUser.dashboard.comments.map((i, idx) => {
                           if (i.postID == id) {
                             return (

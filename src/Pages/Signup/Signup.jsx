@@ -65,6 +65,7 @@ export default function SignUp() {
       password: password.password,
       name: name.name,
       dashboard: {
+        cart: [],
         information: {
           fName: "",
           lName: "",
@@ -102,39 +103,7 @@ export default function SignUp() {
           messageTitle: "Welcome to our store.",
           messageSubTitle: "Please wait while we redirect you...",
         });
-        localStorage.setItem(
-          "auth-user",
-          JSON.stringify({
-            id: res.data.id,
-            email: res.data.email,
-            name: res.data.name,
-            dashboard: {
-              information: {
-                fName: null,
-                lName: null,
-                email: email.email,
-                phone: null,
-                gender: null,
-                state: null,
-                city: null,
-                zipCode: null,
-                address: null,
-              },
-              orders: [],
-              favorites: [],
-              comments: [{ postID: 1, comment: "text" }],
-              tickets: [{ msg: "text" }],
-              reviews: [],
-              returns: [],
-              buy: [],
-              totalPurchases: 0,
-              totalDiscounts: 0,
-              numberOfGoodsSold: 0,
-              salesAmount: 0,
-              offers: 0,
-            },
-          })
-        );
+        localStorage.setItem("auth-user", JSON.stringify(res.data));
         setTimeout(() => {
           navigate("/");
         }, 5000);

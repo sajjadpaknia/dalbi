@@ -1,0 +1,55 @@
+.background {
+  position: fixed;
+  inset: 0;
+  background: url("../../../public/assets/images/windows11-2.jpg") no-repeat
+    center;
+  background-size: cover;
+}
+.container {
+  padding: 3rem;
+  position: absolute;
+  width: 500px;
+  background: var(--color-white);
+  z-index: 100;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.paragraph {
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.btn {
+    cursor: pointer;
+  padding: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.btn:hover{
+    background: var(--color-primary-hover);
+}

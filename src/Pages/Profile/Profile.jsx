@@ -99,49 +99,14 @@ export default function Profile() {
     await axios.get(`/users/${getUser.id}`).then((res) => {
       const obj = {
         dashboard: {
-          information: res.data.dashboard.information,
-          orders: res.data.dashboard.orders,
-          favorites: res.data.dashboard.favorites,
           comments: res.data.dashboard.comments.filter((i) => {
             return i.postID !== productID;
           }),
-          tickets: res.data.dashboard.tickets,
-          reviews: res.data.dashboard.reviews,
-          returns: res.data.dashboard.returns,
-          buy: res.data.dashboard.buy,
-          totalPurchases: res.data.dashboard.totalPurchases,
-          totalDiscounts: res.data.dashboard.totalDiscounts,
-          numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-          salesAmount: res.data.dashboard.salesAmount,
-          offers: res.data.dashboard.offers,
+          ...res.data.dashboard,
         },
       };
       axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-        if (res.status == 200) {
-          localStorage.setItem(
-            "auth-user",
-            JSON.stringify({
-              id: res.data.id,
-              email: res.data.email,
-              name: res.data.name,
-              dashboard: {
-                information: res.data.dashboard.information,
-                orders: res.data.dashboard.orders,
-                favorites: res.data.dashboard.favorites,
-                comments: res.data.dashboard.comments,
-                tickets: res.data.dashboard.tickets,
-                reviews: res.data.dashboard.reviews,
-                returns: res.data.dashboard.returns,
-                buy: res.data.dashboard.buy,
-                totalPurchases: res.data.dashboard.totalPurchases,
-                totalDiscounts: res.data.dashboard.totalDiscounts,
-                numberOfGoodsSold: res.data.dashboard.numberOfGoodsSold,
-                salesAmount: res.data.dashboard.salesAmount,
-                offers: res.data.dashboard.offers,
-              },
-            })
-          );
-        }
+        localStorage.setItem("auth-user", JSON.stringify(res.data));
       });
     });
   };
@@ -186,11 +151,13 @@ export default function Profile() {
                   <i className="fa-regular fa-user"></i>
                 </div>
                 <h1>
-                  {dashboardData
+                  {dashboardData &&
+                  dashboardData.information.fName &&
+                  dashboardData.information.lName
                     ? dashboardData.information.fName +
                       " " +
                       dashboardData.information.lName
-                    : ""}
+                    : getUser.name}
                 </h1>
                 <p>{dashboardData ? dashboardData.information.email : ""}</p>
               </div>
@@ -285,11 +252,11 @@ export default function Profile() {
                     <div className={classes.shipping_info_content}>
                       <div className={classes.shipping_info_item}>
                         <p>Transferee</p>
-                        <span>sajjad paknia</span>
+                        <span>Your name</span>
                       </div>
                       <div className={classes.shipping_info_item}>
                         <p>phone number</p>
-                        <span>(+98) 912 321 5477</span>
+                        <span>(+1) 111 222 333</span>
                       </div>
                       <div className={classes.shipping_info_item}>
                         <p>Loaction</p>
@@ -297,9 +264,7 @@ export default function Profile() {
                       </div>
                       <div className={classes.shipping_info_item}>
                         <p>shipping address</p>
-                        <span>
-                          Blv Method, Utah Avenue Tarantin, Square, 215 Unit.
-                        </span>
+                        <span>Your address</span>
                       </div>
                     </div>
                     <div className={classes.shipping_info_change}>
@@ -316,9 +281,9 @@ export default function Profile() {
                         There are no items in the order section.
                       </p>
                     ) : (
-                      dashboardData.orders.map((i) => {
+                      dashboardData.orders.map((i,idx) => {
                         return (
-                          <div className={classes.productCart}>
+                          <div className={classes.productCart} key={idx}>
                             <figure className={classes.photo}>
                               <LazyLoadImage
                                 src={`http://127.0.0.1:3000/assets/images/products/${i.image}`}

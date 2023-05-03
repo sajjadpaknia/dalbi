@@ -1,13 +1,11 @@
 import classes from "./Header.module.css";
 import { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Search from "../Search/Search";
 import UserDropdown from "../UserDropdown/UserDropdown";
 import MegaMenu from "../MegaMenu/MegaMenu";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Header() {
-  // The number of products in the shopping cart
-  const [count, setCount] = useState(2);
   // If "megaMenuState" is "true", "Mega menu" will be displayed.
   const [megaMenuState, setMegaMenuState] = useState(false);
   // If "userDropdown" is "true", "User dropdown" will be displayed.
@@ -15,6 +13,11 @@ export default function Header() {
   const dropdownRef = useRef();
   const userBtnRef = useRef();
   // When "Mega menu" is displayed, the "Scrolls of Body" must be disabled for "Mega menu" to be displayed correctly.
+  const [getUser, setGetUser] = useState();
+  const { category } = useParams();
+  useEffect(() => {
+    setGetUser(JSON.parse(localStorage.getItem("auth-user")));
+  }, [category]);
   useEffect(() => {
     if (megaMenuState) {
       document.body.style.height = "100vh";
@@ -31,7 +34,6 @@ export default function Header() {
       setUserDropdown(false);
     }
   });
-
   // Codes
   return (
     <>
@@ -62,8 +64,12 @@ export default function Header() {
             <div className={classes.buttonGroup__btn}>
               <div className={classes.cartWrapper}>
                 <Link to={"/cart"}>
-                  {count > 0 && (
-                    <span className={classes.CartCount}>{count}</span>
+                  {getUser && getUser.dashboard.cart.length > 0 ? (
+                    <span className={classes.CartCount}>
+                      {getUser.dashboard.cart.length}
+                    </span>
+                  ) : (
+                    ""
                   )}
                   <i className="fa-regular fa-cart-shopping"></i>
                 </Link>

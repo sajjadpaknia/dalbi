@@ -1,6 +1,11 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Container from "../../Components/Container/Container";
 import Header from "../../Components/Header/Header";
 import classes from "./Cart.module.css";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function Cart() {
   const paymentMethod = [
@@ -24,50 +29,227 @@ export default function Cart() {
       path: "paypal.png",
     },
   ];
+  const { category } = useParams();
+  const [price, setPrice] = useState();
+  const [error, setError] = useState(false);
+  const [getUser, setGetUser] = useState();
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState();
+  useEffect(() => {
+    setGetUser(JSON.parse(localStorage.getItem("auth-user")));
+  }, [category]);
+  useEffect(() => {
+    if (getUser) {
+      const sum = getUser.dashboard.cart.reduce((total, current) => {
+        return total + current.price;
+      }, 0);
+      setPrice(sum);
+    }
+  }, [getUser]);
+  let navigate = useNavigate();
+  const checkout = () => {
+    if (selectedPaymentMethod) {
+      setError(false);
+      navigate("/payment");
+      return;
+    }
+    setError(true);
+  };
+  const removeItem = async (item) => {
+    await axios.get(`/users/${getUser.id}`).then((res) => {
+      const filter = res.data.dashboard.cart.filter((i) => {
+        return i.id !== item.id;
+      });
+      console.log(filter);
+      const obj = {
+        dashboard: {
+          ...res.data.dashboard,
+          cart: [...filter],
+        },
+      };
+      axios.patch(`/users/${getUser.id}`, obj).then((res) => {
+        localStorage.setItem("auth-user", JSON.stringify(res.data));
+      });
+    });
+  };
   return (
     <>
       <Container>
         <Header />
-        <main className={classes.main}>
-          <div className={classes.payment}>
-            <p className={classes.payment_title}>Payment Method</p>
-            <ul>
-              {paymentMethod.map((item) => {
-                return (
-                  <li className={classes.container}>
-                    <label className={classes.checkbox}>
-                      <input
-                        type="radio"
-                        name="payment"
-                        className={classes.input}
-                        data-type={"option-payment"}
-                        onChange={() => {
-                          //   handleChange(item);
-                        }}
-                      />
-                      <div className={classes.content}>
-                        <div
-                          className={classes.icon}
-                          style={{
-                            background: `url(http://127.0.0.1:3000/assets/images/${item.path}) no-repeat center`,
-                          }}
-                        ></div>
+        {getUser && getUser.dashboard.cart.length > 0 ? (
+          <main className={classes.main}>
+            <div className={classes.payment}>
+              <p className={classes.payment_title}>Payment Method</p>
+              <ul>
+                {paymentMethod.map((item, idx) => {
+                  return (
+                    <li
+                      className={classes.container}
+                      key={idx}
+                      onClick={() => setSelectedPaymentMethod(item)}
+                    >
+                      <label className={classes.checkbox}>
+                        <input
+                          type="radio"
+                          name="payment"
+                          className={classes.input}
+                          data-type={"option-payment"}
+                        />
+                        <div className={classes.content}>
+                          <div
+                            className={classes.icon}
+                            style={{
+                              background: `url(http://127.0.0.1:3000/assets/images/${item.path}) no-repeat center`,
+                            }}
+                          ></div>
+                          <div className={classes.details}>
+                            <p className={classes.details__title}>
+                              {item.title}
+                            </p>
+                            <p className={classes.details__subTitle}>
+                              {item.content}
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className={classes.content}>
+              <p className={classes.content_title}>Item in cart ( 3 )</p>
+              <ul className={classes.content_wrapper}>
+                {getUser.dashboard.cart.map((i) => {
+                  return (
+                    <li className={classes.productCart} key={i.id}>
+                      <div className={classes.productCart_wrapper}>
+                        <figure className={classes.photo}>
+                          <LazyLoadImage
+                            src={`http://127.0.0.1:3000/assets/images/products/${i.image}`}
+                            alt="#"
+                            effect="blur"
+                          />
+                        </figure>
                         <div className={classes.details}>
-                          <p className={classes.details__title}>{item.title}</p>
-                          <p className={classes.details__subTitle}>
-                            {item.content}
-                          </p>
+                          <h1 className={classes.productTitle}>{i.title}</h1>
+                          <div className={classes.productDetails}>
+                            <ul className={classes.productDetailsList}>
+                              {i.category === "phone" ||
+                              i.category === "clothing" ||
+                              i.category === "shoes" ||
+                              i.category === "sports-goods" ? (
+                                <li>
+                                  <p className={classes.color}>
+                                    <span
+                                      style={{
+                                        background: i.color.hexCode,
+                                      }}
+                                    ></span>
+                                    {i.color.colorName}
+                                  </p>
+                                </li>
+                              ) : null}
+
+                              <li>
+                                {i.category === "phone" ? (
+                                  <>
+                                    Memory : &nbsp;
+                                    <span>{i.configuration.ram} GB </span>
+                                  </>
+                                ) : i.category === "clothing" ||
+                                  i.category === "shoes" ? (
+                                  <>
+                                    size : &nbsp;
+                                    <span>{i.configuration.size} </span>
+                                  </>
+                                ) : i.category === "super-market" ? (
+                                  <>
+                                    weight : &nbsp;
+                                    <span>{i.configuration.weight} KG</span>
+                                  </>
+                                ) : null}
+                              </li>
+                              {i.category === "phone" ? (
+                                <li>
+                                  Internal storage : &nbsp;
+                                  <span>{i.configuration.storage} GB</span>
+                                </li>
+                              ) : null}
+
+                              <li>
+                                Count :&nbsp;<span>{i.count}</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <p className={classes.productPrice}>${i.price}</p>
                         </div>
                       </div>
-                    </label>
-                  </li>
-                );
-              })}
-            </ul>
+                      <button
+                        className={classes.productCart_btn}
+                        onClick={() => {
+                          removeItem(i);
+                        }}
+                      >
+                        Remove from cart
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className={classes.price}>
+              <div>
+                <h1 className={classes.price_number}>${price && price}</h1>
+                <h3 className={classes.price_subNumber}>Total Price</h3>
+                <p className={classes.price_desc}>
+                  To return the purchased product, you should not open the
+                  package. Otherwise, returns are not included.
+                </p>
+                <button
+                  className={classes.checkoutBtn}
+                  onClick={() => checkout()}
+                >
+                  <Link>Checkout</Link>
+                </button>
+                {error && (
+                  <p className={classes.checkout_error}>
+                    Please select your payment method.
+                  </p>
+                )}
+              </div>
+              <ul className={classes.shipping_info}>
+                <li>
+                  <p className={classes.shipping_info_title}>Transferee</p>
+                  <p className={classes.shipping_info_subTitle}>Your Name</p>
+                </li>
+                <li>
+                  <p className={classes.shipping_info_title}>phone number</p>
+                  <p className={classes.shipping_info_subTitle}>
+                    (+1) 111 222 333
+                  </p>
+                </li>
+                <li>
+                  <p className={classes.shipping_info_title}>Loaction</p>
+                  <p className={classes.shipping_info_subTitle}>City/Town</p>
+                </li>
+                <li>
+                  <p className={classes.shipping_info_title}>
+                    shipping address
+                  </p>
+                  <p className={classes.shipping_info_subTitle}>Your Address</p>
+                </li>
+              </ul>
+            </div>
+          </main>
+        ) : (
+          <div className={classes.empty_cart}>
+            <div>
+              <img src="http://127.0.0.1:3000/assets/images/empty_cart.png" />
+            </div>
+            <h3>Your shopping cart is empty</h3>
+            <p>Go to the products page and select the product you want.</p>
           </div>
-          <div className={classes.content}></div>
-          <div className={classes.price}></div>
-        </main>
+        )}
       </Container>
       <div className={classes.back}></div>
     </>
