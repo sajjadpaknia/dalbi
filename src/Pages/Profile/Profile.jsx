@@ -7,6 +7,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import FavoritesCard from "./FavoritesCard";
+import Spinner from "../../Common/Spinner/Spinner";
 export default function Profile() {
   const { category } = useParams();
   const [isActiveControl, setIsActiveControl] = useState(false);
@@ -14,13 +15,15 @@ export default function Profile() {
     ...document.querySelectorAll("#control-menu > li > a"),
   ];
   const [dashboardData, setDashboardData] = useState();
+  const [ticketError, setTicketError] = useState(false);
   const [ticketData, setTicketData] = useState({
-    title: "",
-    msg: "",
+    title: null,
+    msg: null,
     date: new Date().toISOString().slice(0, 10),
   });
   const [informationData, setInformationData] = useState();
   const [commentData, setCommentData] = useState();
+  const [loading, setLoading] = useState(false);
   const [favoritesData, setFavoritesData] = useState();
   const [getUser, setGetUser] = useState(
     JSON.parse(localStorage.getItem("auth-user"))
@@ -111,6 +114,7 @@ export default function Profile() {
     });
   };
   const postInfo = async () => {
+    setLoading(true);
     const obj = {
       name: informationData.fName + " " + informationData.lName,
       dashboard: {
@@ -120,20 +124,27 @@ export default function Profile() {
     };
     await axios.patch(`/users/${getUser.id}`, obj).then((res) => {
       localStorage.setItem("auth-user", JSON.stringify(res.data));
+      setLoading(false);
     });
   };
   const postTicket = async () => {
-    const obj = {
-      dashboard: {
-        ...dashboardData,
-        tickets: [...dashboardData.tickets, ticketData],
-      },
-    };
-    await axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-      console.log(res.data);
-      setDashboardData(res.data.dashboard);
-      localStorage.setItem("auth-user", JSON.stringify(res.data));
-    });
+    if (ticketData.title && ticketData.msg) {
+      setLoading(true);
+      setTicketError(false);
+      const obj = {
+        dashboard: {
+          ...dashboardData,
+          tickets: [...dashboardData.tickets, ticketData],
+        },
+      };
+      await axios.patch(`/users/${getUser.id}`, obj).then((res) => {
+        setLoading(false);
+        setDashboardData(res.data.dashboard);
+        localStorage.setItem("auth-user", JSON.stringify(res.data));
+      });
+      return;
+    }
+    setTicketError(true);
   };
   return (
     <>
@@ -281,7 +292,7 @@ export default function Profile() {
                         There are no items in the order section.
                       </p>
                     ) : (
-                      dashboardData.orders.map((i,idx) => {
+                      dashboardData.orders.map((i, idx) => {
                         return (
                           <div className={classes.productCart} key={idx}>
                             <figure className={classes.photo}>
@@ -600,10 +611,25 @@ export default function Profile() {
                           e.preventDefault();
                           postTicket();
                         }}
+                        style={{
+                          background: `${
+                            loading ? "none" : " var(--color-primary)"
+                          }`,
+                          pointerEvents: `${loading ? "none" : "initial"}`,
+                        }}
                       >
-                        Submit
+                        {loading ? (
+                          <Spinner size={"20px"} borderSize={"3px"} />
+                        ) : (
+                          "Submit"
+                        )}
                       </button>
                     </form>
+                    {ticketError && (
+                      <p className={classes.ticket_err}>
+                        Please complete the relevant fields.
+                      </p>
+                    )}
                   </div>
                   <p className={classes.title_info}>Previous tickets</p>
                   <div className={classes.previousTicket}>
@@ -791,8 +817,18 @@ export default function Profile() {
                         e.preventDefault();
                         postInfo();
                       }}
+                      style={{
+                        background: `${
+                          loading ? "none" : " var(--color-primary)"
+                        }`,
+                        pointerEvents: `${loading ? "none" : "initial"}`,
+                      }}
                     >
-                      Submit
+                      {loading ? (
+                        <Spinner size={"20px"} borderSize={"3px"} />
+                      ) : (
+                        "Submit"
+                      )}
                     </button>
                   </form>
                 </div>

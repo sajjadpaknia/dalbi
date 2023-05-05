@@ -176,7 +176,6 @@ export default function Product() {
       getUser.dashboard.favorites.length > 0
     ) {
       if (getUser.dashboard.favorites.includes(+id)) {
-        console.log("hi");
         setAddToFavorites(true);
       } else {
         setAddToFavorites(false);
@@ -194,6 +193,7 @@ export default function Product() {
         };
         axios.patch(`/users/${getUser.id}`, obj).then((res) => {
           localStorage.setItem("auth-user", JSON.stringify(res.data));
+          setGetUser(res.data);
           setAddToFavorites(true);
         });
       });
@@ -202,16 +202,17 @@ export default function Product() {
         await axios.get(`/users/${getUser.id}`).then((res) => {
           const obj = {
             dashboard: {
+              ...res.data.dashboard,
               favorites: res.data.dashboard.favorites.filter((i) => {
                 return i !== data.id;
               }),
-              ...res.data.dashboard,
             },
           };
           axios.patch(`/users/${getUser.id}`, obj).then((res) => {
             if (res.status == 200) {
               localStorage.setItem("auth-user", JSON.stringify(res.data));
               setAddToFavorites(false);
+              setGetUser(res.data);
             }
           });
         });
