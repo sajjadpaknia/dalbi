@@ -12,7 +12,7 @@ import Explore from "./Pages/Explore/Explore";
 import Profile from "./Pages/Profile/Profile";
 import Cart from "./Pages/Cart/Cart";
 import Payment from "./Pages/Payment/Payment";
-axios.defaults.baseURL = "http://localhost:4433";
+axios.defaults.baseURL = "https://data-json-server.glitch.me";
 function App() {
   return (
     <>

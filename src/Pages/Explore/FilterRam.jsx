@@ -13,7 +13,6 @@ export default function FilterRam(props) {
   const [rams, setRams] = useState();
   useEffect(() => {
     const RAM = [];
-    console.log(props.data);
     props.data.map((item) => {
       return item.configuration.map((el) => {
         RAM.push(el.ram);

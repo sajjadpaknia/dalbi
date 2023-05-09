@@ -108,7 +108,8 @@ export default function SignUp() {
           navigate("/");
         }, 5000);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.log(err);
         setSpinner(false);
         setMessage({
           ...message,

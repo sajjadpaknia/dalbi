@@ -170,6 +170,11 @@
 .notFound > p {
   color: var(--color-dark-40);
 }
+.loading {
+  display: grid;
+  place-items: center;
+  margin-top: 10rem;
+}
 @media (max-width: 670px) {
   .main {
     display: grid;
@@ -183,4 +188,4 @@
   .products > div {
     flex-basis: 100%;
   }
-} ;
+}

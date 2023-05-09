@@ -297,7 +297,7 @@ export default function Profile() {
                           <div className={classes.productCart} key={idx}>
                             <figure className={classes.photo}>
                               <LazyLoadImage
-                                src={`http://127.0.0.1:3000/assets/images/products/${i.image}`}
+                                src={`./assets/images/products/${i.image}`}
                                 alt="#"
                                 effect="blur"
                               />
@@ -373,7 +373,7 @@ export default function Profile() {
                                   </p>
                                   <p className={classes.status_content_icon}>
                                     <img
-                                      src="http://127.0.0.1:3000/assets/svg/check2.svg"
+                                      src="./assets/svg/check2.svg"
                                       alt=""
                                     />
                                     Complete
@@ -543,7 +543,7 @@ export default function Profile() {
                               <figure className={classes.comment_photo}>
                                 <LazyLoadImage
                                   effect="blur"
-                                  src={`http://127.0.0.1:3000/assets/images/products/${i.image}`}
+                                  src={`./assets/images/products/${i.image}`}
                                   alt="product photo"
                                 />
                               </figure>

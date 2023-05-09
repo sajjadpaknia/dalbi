@@ -43,7 +43,7 @@ export default function Header() {
             <Link to={"/"}>
               <LazyLoadImage
                 effect="blur"
-                src="http://127.0.0.1:3000/assets/svg/light-logo.svg"
+                src="./assets/svg/light-logo.svg"
                 alt="logo"
               />
             </Link>

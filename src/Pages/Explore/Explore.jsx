@@ -8,10 +8,12 @@ import ProductCard2 from "../../Common/ProductCard2/ProductCard2";
 import { generalSortData } from "./Data";
 import axios from "axios";
 import FilterRam from "./FilterRam";
+import Spinner from "../../Common/Spinner/Spinner";
 
 export default function Explore() {
   const unique = (arr) => [...new Set(arr)];
   const { category } = useParams();
+  const [loading, setLoading] = useState(false);
   const [generalSort, setGeneralSort] = useState(false);
   const [generalSortTitle, setGeneralSortTitle] = useState("");
   const [isRAM, setIsRAM] = useState(false);
@@ -27,6 +29,7 @@ export default function Explore() {
     setGeneralSortTitle(generalSortData[0].title);
   }, [category]);
   useEffect(() => {
+    setLoading(true);
     const getItems = async () => {
       await axios.get("/products").then((res) => {
         setData(
@@ -39,6 +42,7 @@ export default function Explore() {
             return item.category === category;
           })
         );
+         setLoading(false);
       });
       if (category === "phone") {
         setIsRAM(true);
@@ -131,92 +135,95 @@ export default function Explore() {
     <>
       <Container>
         <Header />
-        <main className={classes.main}>
-          <section className={classes.filter_section}>
-            <h1 className={classes.filter_title}>filter</h1>
-            {data2 && (
-              <>
-                <FilterBrands
-                  data={data}
-                  category={category}
-                  filter={filter}
-                  setFilter={setFilter}
-                  filterProducts={filterProducts}
-                />
-                {isRAM && (
-                  <FilterRam
+        {data2 && !loading ? (
+          <main className={classes.main}>
+            <section className={classes.filter_section}>
+              <h1 className={classes.filter_title}>filter</h1>
+              {data2 && (
+                <>
+                  <FilterBrands
                     data={data}
                     category={category}
                     filter={filter}
                     setFilter={setFilter}
                     filterProducts={filterProducts}
                   />
-                )}
-              </>
-            )}
-          </section>
-          <section className={classes.products_section}>
-            <section className={classes.sort}>
-              <div
-                className={`${classes.general_sort} ${
-                  generalSort ? classes.show : null
-                }`}
-              >
+                  {isRAM && (
+                    <FilterRam
+                      data={data}
+                      category={category}
+                      filter={filter}
+                      setFilter={setFilter}
+                      filterProducts={filterProducts}
+                    />
+                  )}
+                </>
+              )}
+            </section>
+            <section className={classes.products_section}>
+              <section className={classes.sort}>
                 <div
-                  className={classes.absoluteBtn}
-                  onClick={() => {
-                    setGeneralSort(!generalSort);
-                  }}
-                  ref={generalSortDropdownParent}
-                ></div>
-                <span className={classes.sort_title}>{generalSortTitle}</span>
-                <i className="fa-regular fa-angle-down"></i>
-                <div
-                  className={`${classes.dropdown} ${
+                  className={`${classes.general_sort} ${
                     generalSort ? classes.show : null
                   }`}
-                  ref={generalSortDropdown}
                 >
-                  <ul className={classes.dropdown__list}>
-                    {generalSortData.map((i) => {
-                      return (
-                        <li
-                          className={classes.dropdown__item}
-                          key={i.id}
-                          onClick={() => {
-                            sorting(i.title);
-                          }}
-                        >
-                          <span>{i.title}</span>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <div
+                    className={classes.absoluteBtn}
+                    onClick={() => {
+                      setGeneralSort(!generalSort);
+                    }}
+                    ref={generalSortDropdownParent}
+                  ></div>
+                  <span className={classes.sort_title}>{generalSortTitle}</span>
+                  <i className="fa-regular fa-angle-down"></i>
+                  <div
+                    className={`${classes.dropdown} ${
+                      generalSort ? classes.show : null
+                    }`}
+                    ref={generalSortDropdown}
+                  >
+                    <ul className={classes.dropdown__list}>
+                      {generalSortData.map((i) => {
+                        return (
+                          <li
+                            className={classes.dropdown__item}
+                            key={i.id}
+                            onClick={() => {
+                              sorting(i.title);
+                            }}
+                          >
+                            <span>{i.title}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className={classes.Number_products}>
-                {data2 && data2.length} products
-              </div>
-            </section>
-            {data2 && data2.length > 0 ? (
-              <section className={classes.products}>
-                {data2.map((i) => {
-                  return <ProductCard2 data={i} key={i.id} />;
-                })}
+                <div className={classes.Number_products}>
+                  {data2 && data2.length} products
+                </div>
               </section>
-            ) : (
-              <div className={classes.notFound}>
-                <figure>
-                  <img
-                    src="http://127.0.0.1:3000/assets/images/bag.png"
-                    alt=""
-                  />
-                </figure>
-                <p>No Products Found</p>
-              </div>
-            )}
-          </section>
-        </main>
+              {data2 && data2.length > 0 ? (
+                <section className={classes.products}>
+                  {data2.map((i) => {
+                    return <ProductCard2 data={i} key={i.id} />;
+                  })}
+                </section>
+              ) : (
+                <div className={classes.notFound}>
+                  <figure>
+                    <img src="./assets/images/bag.png" alt="" />
+                  </figure>
+                  <p>No Products Found</p>
+                </div>
+              )}
+            </section>
+          </main>
+        ) : (
+          <div className={classes.loading}>
+            <Spinner size={"40px"} borderSize={"5px"} />
+          </div>
+        )}
       </Container>
       <div className={classes.back}></div>
     </>

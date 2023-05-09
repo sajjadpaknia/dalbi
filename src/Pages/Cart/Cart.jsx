@@ -59,7 +59,6 @@ export default function Cart() {
       const filter = res.data.dashboard.cart.filter((i) => {
         return i.id !== item.id;
       });
-      console.log(filter);
       const obj = {
         dashboard: {
           ...res.data.dashboard,
@@ -98,7 +97,7 @@ export default function Cart() {
                           <div
                             className={classes.icon}
                             style={{
-                              background: `url(http://127.0.0.1:3000/assets/images/${item.path}) no-repeat center`,
+                              background: `url(./assets/images/${item.path}) no-repeat center`,
                             }}
                           ></div>
                           <div className={classes.details}>
@@ -125,7 +124,7 @@ export default function Cart() {
                       <div className={classes.productCart_wrapper}>
                         <figure className={classes.photo}>
                           <LazyLoadImage
-                            src={`http://127.0.0.1:3000/assets/images/products/${i.image}`}
+                            src={`./assets/images/products/${i.image}`}
                             alt="#"
                             effect="blur"
                           />
@@ -244,7 +243,7 @@ export default function Cart() {
         ) : (
           <div className={classes.empty_cart}>
             <div>
-              <img src="http://127.0.0.1:3000/assets/images/empty_cart.png" />
+              <img src="./assets/images/empty_cart.png" />
             </div>
             <h3>Your shopping cart is empty</h3>
             <p>Go to the products page and select the product you want.</p>

@@ -14,7 +14,7 @@ export default function Footer() {
             <figure>
               <LazyLoadImage
                 effect="blur"
-                src="http://127.0.0.1:3000/assets/svg/light-logo.svg"
+                src="./assets/svg/light-logo.svg"
                 alt=""
               />
             </figure>
@@ -30,7 +30,7 @@ export default function Footer() {
                 return (
                   <div className={classes.payments__item} key={item._id}>
                     <img
-                      src={`http://127.0.0.1:3000/assets/images/gateways/${item.imgURL}`}
+                      src={`./assets/images/gateways/${item.imgURL}`}
                       alt=""
                       loading="lazy"
                     />
@@ -64,7 +64,7 @@ export default function Footer() {
           <figure className={classes.app_photo}>
             <LazyLoadImage
               effect="blur"
-              src="http://127.0.0.1:3000/assets/images/shop.png"
+              src="./assets/images/shop.png"
               alt=""
             />
           </figure>
@@ -73,7 +73,7 @@ export default function Footer() {
               <Link to={"#"}>
                 <img
                   loading="lazy"
-                  src="http://127.0.0.1:3000/assets/svg/google-play.svg"
+                  src="./assets/svg/google-play.svg"
                   alt=""
                 />
               </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
               <Link to={"#"}>
                 <img
                   loading="lazy"
-                  src="http://127.0.0.1:3000/assets/svg/app-store.svg"
+                  src="./assets/svg/app-store.svg"
                   alt=""
                 />
               </Link>

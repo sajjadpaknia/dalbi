@@ -286,7 +286,7 @@ export default function Product() {
                             return (
                               <SwiperSlide key={idx}>
                                 <LazyLoadImage
-                                  src={`http://127.0.0.1:3000/assets/images/products/${data.image[idx]}`}
+                                  src={`./assets/images/products/${data.image[idx]}`}
                                   alt="#"
                                   effect="blur"
                                 />

@@ -20,16 +20,18 @@ export default function Home() {
   const [topProducts, setTopProducts] = useState();
   useEffect(() => {
     const getItems = async () => {
-      await axios.get("/products").then((res) => {
-        setPhones(
-          res.data.filter((item) => {
-            return item.category === "phone";
-          })
-        );
-        setTopProducts(
-          res.data.sort((a, b) => b.sellCount - a.sellCount).slice(0, 10)
-        );
-      });
+      await axios
+        .get("/products")
+        .then((res) => {
+          setPhones(
+            res.data.filter((item) => {
+              return item.category === "phone";
+            })
+          );
+          setTopProducts(
+            res.data.sort((a, b) => b.sellCount - a.sellCount).slice(0, 10)
+          );
+        })
     };
     getItems();
   }, []);

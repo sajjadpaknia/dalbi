@@ -77,7 +77,7 @@ export default function Search() {
                           <div className={classes.card__image}>
                             <figure className={classes.card__figure}>
                               <img
-                                src={`http://127.0.0.1:3000/assets/images/products/${item.image[0]}`}
+                                src={`./assets/images/products/${item.image[0]}`}
                                 alt="#"
                                 loading="lazy"
                               />
@@ -110,7 +110,7 @@ export default function Search() {
                   <figure>
                     <img
                       loading="lazy"
-                      src="http://127.0.0.1:3000/assets/images/error.png"
+                      src="./assets/images/error.png"
                       alt=""
                     />
                   </figure>
@@ -122,7 +122,7 @@ export default function Search() {
                 <figure>
                   <img
                     loading="lazy"
-                    src="http://127.0.0.1:3000/assets/images/search.png"
+                    src="./assets/images/search.png"
                     alt=""
                   />
                 </figure>
