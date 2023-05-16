@@ -16,7 +16,7 @@ export default function ProductCard({ data }) {
                     ? { objectFit: "cover" }
                     : { objectFit: "contain" }
                 }
-                src={`http://127.0.0.1:3000/assets/images/products/${data.image[0]}`}
+                src={`/assets/images/products/${data.image[0]}`}
                 alt="#"
                 loading="lazy"
               />

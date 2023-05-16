@@ -4,7 +4,7 @@ export const galleryData = [
     badgeTitle: "Clothes",
     badgeBKColor: "#D6293E",
     description: "Nice clothes help you look good in society.",
-    background: "http://127.0.0.1:3000/assets/images/category/Clothes.jpg",
+    background: "/assets/images/category/Clothes.jpg",
     alt: "clothes",
     to: "/clothing",
   },
@@ -13,7 +13,7 @@ export const galleryData = [
     badgeTitle: "Super Market",
     badgeBKColor: "#297FD6",
     description: "You don't need to go to crowded stores for shopping.",
-    background: "http://127.0.0.1:3000/assets/images/category/SuperMarket.jpg",
+    background: "/assets/images/category/SuperMarket.jpg",
     alt: "superMarket",
     to: "/super-market",
   },
@@ -22,7 +22,7 @@ export const galleryData = [
     badgeTitle: "Cell Phones",
     badgeBKColor: "#000000",
     description: "Buy original mobile phones at amazing prices.",
-    background: "http://127.0.0.1:3000/assets/images/category/CellPhones.jpg",
+    background: "/assets/images/category/CellPhones.jpg",
     alt: "Cellphones",
     to: "/phone",
   },
@@ -31,8 +31,7 @@ export const galleryData = [
     badgeTitle: "Books & Podcasts",
     badgeBKColor: "#12B364",
     description: "Today, books and podcasts have a special value for us.",
-    background:
-      "http://127.0.0.1:3000/assets/images/category/Books&Podcasts.jpg",
+    background: "/assets/images/category/Books&Podcasts.jpg",
     alt: "book",
     to: "/books-podcasts",
   },
@@ -42,7 +41,7 @@ export const galleryData = [
     badgeBKColor: "#2937D6",
     description:
       "Leather and formal shoes, new sports pants for beauty lovers.",
-    background: "http://127.0.0.1:3000/assets/images/category/Shoes.jpg",
+    background: "/assets/images/category/Shoes.jpg",
     alt: "Shoes",
     to: "/shoes",
   },
@@ -52,8 +51,7 @@ export const galleryData = [
     badgeBKColor: "#D629C5",
     description:
       "Beauty and cosmetic products, all kinds of perfumes and attractive accessories.",
-    background:
-      "http://127.0.0.1:3000/assets/images/category/Health&PersonalCare.jpg",
+    background: "/assets/images/category/Health&PersonalCare.jpg",
     alt: "Health & Personal Care",
     to: "/Health-Personal-Care",
   },
@@ -63,7 +61,7 @@ export const galleryData = [
     badgeBKColor: "#FF8400",
     description:
       "You must have the right equipment to exercise. Find them here.",
-    background: "http://127.0.0.1:3000/assets/images/category/SportsGoods.jpg",
+    background: "/assets/images/category/SportsGoods.jpg",
     alt: "Sports Goods",
     to: "/sports-goods",
   },
@@ -73,7 +71,7 @@ export const galleryData = [
     badgeBKColor: "#2CB322",
     description:
       "Paper, pencils and pens, supplies and stationery for your beloved children.",
-    background: "http://127.0.0.1:3000/assets/images/category/Stationery.jpg",
+    background: "/assets/images/category/Stationery.jpg",
     alt: "Stationery",
     to: "/stationery",
   },
@@ -81,7 +79,7 @@ export const galleryData = [
 export const servicesData = [
   {
     id: 1,
-    logo: "http://127.0.0.1:3000/assets/svg/Dalbi-Elite.svg",
+    logo: "/assets/svg/Dalbi-Elite.svg",
     title: "Dalbi Elite",
     description: "Multi-tasking, gaming or binge watching your favorite.",
     alt: "clothes",
@@ -89,7 +87,7 @@ export const servicesData = [
   },
   {
     id: 2,
-    logo: "http://127.0.0.1:3000/assets/svg/Dalbi-Pro.svg",
+    logo: "/assets/svg/Dalbi-Pro.svg",
     title: "Dalbi Pro",
     description: "Follow your after-sales service and special offers.",
     alt: "clothes",
@@ -97,7 +95,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    logo: "http://127.0.0.1:3000/assets/svg/Dalbi-Club.svg",
+    logo: "/assets/svg/Dalbi-Club.svg",
     title: "Dalbi Club",
     description:
       "Free shipping, product insurance and choice of shipping method.",
@@ -106,7 +104,7 @@ export const servicesData = [
   },
   {
     id: 4,
-    logo: "http://127.0.0.1:3000/assets/svg/Dalbi-Time.svg",
+    logo: "/assets/svg/Dalbi-Time.svg",
     title: "Dalbi Time",
     description: "Return or sell the product you bought without any hassle.",
     alt: "clothes",

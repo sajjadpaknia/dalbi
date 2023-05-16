@@ -12,7 +12,7 @@ const Boxes = () => {
           <div className={classes.box} key={item._id}>
             <Link to={item.to} className={classes.figure}>
               <LazyLoadImage
-                src={`./assets/images/${item.background}.jpg`}
+                src={`/assets/images/${item.background}.jpg`}
                 alt=""
               />
             </Link>

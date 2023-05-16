@@ -11,7 +11,7 @@ const WideBanner = () => {
             <div className={classes.logo}>
               <LazyLoadImage
                 effect="blur"
-                src="./assets/images/creativeCloud.png"
+                src="/assets/images/creativeCloud.png"
                 alt=""
               />
             </div>

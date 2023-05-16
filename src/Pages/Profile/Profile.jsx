@@ -35,8 +35,8 @@ export default function Profile() {
   }, [dashboardData]);
   useEffect(() => {
     const getData = async () => {
-      await axios.get(`/users/${getUser.id}`).then((res) => {
-        setDashboardData(res.data.dashboard);
+      await Promise.resolve("Success").then((res) => {
+        setDashboardData(getUser.dashboard);
       });
     };
     getData();
@@ -99,49 +99,47 @@ export default function Profile() {
     }
   }, [category, controlMenulist]);
   const deleteComment = async (productID) => {
-    await axios.get(`/users/${getUser.id}`).then((res) => {
+    await Promise.resolve("Success").then((res) => {
       const obj = {
+        ...getUser,
         dashboard: {
-          comments: res.data.dashboard.comments.filter((i) => {
+          comments: getUser.dashboard.comments.filter((i) => {
             return i.postID !== productID;
           }),
-          ...res.data.dashboard,
+          ...getUser.dashboard,
         },
       };
-      axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-        localStorage.setItem("auth-user", JSON.stringify(res.data));
-      });
+      localStorage.setItem("auth-user", JSON.stringify(obj));
     });
   };
   const postInfo = async () => {
     setLoading(true);
     const obj = {
+      ...getUser,
       name: informationData.fName + " " + informationData.lName,
       dashboard: {
         ...dashboardData,
         information: informationData,
       },
     };
-    await axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-      localStorage.setItem("auth-user", JSON.stringify(res.data));
-      setLoading(false);
-    });
+    localStorage.setItem("auth-user", JSON.stringify(obj));
+    setGetUser(obj);
+    setLoading(false);
   };
   const postTicket = async () => {
     if (ticketData.title && ticketData.msg) {
       setLoading(true);
       setTicketError(false);
       const obj = {
+        ...getUser,
         dashboard: {
           ...dashboardData,
           tickets: [...dashboardData.tickets, ticketData],
         },
       };
-      await axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-        setLoading(false);
-        setDashboardData(res.data.dashboard);
-        localStorage.setItem("auth-user", JSON.stringify(res.data));
-      });
+      setDashboardData(obj.dashboard);
+      localStorage.setItem("auth-user", JSON.stringify(obj));
+      setLoading(false);
       return;
     }
     setTicketError(true);
@@ -170,7 +168,7 @@ export default function Profile() {
                       dashboardData.information.lName
                     : getUser.name}
                 </h1>
-                <p>{dashboardData ? dashboardData.information.email : ""}</p>
+                <p>{getUser ? getUser.dashboard.information.email : ""}</p>
               </div>
               <div
                 id="control_btn"
@@ -297,7 +295,7 @@ export default function Profile() {
                           <div className={classes.productCart} key={idx}>
                             <figure className={classes.photo}>
                               <LazyLoadImage
-                                src={`./assets/images/products/${i.image}`}
+                                src={`/assets/images/products/${i.image}`}
                                 alt="#"
                                 effect="blur"
                               />
@@ -372,10 +370,7 @@ export default function Profile() {
                                     payment :
                                   </p>
                                   <p className={classes.status_content_icon}>
-                                    <img
-                                      src="./assets/svg/check2.svg"
-                                      alt=""
-                                    />
+                                    <img src="/assets/svg/check2.svg" alt="" />
                                     Complete
                                   </p>
                                 </li>
@@ -543,7 +538,7 @@ export default function Profile() {
                               <figure className={classes.comment_photo}>
                                 <LazyLoadImage
                                   effect="blur"
-                                  src={`./assets/images/products/${i.image}`}
+                                  src={`/assets/images/products/${i.image}`}
                                   alt="product photo"
                                 />
                               </figure>

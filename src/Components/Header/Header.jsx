@@ -43,7 +43,7 @@ export default function Header() {
             <Link to={"/"}>
               <LazyLoadImage
                 effect="blur"
-                src="./assets/svg/light-logo.svg"
+                src="/assets/svg/light-logo.svg"
                 alt="logo"
               />
             </Link>
@@ -64,7 +64,9 @@ export default function Header() {
             <div className={classes.buttonGroup__btn}>
               <div className={classes.cartWrapper}>
                 <Link to={"/cart"}>
-                  {getUser && getUser.dashboard.cart.length > 0 ? (
+                  {getUser &&
+                  getUser.dashboard &&
+                  getUser.dashboard.cart.length > 0 ? (
                     <span className={classes.CartCount}>
                       {getUser.dashboard.cart.length}
                     </span>

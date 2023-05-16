@@ -42,36 +42,8 @@ function emailValidation(state, setState, setStep, setSpinner, setMessage) {
     });
     return;
   }
-  setSpinner(true);
-  const isThereEmail = async () => {
-    await axios
-      .get("/users")
-      .then((res) => {
-        const user = res.data.find((item) => item.email === state.email);
-        if (user) {
-          setState({
-            ...state,
-            error: true,
-            errorText: "This email is already associated with an account.",
-          });
-          setSpinner(false);
-          return;
-        }
-        setSpinner(false);
-        setState({ ...state, error: false, errorText: "" });
-        setStep({ step1: false, step2: true });
-      })
-      .catch(() => {
-        setSpinner(false);
-        setMessage({
-          show: true,
-          error: true,
-          messageTitle: "Sorry, an error has occurred.",
-          messageSubTitle: "Please try again.",
-        });
-      });
-  };
-  isThereEmail();
+       setState({ ...state, error: false, errorText: "" });
+       setStep({ step1: false, step2: true });
 }
 // Password validation function
 function passwordValidation(state, setState, setStep) {

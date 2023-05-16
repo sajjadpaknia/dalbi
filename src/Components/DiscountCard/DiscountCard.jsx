@@ -29,7 +29,7 @@ export default function DiscountCard() {
                 </div>
                 <figure className={classes.image}>
                   <LazyLoadImage
-                    src={`./assets/images/discountCard/${item.bkImage}`}
+                    src={`/assets/images/discountCard/${item.bkImage}`}
                     effect="blur"
                   />
                 </figure>

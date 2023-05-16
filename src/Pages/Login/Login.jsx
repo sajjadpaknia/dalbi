@@ -59,10 +59,7 @@ export default function Login() {
       messageTitle: "Welcome Back to our store.",
       messageSubTitle: "We’re happy to have you on board.",
     });
-    localStorage.setItem(
-      "auth-user",
-      JSON.stringify(loggedUser)
-    );
+    localStorage.setItem("auth-user", JSON.stringify(loggedUser));
     setTimeout(() => {
       navigate("/");
     }, 5000);
@@ -78,7 +75,7 @@ export default function Login() {
               <figure className={classes.logo}>
                 <LazyLoadImage
                   effect="blur"
-                  src="./assets/svg/light-logo.svg"
+                  src="/assets/svg/light-logo.svg"
                   alt="logo"
                 />
               </figure>

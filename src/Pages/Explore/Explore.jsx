@@ -42,7 +42,7 @@ export default function Explore() {
             return item.category === category;
           })
         );
-         setLoading(false);
+        setLoading(false);
       });
       if (category === "phone") {
         setIsRAM(true);
@@ -212,7 +212,7 @@ export default function Explore() {
               ) : (
                 <div className={classes.notFound}>
                   <figure>
-                    <img src="./assets/images/bag.png" alt="" />
+                    <img src="/assets/images/bag.png" alt="" />
                   </figure>
                   <p>No Products Found</p>
                 </div>

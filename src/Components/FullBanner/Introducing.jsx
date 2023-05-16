@@ -3,7 +3,7 @@ import classes from "./Introducing.module.css";
 
 export default function Introducing() {
   return (
-    <section className={classes.container}>
+    <section className={classes.mainContainer}>
       <div className={classes.context}>
         <p className={classes.intro}>
           Crash detection calls in help when you can't.
@@ -23,7 +23,7 @@ export default function Introducing() {
             <p className={classes.item__logo}>
               <LazyLoadImage
                 effect="blur"
-                src="./assets/svg/Energy.svg"
+                src="/assets/svg/Energy.svg"
                 alt=""
               />
             </p>

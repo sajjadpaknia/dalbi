@@ -26,7 +26,7 @@ const ProductCategories = () => {
               <figure className={classes.img}>
                 <LazyLoadImage
                   effect="blur"
-                  src={`./assets/images/category/${item.image}`}
+                  src={`/assets/images/category/${item.image}`}
                   alt=""
                 />
               </figure>

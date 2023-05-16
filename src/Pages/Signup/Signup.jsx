@@ -7,7 +7,7 @@ import BackToHomeBtn from "../../Common/BackToHomeBtn/BackToHomeBtn";
 import Spinner from "../../Common/Spinner/Spinner";
 import validation from "./validation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import { v4 as uuidv4 } from "uuid";
 export default function SignUp() {
   const navigate = useNavigate();
   // After the end of the operation, it reports the result.
@@ -61,6 +61,7 @@ export default function SignUp() {
     setSpinner(true);
     // All user information is placed in "data" to be sent to the server.
     const data = {
+      id: uuidv4(),
       email: email.email,
       password: password.password,
       name: name.name,
@@ -93,8 +94,9 @@ export default function SignUp() {
     };
     // Post "data"
     await axios
-      .post("/users", data)
+      .post(`/users`, data)
       .then((res) => {
+        console.log(res);
         // Spinner => false
         setSpinner(false);
         setMessage({
@@ -109,7 +111,6 @@ export default function SignUp() {
         }, 5000);
       })
       .catch((err) => {
-        console.log(err);
         setSpinner(false);
         setMessage({
           ...message,
@@ -131,7 +132,7 @@ export default function SignUp() {
               <figure className={classes.logo}>
                 <LazyLoadImage
                   effect="blur"
-                  src="./assets/svg/light-logo.svg"
+                  src="/assets/svg/light-logo.svg"
                   alt="logo"
                 />
               </figure>

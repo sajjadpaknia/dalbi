@@ -12,7 +12,7 @@ export default function ProductCard2({ data }) {
           <div className={classes.image}>
             <figure className={classes.figure}>
               <img
-                src={`http://127.0.0.1:3000/assets/images/products/${data.image[0]}`}
+                src={`/assets/images/products/${data.image[0]}`}
                 alt="#"
                 loading="lazy"
               />

@@ -55,19 +55,19 @@ export default function Cart() {
     setError(true);
   };
   const removeItem = async (item) => {
-    await axios.get(`/users/${getUser.id}`).then((res) => {
-      const filter = res.data.dashboard.cart.filter((i) => {
+    await Promise.resolve("Success").then((res) => {
+      const filter = getUser.dashboard.cart.filter((i) => {
         return i.id !== item.id;
       });
       const obj = {
+        ...getUser,
         dashboard: {
-          ...res.data.dashboard,
+          ...getUser.dashboard,
           cart: [...filter],
         },
       };
-      axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-        localStorage.setItem("auth-user", JSON.stringify(res.data));
-      });
+      localStorage.setItem("auth-user", JSON.stringify(obj));
+      setGetUser(obj);
     });
   };
   return (
@@ -97,7 +97,7 @@ export default function Cart() {
                           <div
                             className={classes.icon}
                             style={{
-                              background: `url(./assets/images/${item.path}) no-repeat center`,
+                              background: `url(/assets/images/${item.path}) no-repeat center`,
                             }}
                           ></div>
                           <div className={classes.details}>
@@ -124,7 +124,7 @@ export default function Cart() {
                       <div className={classes.productCart_wrapper}>
                         <figure className={classes.photo}>
                           <LazyLoadImage
-                            src={`./assets/images/products/${i.image}`}
+                            src={`/assets/images/products/${i.image}`}
                             alt="#"
                             effect="blur"
                           />
@@ -243,7 +243,7 @@ export default function Cart() {
         ) : (
           <div className={classes.empty_cart}>
             <div>
-              <img src="./assets/images/empty_cart.png" />
+              <img src="/assets/images/empty_cart.png" />
             </div>
             <h3>Your shopping cart is empty</h3>
             <p>Go to the products page and select the product you want.</p>

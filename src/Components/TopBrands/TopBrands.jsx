@@ -21,7 +21,7 @@ const TopBrands = () => {
                 <figure className={classes.profile}>
                   <LazyLoadImage
                     effect="blur"
-                    src={`./assets/images/brands/${item.logo}`}
+                    src={`/assets/images/brands/${item.logo}`}
                   />
                 </figure>
                 <div className={classes.info}>

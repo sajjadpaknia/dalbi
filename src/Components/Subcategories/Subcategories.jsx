@@ -22,7 +22,7 @@ export default function Subcategories() {
                 >
                   <LazyLoadImage
                     effect="blur"
-                    src={`./assets/images/subcategory/${item.logo}.png`}
+                    src={`/assets/images/subcategory/${item.logo}.png`}
                     alt="the woman is laughing"
                   />
                 </figure>

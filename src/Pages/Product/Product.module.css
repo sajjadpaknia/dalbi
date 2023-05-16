@@ -415,6 +415,11 @@
   );
   z-index: 10;
 }
+.loading {
+  display: grid;
+  place-items: center;
+  margin-block: 10rem;
+}
 @media (max-width: 1240px) {
   .product_img {
     width: 350px;

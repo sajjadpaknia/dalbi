@@ -13,6 +13,7 @@ import ColorBox from "./ColorBox";
 import Configuration from "./Configuration";
 import classes from "./Product.module.css";
 import Specifications from "./Specifications";
+import Spinner from "../../Common/Spinner/Spinner";
 
 export default function Product() {
   const { id } = useParams();
@@ -39,7 +40,7 @@ export default function Product() {
     if (getUser) {
       if (addToCartFnc) {
         async function patchToOrders() {
-          await axios.get(`/users/${getUser.id}`).then((res) => {
+          await Promise.resolve("Success").then((res) => {
             const newItem = {
               id: data.id,
               category: data.category,
@@ -54,15 +55,14 @@ export default function Product() {
               date: new Date().toISOString().slice(0, 10),
             };
             const obj = {
+              ...getUser,
               dashboard: {
-                ...res.data.dashboard,
-                cart: [...res.data.dashboard.cart, newItem],
+                ...getUser.dashboard,
+                cart: [...getUser.dashboard.cart, newItem],
               },
             };
-            axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-              localStorage.setItem("auth-user", JSON.stringify(res.data));
-              setAddToCartBTN("It was added to cart");
-            });
+            localStorage.setItem("auth-user", JSON.stringify(obj));
+            setAddToCartBTN("It was added to cart");
           });
         }
         patchToOrders();
@@ -184,37 +184,33 @@ export default function Product() {
   }, [id, getUser]);
   const handlePatchItem = async () => {
     if (!addToFavorites) {
-      await axios.get(`/users/${getUser.id}`).then((res) => {
+      await Promise.resolve("Success").then((res) => {
         const obj = {
+          ...getUser,
           dashboard: {
-            ...res.data.dashboard,
-            favorites: [...res.data.dashboard.favorites, data.id],
+            ...getUser.dashboard,
+            favorites: [...getUser.dashboard.favorites, data.id],
           },
         };
-        axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-          localStorage.setItem("auth-user", JSON.stringify(res.data));
-          setGetUser(res.data);
-          setAddToFavorites(true);
-        });
+        localStorage.setItem("auth-user", JSON.stringify(obj));
+        setGetUser(obj);
+        setAddToFavorites(true);
       });
     } else {
       if (getUser.dashboard.favorites.length > 0) {
-        await axios.get(`/users/${getUser.id}`).then((res) => {
+        await Promise.resolve("Success").then((res) => {
           const obj = {
+            ...getUser,
             dashboard: {
-              ...res.data.dashboard,
-              favorites: res.data.dashboard.favorites.filter((i) => {
+              ...getUser.dashboard,
+              favorites: getUser.dashboard.favorites.filter((i) => {
                 return i !== data.id;
               }),
             },
           };
-          axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-            if (res.status == 200) {
-              localStorage.setItem("auth-user", JSON.stringify(res.data));
-              setAddToFavorites(false);
-              setGetUser(res.data);
-            }
-          });
+          localStorage.setItem("auth-user", JSON.stringify(obj));
+          setGetUser(obj);
+          setAddToFavorites(false);
         });
       }
     }
@@ -234,27 +230,24 @@ export default function Product() {
       date: new Date().toISOString().slice(0, 10),
       comment: textarea.value,
     };
-    await axios.get(`/users/${getUser.id}`).then((res) => {
+    await Promise.resolve("Success").then((res) => {
       const obj = {
+        ...getUser,
         dashboard: {
-          ...res.data.dashboard,
-          comments: [...res.data.dashboard.comments, newComment],
+          ...getUser.dashboard,
+          comments: [...getUser.dashboard.comments, newComment],
         },
       };
-      axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-        if (res.status == 200) {
-          localStorage.setItem("auth-user", JSON.stringify(res.data));
-          textarea.value = "";
-          setGetUser(JSON.parse(localStorage.getItem("auth-user")));
-        }
-      });
+      localStorage.setItem("auth-user", JSON.stringify(obj));
+      setGetUser(obj);
+      textarea.value = "";
     });
   };
   return (
     <>
       <Container>
         <Header />
-        {data && (
+        {data ? (
           <>
             <main className={classes.main} id="product_page">
               <section className={classes.product_info}>
@@ -286,7 +279,7 @@ export default function Product() {
                             return (
                               <SwiperSlide key={idx}>
                                 <LazyLoadImage
-                                  src={`./assets/images/products/${data.image[idx]}`}
+                                  src={`/assets/images/products/${data.image[idx]}`}
                                   alt="#"
                                   effect="blur"
                                 />
@@ -613,6 +606,10 @@ export default function Product() {
               </section>
             </main>
           </>
+        ) : (
+          <div className={classes.loading}>
+            <Spinner size={"40px"} borderSize={"5px"} />
+          </div>
         )}
         <Footer />
       </Container>

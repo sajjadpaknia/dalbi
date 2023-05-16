@@ -18,24 +18,24 @@ export default function Payment() {
   let navigate = useNavigate();
   const pay = async () => {
     setLoading(true);
-    await axios.get(`/users/${getUser.id}`).then((res) => {
+    await Promise.resolve("Success").then((res) => {
       const obj = {
+        ...getUser,
         dashboard: {
-          ...res.data.dashboard,
-          orders: [...res.data.dashboard.orders, ...res.data.dashboard.cart],
+          ...getUser.dashboard,
+          orders: [...getUser.dashboard.orders, ...getUser.dashboard.cart],
           cart: [],
         },
       };
-      axios.patch(`/users/${getUser.id}`, obj).then((res) => {
-        localStorage.setItem("auth-user", JSON.stringify(res.data));
+      localStorage.setItem("auth-user", JSON.stringify(obj));
+      setTimeout(() => {
+        setLoading(false);
+        setPayResult(true);
         setTimeout(() => {
-          setLoading(false);
-          setPayResult(true);
-          setTimeout(() => {
-            navigate("/profile/orders");
-          }, 2000);
-        }, 3000);
-      });
+          navigate("/profile/orders");
+        }, 2000);
+      }, 3000);
+      setGetUser(obj)
     });
   };
   return (

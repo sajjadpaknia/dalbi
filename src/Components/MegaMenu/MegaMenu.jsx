@@ -96,18 +96,14 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
               <div className={classes.mobileAppContainer}>
                 <div className={classes.mobileAppContainer__wrapper}>
                   <figure className={classes.mobileAppContainer__figure}>
-                    <img
-                      loading="lazy"
-                      src="./assets/images/shop.png"
-                      alt=""
-                    />
+                    <img loading="lazy" src="/assets/images/shop.png" alt="" />
                   </figure>
                   <div className={classes.mobileAppContainer__group}>
                     <figure className={classes.apps}>
                       <Link to={"#"}>
                         <img
                           loading="lazy"
-                          src="./assets/svg/google-play.svg"
+                          src="/assets/svg/google-play.svg"
                           alt=""
                         />
                       </Link>
@@ -116,7 +112,7 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
                       <Link to={"#"}>
                         <img
                           loading="lazy"
-                          src="./assets/svg/app-store.svg"
+                          src="/assets/svg/app-store.svg"
                           alt=""
                         />
                       </Link>
@@ -131,7 +127,7 @@ export default function MegaMenu({ setMegaMenuState, megaMenuState }) {
           <figure className={classes.profile}>
             <img
               loading="lazy"
-              src="./assets/images/profile/Woman.jpeg"
+              src="/assets/images/profile/Woman.jpeg"
               alt="the woman is laughing"
             />
           </figure>

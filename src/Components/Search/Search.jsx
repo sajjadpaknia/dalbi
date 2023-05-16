@@ -77,7 +77,7 @@ export default function Search() {
                           <div className={classes.card__image}>
                             <figure className={classes.card__figure}>
                               <img
-                                src={`./assets/images/products/${item.image[0]}`}
+                                src={`/assets/images/products/${item.image[0]}`}
                                 alt="#"
                                 loading="lazy"
                               />
@@ -108,11 +108,7 @@ export default function Search() {
               ) : (
                 <div className={classes.msg}>
                   <figure>
-                    <img
-                      loading="lazy"
-                      src="./assets/images/error.png"
-                      alt=""
-                    />
+                    <img loading="lazy" src="/assets/images/error.png" alt="" />
                   </figure>
                   <p>Your desired product was not found.</p>
                 </div>
@@ -120,11 +116,7 @@ export default function Search() {
             ) : (
               <div className={classes.msg}>
                 <figure>
-                  <img
-                    loading="lazy"
-                    src="./assets/images/search.png"
-                    alt=""
-                  />
+                  <img loading="lazy" src="/assets/images/search.png" alt="" />
                 </figure>
                 <p>Please enter the name of the product you want.</p>
               </div>
